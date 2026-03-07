@@ -1,0 +1,1099 @@
+==================== 2026-03-02T15:25:37.765769Z | a9b9706e-7419-47f0-9df4-cc4383c727e8 ====================
+15:25:37.766003 [info ]: Starting dbt LSP server
+15:25:37.766059 [info ]: Connecting to LSP client on port 8000
+15:25:37.766260 [info ]: Successfully connected to LSP client
+15:25:37.766267 [info ]: Creating LSP service...
+15:25:37.816365 [info ]: Creating LSP server...
+15:25:37.816385 [info ]: Starting LSP server...
+15:25:37.828980 [info ]: Started loading project
+15:25:37.831519 [info ]: Loading ~/.dbt/profiles.yml
+15:25:37.963218 [debug]:    Started loading packages
+15:25:37.964354 [debug]:     Loaded [  0.00s] packages
+15:25:37.964373 [debug]:    Started loading internal packages
+15:25:37.966879 [debug]:     Loaded [  0.00s] internal packages
+15:25:37.967343 [info ]: Started parsing
+15:25:37.982064 [info ]: Finished loading project [  0.15s]
+15:25:37.984474 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:25:37.985854 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+15:25:37.986504 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:25:37.989334 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:25:37.989707 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:25:37.990101 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:25:37.990383 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:25:37.991999 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:25:37.992776 [info ]: Finished parsing [  0.03s]
+15:25:37.992971 [info ]: Cached model count updated: 3 models (estimate)
+15:25:37.992979 [info ]: Cached model count updated: 3 models (accurate)
+15:25:37.993130 [info ]: Started scheduling
+15:25:37.993373 [info ]: Finished scheduling [  0.00s]
+15:25:37.993390 [info ]: Started scheduling
+15:25:37.993406 [info ]: Finished scheduling [  0.00s]
+15:25:37.994046 [info ]: Started deferring state
+15:25:37.994060 [info ]: Finished deferring state [  0.00s]
+15:25:37.995914 [info ]: Started downloading schemas
+15:25:37.995979 [debug]:    Started downloading relations
+15:25:37.996093 [debug]:   Finished [  0.00s] downloading relations
+15:25:37.996108 [info ]: Finished downloading schemas [  0.00s]
+15:25:38.064385 [info ]: Started building task graph
+15:25:38.064682 [info ]: Finished building task graph [  0.00s]
+15:25:38.065057 [info ]: Started rendering (2 nodes)
+15:25:38.065115 [info ]: Started model cleaned.my_first_dbt_model
+15:25:38.065156 [debug]: Started rendering model cleaned.my_first_dbt_model
+15:25:38.066220 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:25:38.066390 [debug]: Finished rendering [  0.00s] model cleaned.my_first_dbt_model [success]
+15:25:38.066440 [info ]: Started analyzing (2 nodes)
+15:25:38.066444 [debug]: Started analyzing model cleaned.my_first_dbt_model
+15:25:38.079372 [info ]:  Succeeded [  0.01s] model cleaned.my_first_dbt_model (table)
+15:25:38.079394 [debug]: Finished analyzing [  0.01s] model cleaned.my_first_dbt_model [success]
+15:25:38.079404 [info ]: Started model cleaned.my_second_dbt_model
+15:25:38.079409 [debug]: Started rendering model cleaned.my_second_dbt_model
+15:25:38.079807 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:25:38.079842 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+15:25:38.079849 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 0 errors)
+15:25:38.079857 [debug]: Started analyzing model cleaned.my_second_dbt_model
+15:25:38.082342 [info ]:  Succeeded [  0.00s] model cleaned.my_second_dbt_model (view)
+15:25:38.082364 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+15:25:38.082368 [info ]: Finished analyzing [  0.02s] (2 nodes, 0 skipped, 0 errors)
+15:25:38.084930 [info ]: Cached model count updated: 3 models (accurate)
+15:25:38.489102 [info ]: Loading ~/.dbt/profiles.yml
+15:44:17.058042 [info ]: Started loading project
+15:44:17.058677 [info ]: Loading ~/.dbt/profiles.yml
+15:44:17.063042 [info ]: Started parsing
+15:44:17.077888 [info ]: Finished loading project [  0.02s]
+15:44:17.079618 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+15:44:17.080017 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned_orders_item.sql:10:10
+15:44:17.080837 [info ]: Cached model count updated: 3 models (estimate)
+15:44:17.080843 [info ]: Cached model count updated: 3 models (accurate)
+15:44:17.080861 [info ]: Started scheduling
+15:44:17.080978 [info ]: Finished scheduling [  0.00s]
+15:44:17.081266 [info ]: Started deferring state
+15:44:17.081272 [info ]: Finished deferring state [  0.00s]
+15:44:17.081477 [info ]: Started downloading schemas
+15:44:17.081488 [debug]:    Started downloading relations
+15:44:17.081502 [debug]:   Finished [  0.00s] downloading relations
+15:44:17.081512 [info ]: Finished downloading schemas [  0.00s]
+15:44:17.170704 [info ]: Started building task graph
+15:44:17.170752 [info ]: Finished building task graph [  0.00s]
+15:44:17.170830 [info ]: Started rendering (1 nodes)
+15:44:17.170840 [info ]: Started model cleaned.cleaned_orders_item
+15:44:17.170849 [debug]: Started rendering model cleaned.cleaned_orders_item
+15:44:17.170879 [info ]: Finished parsing [  0.11s]
+15:44:17.171149 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned_orders_item.sql:10:10)
+  --> models/cleaned_orders_item.sql:10:10
+15:44:17.171190 [info ]: Started analyzing (1 nodes)
+15:44:17.171195 [debug]: Started analyzing model cleaned.cleaned_orders_item
+15:44:17.171206 [info ]:     Failed [-------] model cleaned.cleaned_orders_item (table)
+15:44:17.171218 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+15:44:17.171224 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+15:44:17.171262 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.cleaned_orders_item"}
+15:44:17.174481 [info ]: Cached model count updated: 3 models (accurate)
+15:44:17.174496 [debug]: Finished rendering [  0.00s] model cleaned.cleaned_orders_item [error]
+15:44:17.174505 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+17:35:24.851086 [info ]: Started loading project
+17:35:24.852579 [info ]: Loading ~/.dbt/profiles.yml
+17:35:24.859518 [info ]: Started parsing
+17:35:24.876965 [info ]: Finished loading project [  0.03s]
+17:35:24.879205 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+17:35:24.879542 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned_orders_item.sql:10:10
+17:35:24.880416 [info ]: Cached model count updated: 3 models (estimate)
+17:35:24.880423 [info ]: Cached model count updated: 3 models (accurate)
+17:35:24.880448 [info ]: Started scheduling
+17:35:24.880515 [info ]: Finished scheduling [  0.00s]
+17:35:24.880836 [info ]: Started deferring state
+17:35:24.880844 [info ]: Finished deferring state [  0.00s]
+17:35:24.881177 [info ]: Started downloading schemas
+17:35:24.881192 [debug]:    Started downloading relations
+17:35:24.881216 [debug]:   Finished [  0.00s] downloading relations
+17:35:24.881227 [info ]: Finished downloading schemas [  0.00s]
+17:35:24.971371 [info ]: Started building task graph
+17:35:24.971431 [info ]: Finished building task graph [  0.00s]
+17:35:24.971527 [info ]: Started rendering (1 nodes)
+17:35:24.971542 [info ]: Started model cleaned.cleaned_orders_item
+17:35:24.971554 [debug]: Started rendering model cleaned.cleaned_orders_item
+17:35:24.971589 [info ]: Finished parsing [  0.11s]
+17:35:24.971907 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned_orders_item.sql:10:10)
+  --> models/cleaned_orders_item.sql:10:10
+17:35:24.971933 [info ]: Started analyzing (1 nodes)
+17:35:24.971938 [debug]: Started analyzing model cleaned.cleaned_orders_item
+17:35:24.971948 [info ]:     Failed [-------] model cleaned.cleaned_orders_item (table)
+17:35:24.971963 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+17:35:24.971968 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+17:35:24.972023 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.cleaned_orders_item"}
+17:35:24.977213 [info ]: Cached model count updated: 3 models (accurate)
+17:35:24.977245 [debug]: Finished rendering [  0.01s] model cleaned.cleaned_orders_item [error]
+17:35:24.977258 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+==================== 2026-03-03T13:57:07.436183Z | 74d2e067-83d6-482b-a41e-9cbd49acfd07 ====================
+13:57:07.437768 [info ]: Starting dbt LSP server
+13:57:07.438065 [info ]: Connecting to LSP client on port 8000
+13:57:07.438630 [info ]: Successfully connected to LSP client
+13:57:07.438636 [info ]: Creating LSP service...
+13:57:07.489255 [info ]: Creating LSP server...
+13:57:07.489269 [info ]: Starting LSP server...
+13:57:07.529863 [info ]: Started loading project
+13:57:07.542430 [info ]: Loading ~/.dbt/profiles.yml
+13:57:07.684512 [debug]:    Started loading packages
+13:57:07.689422 [debug]:     Loaded [  0.00s] packages
+13:57:07.689537 [debug]:    Started loading internal packages
+13:57:07.691532 [debug]:     Loaded [  0.00s] internal packages
+13:57:07.695209 [info ]: Started parsing
+13:57:07.717468 [info ]: Finished loading project [  0.19s]
+13:57:07.724803 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+13:57:07.732646 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+13:57:07.733376 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+13:57:07.738303 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+13:57:07.738616 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+13:57:07.738822 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+13:57:07.739039 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+13:57:07.740271 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+13:57:07.741986 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned_orders_item.sql:10:10
+13:57:07.743422 [info ]: Cached model count updated: 3 models (estimate)
+13:57:07.743427 [info ]: Cached model count updated: 3 models (accurate)
+13:57:07.744393 [info ]: Started scheduling
+13:57:07.745729 [info ]: Finished scheduling [  0.00s]
+13:57:07.745746 [info ]: Started scheduling
+13:57:07.745768 [info ]: Finished scheduling [  0.00s]
+13:57:07.749406 [info ]: Started deferring state
+13:57:07.749567 [info ]: Finished deferring state [  0.00s]
+13:57:07.762191 [info ]: Started downloading schemas
+13:57:07.762595 [debug]:    Started downloading relations
+13:57:07.763808 [debug]:   Finished [  0.00s] downloading relations
+13:57:07.763912 [info ]: Finished downloading schemas [  0.00s]
+13:57:07.838547 [info ]: Started building task graph
+13:57:07.841416 [info ]: Finished building task graph [  0.00s]
+13:57:07.844305 [info ]: Started rendering (3 nodes)
+13:57:07.844610 [info ]: Started model cleaned.my_first_dbt_model
+13:57:07.844865 [debug]: Started rendering model cleaned.my_first_dbt_model
+13:57:07.845077 [info ]: Finished parsing [  0.15s]
+13:57:07.845197 [info ]: Started model cleaned.cleaned_orders_item
+13:57:07.845205 [debug]: Started rendering model cleaned.cleaned_orders_item
+13:57:07.848963 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned_orders_item.sql:10:10)
+  --> models/cleaned_orders_item.sql:10:10
+13:57:07.849744 [info ]: Started analyzing (3 nodes)
+13:57:07.849752 [debug]: Started analyzing model cleaned.cleaned_orders_item
+13:57:07.849762 [info ]:     Failed [  0.00s] model cleaned.cleaned_orders_item (table)
+13:57:07.849809 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+13:57:07.849895 [debug]: Finished rendering [  0.00s] model cleaned.cleaned_orders_item [error]
+13:57:07.850033 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+13:57:07.850528 [debug]: Finished rendering [  0.01s] model cleaned.my_first_dbt_model [success]
+13:57:07.850543 [debug]: Started analyzing model cleaned.my_first_dbt_model
+13:57:07.896086 [info ]:  Succeeded [  0.05s] model cleaned.my_first_dbt_model (table)
+13:57:07.896108 [debug]: Finished analyzing [  0.05s] model cleaned.my_first_dbt_model [success]
+13:57:07.896125 [info ]: Started model cleaned.my_second_dbt_model
+13:57:07.896133 [debug]: Started rendering model cleaned.my_second_dbt_model
+13:57:07.896533 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+13:57:07.896569 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+13:57:07.896576 [info ]: Finished rendering [  0.05s] (3 nodes, 0 skipped, 1 errors)
+13:57:07.896584 [debug]: Started analyzing model cleaned.my_second_dbt_model
+13:57:07.901521 [info ]:  Succeeded [  0.00s] model cleaned.my_second_dbt_model (view)
+13:57:07.901537 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+13:57:07.901542 [info ]: Finished analyzing [  0.05s] (3 nodes, 1 skipped, 0 errors)
+13:57:07.906469 [info ]: Cached model count updated: 3 models (accurate)
+13:57:08.302026 [info ]: Loading ~/.dbt/profiles.yml
+13:59:12.215739 [info ]: Started loading project
+13:59:12.216743 [info ]: Loading ~/.dbt/profiles.yml
+13:59:12.223258 [info ]: Started parsing
+13:59:12.236534 [info ]: Finished loading project [  0.02s]
+13:59:12.238016 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+13:59:12.238259 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned_orders_item.sql:10:10
+13:59:12.239799 [info ]: Cached model count updated: 3 models (estimate)
+13:59:12.239806 [info ]: Cached model count updated: 3 models (accurate)
+13:59:12.239821 [info ]: Started scheduling
+13:59:12.240509 [info ]: Finished scheduling [  0.00s]
+13:59:12.240746 [info ]: Started deferring state
+13:59:12.240752 [info ]: Finished deferring state [  0.00s]
+13:59:12.240936 [info ]: Started downloading schemas
+13:59:12.240948 [debug]:    Started downloading relations
+13:59:12.240960 [debug]:   Finished [  0.00s] downloading relations
+13:59:12.240969 [info ]: Finished downloading schemas [  0.00s]
+13:59:12.328269 [info ]: Started building task graph
+13:59:12.328305 [info ]: Finished building task graph [  0.00s]
+13:59:12.328367 [info ]: Started rendering (1 nodes)
+13:59:12.328376 [info ]: Started model cleaned.cleaned_orders_item
+13:59:12.328383 [debug]: Started rendering model cleaned.cleaned_orders_item
+13:59:12.328414 [info ]: Finished parsing [  0.11s]
+13:59:12.328679 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned_orders_item.sql:10:10)
+  --> models/cleaned_orders_item.sql:10:10
+13:59:12.328702 [info ]: Started analyzing (1 nodes)
+13:59:12.328707 [debug]: Started analyzing model cleaned.cleaned_orders_item
+13:59:12.328717 [info ]:     Failed [-------] model cleaned.cleaned_orders_item (table)
+13:59:12.328730 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+13:59:12.328736 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+13:59:12.328773 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.cleaned_orders_item"}
+13:59:12.333446 [info ]: Cached model count updated: 3 models (accurate)
+13:59:12.333484 [debug]: Finished rendering [  0.01s] model cleaned.cleaned_orders_item [error]
+13:59:12.333497 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+14:01:21.347381 [info ]: Started loading project
+14:01:21.347965 [info ]: Loading ~/.dbt/profiles.yml
+14:01:21.352251 [info ]: Started parsing
+14:01:21.367512 [info ]: Finished loading project [  0.02s]
+14:01:21.369334 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+14:01:21.369586 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned_orders_item.sql:10:10
+14:01:21.370353 [info ]: Cached model count updated: 3 models (estimate)
+14:01:21.370359 [info ]: Cached model count updated: 3 models (accurate)
+14:01:21.370376 [info ]: Started scheduling
+14:01:21.370421 [info ]: Finished scheduling [  0.00s]
+14:01:21.370705 [info ]: Started deferring state
+14:01:21.370711 [info ]: Finished deferring state [  0.00s]
+14:01:21.370910 [info ]: Started downloading schemas
+14:01:21.370921 [debug]:    Started downloading relations
+14:01:21.370934 [debug]:   Finished [  0.00s] downloading relations
+14:01:21.370944 [info ]: Finished downloading schemas [  0.00s]
+14:01:21.460635 [info ]: Started building task graph
+14:01:21.460671 [info ]: Finished building task graph [  0.00s]
+14:01:21.460736 [info ]: Started rendering (1 nodes)
+14:01:21.460745 [info ]: Started model cleaned.cleaned_orders_item
+14:01:21.460754 [debug]: Started rendering model cleaned.cleaned_orders_item
+14:01:21.460787 [info ]: Finished parsing [  0.11s]
+14:01:21.461026 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned_orders_item.sql:10:10)
+  --> models/cleaned_orders_item.sql:10:10
+14:01:21.461048 [info ]: Started analyzing (1 nodes)
+14:01:21.461052 [debug]: Started analyzing model cleaned.cleaned_orders_item
+14:01:21.461063 [info ]:     Failed [-------] model cleaned.cleaned_orders_item (table)
+14:01:21.461076 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+14:01:21.461081 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+14:01:21.461124 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.cleaned_orders_item"}
+14:01:21.463358 [debug]: Finished rendering [  0.00s] model cleaned.cleaned_orders_item [error]
+14:01:21.463371 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+14:01:21.465856 [info ]: Cached model count updated: 3 models (accurate)
+14:02:24.222289 [info ]: Started loading project
+14:02:24.222893 [info ]: Loading ~/.dbt/profiles.yml
+14:02:24.227755 [info ]: Started parsing
+14:02:24.245899 [info ]: Finished loading project [  0.02s]
+14:02:24.247958 [debug]: Finished parsing models/cleaned_orders_item.sql [  0.00s]
+14:02:24.248337 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned_orders_item.sql:10:10
+14:02:24.249435 [info ]: Cached model count updated: 3 models (estimate)
+14:02:24.249442 [info ]: Cached model count updated: 3 models (accurate)
+14:02:24.249458 [info ]: Started scheduling
+14:02:24.249485 [info ]: Finished scheduling [  0.00s]
+14:02:24.249497 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+14:02:24.249502 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+14:02:24.249955 [info ]: Started deferring state
+14:02:24.249962 [info ]: Finished deferring state [  0.00s]
+14:02:24.250185 [info ]: Started downloading schemas
+14:02:24.250197 [debug]:    Started downloading relations
+14:02:24.250213 [debug]:   Finished [  0.00s] downloading relations
+14:02:24.250223 [info ]: Finished downloading schemas [  0.00s]
+14:02:24.333057 [info ]: Started building task graph
+14:02:24.333080 [info ]: Finished building task graph [  0.00s]
+14:02:24.333150 [debug]: Incremental compilation - 0 nodes selected: {}
+14:02:24.335967 [info ]: Cached model count updated: 3 models (accurate)
+14:02:24.335981 [info ]: Finished parsing [  0.11s]
+14:02:27.209598 [info ]: Started loading project
+14:02:27.210365 [info ]: Loading ~/.dbt/profiles.yml
+14:02:27.215396 [info ]: Started loading project
+14:02:27.215771 [info ]: Loading ~/.dbt/profiles.yml
+14:02:27.215810 [info ]: Finished loading project [  0.01s]
+14:02:27.350644 [debug]:    Started loading packages
+14:02:27.351130 [debug]:     Loaded [  0.00s] packages
+14:02:27.351139 [debug]:    Started loading internal packages
+14:02:27.353464 [debug]:     Loaded [  0.00s] internal packages
+14:02:27.353647 [info ]: Started parsing
+14:02:27.368507 [info ]: Finished loading project [  0.15s]
+14:02:27.370462 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:02:27.371376 [debug]: Finished parsing models/cleaned/cleaned_orders_item.sql [  0.00s]
+14:02:27.371819 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:02:27.373476 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:02:27.373707 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:02:27.373946 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:02:27.374144 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:02:27.374985 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:02:27.375299 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned/cleaned_orders_item.sql:10:10
+14:02:27.375398 [info ]: Cached model count updated: 3 models (estimate)
+14:02:27.375402 [info ]: Cached model count updated: 3 models (accurate)
+14:02:27.375413 [info ]: Started scheduling
+14:02:27.375445 [info ]: Finished scheduling [  0.00s]
+14:02:27.375451 [info ]: Started scheduling
+14:02:27.375468 [info ]: Finished scheduling [  0.00s]
+14:02:27.375708 [info ]: Started deferring state
+14:02:27.375713 [info ]: Finished deferring state [  0.00s]
+14:02:27.375860 [info ]: Started downloading schemas
+14:02:27.375868 [debug]:    Started downloading relations
+14:02:27.375878 [debug]:   Finished [  0.00s] downloading relations
+14:02:27.375885 [info ]: Finished downloading schemas [  0.00s]
+14:02:27.451250 [info ]: Started building task graph
+14:02:27.451297 [info ]: Finished building task graph [  0.00s]
+14:02:27.451362 [info ]: Started rendering (3 nodes)
+14:02:27.451371 [info ]: Started model cleaned.my_first_dbt_model
+14:02:27.451379 [debug]: Started rendering model cleaned.my_first_dbt_model
+14:02:27.451392 [info ]: Started model cleaned.cleaned_orders_item
+14:02:27.451399 [debug]: Started rendering model cleaned.cleaned_orders_item
+14:02:27.451407 [info ]: Finished parsing [  0.10s]
+14:02:27.451691 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned/cleaned_orders_item.sql:10:10)
+  --> models/cleaned/cleaned_orders_item.sql:10:10
+14:02:27.451712 [info ]: Started analyzing (3 nodes)
+14:02:27.451717 [debug]: Started analyzing model cleaned.cleaned_orders_item
+14:02:27.451726 [info ]:     Failed [-------] model cleaned.cleaned_orders_item (table)
+14:02:27.451738 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+14:02:27.451748 [debug]: Finished rendering [  0.00s] model cleaned.cleaned_orders_item [error]
+14:02:27.451882 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:02:27.451904 [debug]: Started analyzing model cleaned.my_first_dbt_model
+14:02:27.451908 [debug]: Finished rendering [  0.00s] model cleaned.my_first_dbt_model [success]
+14:02:27.452404 [info ]:  Succeeded [-------] model cleaned.my_first_dbt_model (table)
+14:02:27.452414 [debug]: Finished analyzing [  0.00s] model cleaned.my_first_dbt_model [success]
+14:02:27.452422 [info ]: Started model cleaned.my_second_dbt_model
+14:02:27.452427 [debug]: Started rendering model cleaned.my_second_dbt_model
+14:02:27.452784 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:02:27.452802 [debug]: Started analyzing model cleaned.my_second_dbt_model
+14:02:27.452808 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+14:02:27.452814 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 1 errors)
+14:02:27.453189 [info ]:  Succeeded [-------] model cleaned.my_second_dbt_model (view)
+14:02:27.453198 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+14:02:27.453202 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+14:02:27.456420 [info ]: Cached model count updated: 3 models (accurate)
+14:02:55.392520 [info ]: Started loading project
+14:02:55.393086 [info ]: Loading ~/.dbt/profiles.yml
+14:02:55.396378 [info ]: Started loading project
+14:02:55.396577 [info ]: Loading ~/.dbt/profiles.yml
+14:02:55.396603 [info ]: Finished loading project [  0.00s]
+14:02:55.525230 [debug]:    Started loading packages
+14:02:55.525700 [debug]:     Loaded [  0.00s] packages
+14:02:55.525708 [debug]:    Started loading internal packages
+14:02:55.527618 [debug]:     Loaded [  0.00s] internal packages
+14:02:55.527763 [info ]: Started parsing
+14:02:55.541895 [info ]: Finished loading project [  0.15s]
+14:02:55.542623 [debug]: Finished parsing models/cleaned/sources.yml [  0.00s]
+14:02:55.542734 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:02:55.544689 [debug]: Finished parsing models/cleaned/cleaned_orders_item.sql [  0.00s]
+14:02:55.544971 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:02:55.547152 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:02:55.547375 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:02:55.547615 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:02:55.547810 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:02:55.548634 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:02:55.548949 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned/cleaned_orders_item.sql:10:10
+14:02:55.549073 [info ]: Cached model count updated: 3 models (estimate)
+14:02:55.549080 [info ]: Cached model count updated: 3 models (accurate)
+14:02:55.549090 [info ]: Started scheduling
+14:02:55.549120 [info ]: Finished scheduling [  0.00s]
+14:02:55.549126 [info ]: Started scheduling
+14:02:55.549140 [info ]: Finished scheduling [  0.00s]
+14:02:55.549432 [info ]: Started deferring state
+14:02:55.549437 [info ]: Finished deferring state [  0.00s]
+14:02:55.549597 [info ]: Started downloading schemas
+14:02:55.549605 [debug]:    Started downloading relations
+14:02:55.549614 [debug]:   Finished [  0.00s] downloading relations
+14:02:55.549621 [info ]: Finished downloading schemas [  0.00s]
+14:02:55.620638 [info ]: Started building task graph
+14:02:55.620681 [info ]: Finished building task graph [  0.00s]
+14:02:55.620745 [info ]: Started rendering (3 nodes)
+14:02:55.620753 [info ]: Started model cleaned.my_first_dbt_model
+14:02:55.620761 [debug]: Started rendering model cleaned.my_first_dbt_model
+14:02:55.620774 [info ]: Started model cleaned.cleaned_orders_item
+14:02:55.620778 [debug]: Started rendering model cleaned.cleaned_orders_item
+14:02:55.620787 [info ]: Finished parsing [  0.09s]
+14:02:55.621050 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned/cleaned_orders_item.sql:10:10)
+  --> models/cleaned/cleaned_orders_item.sql:10:10
+14:02:55.621071 [info ]: Started analyzing (3 nodes)
+14:02:55.621075 [debug]: Started analyzing model cleaned.cleaned_orders_item
+14:02:55.621084 [info ]:     Failed [-------] model cleaned.cleaned_orders_item (table)
+14:02:55.621095 [debug]: Finished analyzing [  0.00s] model cleaned.cleaned_orders_item [skipped]
+14:02:55.621105 [debug]: Finished rendering [  0.00s] model cleaned.cleaned_orders_item [error]
+14:02:55.621261 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:02:55.621279 [debug]: Started analyzing model cleaned.my_first_dbt_model
+14:02:55.621306 [debug]: Finished rendering [  0.00s] model cleaned.my_first_dbt_model [success]
+14:02:55.621723 [info ]:  Succeeded [-------] model cleaned.my_first_dbt_model (table)
+14:02:55.621732 [debug]: Finished analyzing [  0.00s] model cleaned.my_first_dbt_model [success]
+14:02:55.621741 [info ]: Started model cleaned.my_second_dbt_model
+14:02:55.621746 [debug]: Started rendering model cleaned.my_second_dbt_model
+14:02:55.622053 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:02:55.622070 [debug]: Started analyzing model cleaned.my_second_dbt_model
+14:02:55.622075 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+14:02:55.622080 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 1 errors)
+14:02:55.622441 [info ]:  Succeeded [-------] model cleaned.my_second_dbt_model (view)
+14:02:55.622451 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+14:02:55.622454 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+14:02:55.625607 [info ]: Cached model count updated: 3 models (accurate)
+14:24:01.890103 [info ]: Started loading project
+14:24:01.890886 [info ]: Loading ~/.dbt/profiles.yml
+14:24:01.893951 [info ]: Started loading project
+14:24:01.894140 [info ]: Loading ~/.dbt/profiles.yml
+14:24:01.894163 [info ]: Finished loading project [  0.00s]
+14:24:02.032705 [debug]:    Started loading packages
+14:24:02.033148 [debug]:     Loaded [  0.00s] packages
+14:24:02.033155 [debug]:    Started loading internal packages
+14:24:02.035118 [debug]:     Loaded [  0.00s] internal packages
+14:24:02.035269 [info ]: Started parsing
+14:24:02.049275 [info ]: Finished loading project [  0.16s]
+14:24:02.049877 [debug]: Finished parsing models/cleaned/sources.yml [  0.00s]
+14:24:02.051255 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:24:02.052421 [debug]: Finished parsing models/cleaned/stg_orders_item.sql [  0.00s]
+14:24:02.052835 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:24:02.054646 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:24:02.054881 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:24:02.055113 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:24:02.055332 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:24:02.056342 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:24:02.056547 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/cleaned/stg_orders_item.sql:10:10
+14:24:02.056654 [info ]: Cached model count updated: 3 models (estimate)
+14:24:02.056659 [info ]: Cached model count updated: 3 models (accurate)
+14:24:02.056671 [info ]: Started scheduling
+14:24:02.056703 [info ]: Finished scheduling [  0.00s]
+14:24:02.056709 [info ]: Started scheduling
+14:24:02.056727 [info ]: Finished scheduling [  0.00s]
+14:24:02.056948 [info ]: Started deferring state
+14:24:02.056953 [info ]: Finished deferring state [  0.00s]
+14:24:02.057102 [info ]: Started downloading schemas
+14:24:02.057110 [debug]:    Started downloading relations
+14:24:02.057119 [debug]:   Finished [  0.00s] downloading relations
+14:24:02.057126 [info ]: Finished downloading schemas [  0.00s]
+14:24:02.128636 [info ]: Started building task graph
+14:24:02.128674 [info ]: Finished building task graph [  0.00s]
+14:24:02.128727 [info ]: Started rendering (3 nodes)
+14:24:02.128735 [info ]: Started model cleaned.stg_orders_item
+14:24:02.128742 [debug]: Started rendering model cleaned.stg_orders_item
+14:24:02.128755 [info ]: Started model cleaned.my_first_dbt_model
+14:24:02.128760 [debug]: Started rendering model cleaned.my_first_dbt_model
+14:24:02.128764 [info ]: Finished parsing [  0.09s]
+14:24:02.129026 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/cleaned/stg_orders_item.sql:10:10)
+  --> models/cleaned/stg_orders_item.sql:10:10
+14:24:02.129046 [info ]: Started analyzing (3 nodes)
+14:24:02.129050 [debug]: Started analyzing model cleaned.stg_orders_item
+14:24:02.129059 [info ]:     Failed [-------] model cleaned.stg_orders_item (table)
+14:24:02.129069 [debug]: Finished analyzing [  0.00s] model cleaned.stg_orders_item [skipped]
+14:24:02.129080 [debug]: Finished rendering [  0.00s] model cleaned.stg_orders_item [error]
+14:24:02.129214 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:24:02.129229 [debug]: Started analyzing model cleaned.my_first_dbt_model
+14:24:02.129253 [debug]: Finished rendering [  0.00s] model cleaned.my_first_dbt_model [success]
+14:24:02.129853 [info ]:  Succeeded [-------] model cleaned.my_first_dbt_model (table)
+14:24:02.129869 [debug]: Finished analyzing [  0.00s] model cleaned.my_first_dbt_model [success]
+14:24:02.129879 [info ]: Started model cleaned.my_second_dbt_model
+14:24:02.129885 [debug]: Started rendering model cleaned.my_second_dbt_model
+14:24:02.130220 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:24:02.130240 [debug]: Started analyzing model cleaned.my_second_dbt_model
+14:24:02.130245 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+14:24:02.130250 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 1 errors)
+14:24:02.130820 [info ]:  Succeeded [-------] model cleaned.my_second_dbt_model (view)
+14:24:02.130831 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+14:24:02.130835 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+14:24:02.134204 [info ]: Cached model count updated: 3 models (accurate)
+14:24:16.596888 [info ]: Started loading project
+14:24:16.597214 [info ]: Loading ~/.dbt/profiles.yml
+14:24:16.599217 [info ]: Started loading project
+14:24:16.599354 [info ]: Loading ~/.dbt/profiles.yml
+14:24:16.599372 [info ]: Finished loading project [  0.00s]
+14:24:16.721267 [debug]:    Started loading packages
+14:24:16.721700 [debug]:     Loaded [  0.00s] packages
+14:24:16.721708 [debug]:    Started loading internal packages
+14:24:16.723627 [debug]:     Loaded [  0.00s] internal packages
+14:24:16.723769 [info ]: Started parsing
+14:24:16.737646 [info ]: Finished loading project [  0.14s]
+14:24:16.738355 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:24:16.738384 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+14:24:16.739168 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:24:16.740336 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:24:16.741780 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:24:16.742014 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:24:16.742259 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:24:16.742455 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:24:16.743336 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:24:16.743589 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:10:10
+14:24:16.743700 [info ]: Cached model count updated: 3 models (estimate)
+14:24:16.743705 [info ]: Cached model count updated: 3 models (accurate)
+14:24:16.743717 [info ]: Started scheduling
+14:24:16.743753 [info ]: Finished scheduling [  0.00s]
+14:24:16.743760 [info ]: Started scheduling
+14:24:16.743776 [info ]: Finished scheduling [  0.00s]
+14:24:16.744034 [info ]: Started deferring state
+14:24:16.744038 [info ]: Finished deferring state [  0.00s]
+14:24:16.744187 [info ]: Started downloading schemas
+14:24:16.744195 [debug]:    Started downloading relations
+14:24:16.744204 [debug]:   Finished [  0.00s] downloading relations
+14:24:16.744211 [info ]: Finished downloading schemas [  0.00s]
+14:24:16.813072 [info ]: Started building task graph
+14:24:16.813111 [info ]: Finished building task graph [  0.00s]
+14:24:16.813169 [info ]: Started rendering (3 nodes)
+14:24:16.813177 [info ]: Started model cleaned.stg_orders_item
+14:24:16.813186 [debug]: Started rendering model cleaned.stg_orders_item
+14:24:16.813200 [info ]: Started model cleaned.my_first_dbt_model
+14:24:16.813206 [debug]: Started rendering model cleaned.my_first_dbt_model
+14:24:16.813209 [info ]: Finished parsing [  0.09s]
+14:24:16.813532 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/staging/stg_orders_item.sql:10:10)
+  --> models/staging/stg_orders_item.sql:10:10
+14:24:16.813554 [info ]: Started analyzing (3 nodes)
+14:24:16.813557 [debug]: Started analyzing model cleaned.stg_orders_item
+14:24:16.813564 [info ]:     Failed [-------] model cleaned.stg_orders_item (table)
+14:24:16.813573 [debug]: Finished analyzing [  0.00s] model cleaned.stg_orders_item [skipped]
+14:24:16.813583 [debug]: Finished rendering [  0.00s] model cleaned.stg_orders_item [error]
+14:24:16.813702 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:24:16.813718 [debug]: Started analyzing model cleaned.my_first_dbt_model
+14:24:16.813737 [debug]: Finished rendering [  0.00s] model cleaned.my_first_dbt_model [success]
+14:24:16.814178 [info ]:  Succeeded [-------] model cleaned.my_first_dbt_model (table)
+14:24:16.814187 [debug]: Finished analyzing [  0.00s] model cleaned.my_first_dbt_model [success]
+14:24:16.814194 [info ]: Started model cleaned.my_second_dbt_model
+14:24:16.814199 [debug]: Started rendering model cleaned.my_second_dbt_model
+14:24:16.814526 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:24:16.814542 [debug]: Started analyzing model cleaned.my_second_dbt_model
+14:24:16.814550 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+14:24:16.814556 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 1 errors)
+14:24:16.814881 [info ]:  Succeeded [-------] model cleaned.my_second_dbt_model (view)
+14:24:16.814890 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+14:24:16.814893 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+14:24:16.817957 [info ]: Cached model count updated: 3 models (accurate)
+14:34:58.750092 [info ]: Started loading project
+14:34:58.750633 [info ]: Loading ~/.dbt/profiles.yml
+14:34:58.753816 [info ]: Started loading project
+14:34:58.754026 [info ]: Loading ~/.dbt/profiles.yml
+14:34:58.754055 [info ]: Finished loading project [  0.00s]
+14:34:58.883827 [debug]:    Started loading packages
+14:34:58.884295 [debug]:     Loaded [  0.00s] packages
+14:34:58.884303 [debug]:    Started loading internal packages
+14:34:58.886213 [debug]:     Loaded [  0.00s] internal packages
+14:34:58.886361 [info ]: Started parsing
+14:34:58.900737 [info ]: Finished loading project [  0.15s]
+14:34:58.901511 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:34:58.901542 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+14:34:58.901560 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+14:34:58.903539 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:34:58.903742 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:34:58.905220 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:34:58.905453 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:34:58.905724 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:34:58.905947 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:34:58.906790 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:34:58.907022 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:10:10
+14:34:58.907123 [info ]: Cached model count updated: 3 models (estimate)
+14:34:58.907128 [info ]: Cached model count updated: 3 models (accurate)
+14:34:58.907138 [info ]: Started scheduling
+14:34:58.907170 [info ]: Finished scheduling [  0.00s]
+14:34:58.907177 [info ]: Started scheduling
+14:34:58.907194 [info ]: Finished scheduling [  0.00s]
+14:34:58.907427 [info ]: Started deferring state
+14:34:58.907432 [info ]: Finished deferring state [  0.00s]
+14:34:58.907589 [info ]: Started downloading schemas
+14:34:58.907598 [debug]:    Started downloading relations
+14:34:58.907608 [debug]:   Finished [  0.00s] downloading relations
+14:34:58.907615 [info ]: Finished downloading schemas [  0.00s]
+14:34:58.975422 [info ]: Started building task graph
+14:34:58.975460 [info ]: Finished building task graph [  0.00s]
+14:34:58.975511 [info ]: Started rendering (3 nodes)
+14:34:58.975519 [info ]: Started model cleaned.stg_orders_item
+14:34:58.975526 [debug]: Started rendering model cleaned.stg_orders_item
+14:34:58.975539 [info ]: Started model cleaned.my_first_dbt_model
+14:34:58.975544 [debug]: Started rendering model cleaned.my_first_dbt_model
+14:34:58.975551 [info ]: Finished parsing [  0.09s]
+14:34:58.975789 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/staging/stg_orders_item.sql:10:10)
+  --> models/staging/stg_orders_item.sql:10:10
+14:34:58.975807 [info ]: Started analyzing (3 nodes)
+14:34:58.975811 [debug]: Started analyzing model cleaned.stg_orders_item
+14:34:58.975819 [info ]:     Failed [-------] model cleaned.stg_orders_item (table)
+14:34:58.975829 [debug]: Finished analyzing [  0.00s] model cleaned.stg_orders_item [skipped]
+14:34:58.975838 [debug]: Finished rendering [  0.00s] model cleaned.stg_orders_item [error]
+14:34:58.976012 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:34:58.976035 [debug]: Finished rendering [  0.00s] model cleaned.my_first_dbt_model [success]
+14:34:58.976035 [debug]: Started analyzing model cleaned.my_first_dbt_model
+14:34:58.976442 [info ]:  Succeeded [-------] model cleaned.my_first_dbt_model (table)
+14:34:58.976451 [debug]: Finished analyzing [  0.00s] model cleaned.my_first_dbt_model [success]
+14:34:58.976459 [info ]: Started model cleaned.my_second_dbt_model
+14:34:58.976464 [debug]: Started rendering model cleaned.my_second_dbt_model
+14:34:58.976742 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:34:58.976756 [debug]: Started analyzing model cleaned.my_second_dbt_model
+14:34:58.976763 [debug]: Finished rendering [  0.00s] model cleaned.my_second_dbt_model [success]
+14:34:58.976769 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 1 errors)
+14:34:58.977102 [info ]:  Succeeded [-------] model cleaned.my_second_dbt_model (view)
+14:34:58.977111 [debug]: Finished analyzing [  0.00s] model cleaned.my_second_dbt_model [success]
+14:34:58.977115 [info ]: Finished analyzing [  0.00s] (3 nodes, 1 skipped, 0 errors)
+14:34:58.980070 [info ]: Cached model count updated: 3 models (accurate)
+14:42:11.175523 [info ]: Started loading project
+14:42:11.176052 [info ]: Loading ~/.dbt/profiles.yml
+14:42:11.181117 [info ]: Started parsing
+14:42:11.196497 [info ]: Finished loading project [  0.02s]
+14:42:11.197543 [error]: dbt1013: YAML error: did not find expected '-' indicator at line 22 column 8, while parsing a block collection at line 7 column 7
+  --> models/staging/stg_orders_item.yml:22:8
+14:42:11.197814 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+14:42:11.199459 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:42:11.199888 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:10:10
+14:42:11.200925 [info ]: Cached model count updated: 3 models (estimate)
+14:42:11.200931 [info ]: Cached model count updated: 3 models (accurate)
+14:42:11.200947 [info ]: Started scheduling
+14:42:11.200975 [info ]: Finished scheduling [  0.00s]
+14:42:11.200984 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+14:42:11.200989 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+14:42:11.201277 [info ]: Started deferring state
+14:42:11.201283 [info ]: Finished deferring state [  0.00s]
+14:42:11.201555 [info ]: Started downloading schemas
+14:42:11.201580 [debug]:    Started downloading relations
+14:42:11.201595 [debug]:   Finished [  0.00s] downloading relations
+14:42:11.201612 [info ]: Finished downloading schemas [  0.00s]
+14:42:11.291782 [info ]: Started building task graph
+14:42:11.291809 [info ]: Finished building task graph [  0.00s]
+14:42:11.291887 [debug]: Incremental compilation - 0 nodes selected: {}
+14:42:11.294868 [info ]: Cached model count updated: 3 models (accurate)
+14:42:11.294885 [info ]: Finished parsing [  0.11s]
+14:43:14.273542 [info ]: Started loading project
+14:43:14.273869 [info ]: Loading ~/.dbt/profiles.yml
+14:43:14.277198 [info ]: Started parsing
+14:43:14.291470 [info ]: Finished loading project [  0.02s]
+14:43:14.291854 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+14:43:14.294646 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:43:14.294969 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+14:43:14.295298 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+14:43:14.295527 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+14:43:14.295782 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+14:43:14.295995 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+14:43:14.296275 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+14:43:14.297824 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+14:43:14.298139 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:10:10
+14:43:14.298940 [info ]: Cached model count updated: 3 models (estimate)
+14:43:14.298946 [info ]: Cached model count updated: 3 models (accurate)
+14:43:14.298963 [info ]: Started scheduling
+14:43:14.298992 [info ]: Finished scheduling [  0.00s]
+14:43:14.299001 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+14:43:14.299006 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+14:43:14.299286 [info ]: Started deferring state
+14:43:14.299292 [info ]: Finished deferring state [  0.00s]
+14:43:14.299488 [info ]: Started downloading schemas
+14:43:14.299499 [debug]:    Started downloading relations
+14:43:14.299512 [debug]:   Finished [  0.00s] downloading relations
+14:43:14.299521 [info ]: Finished downloading schemas [  0.00s]
+14:43:14.379661 [info ]: Started building task graph
+14:43:14.379688 [info ]: Finished building task graph [  0.00s]
+14:43:14.379766 [debug]: Incremental compilation - 0 nodes selected: {}
+14:43:14.382840 [info ]: Cached model count updated: 3 models (accurate)
+14:43:14.382860 [info ]: Finished parsing [  0.11s]
+15:15:06.994309 [info ]: Started loading project
+15:15:06.994891 [info ]: Loading ~/.dbt/profiles.yml
+15:15:06.999293 [info ]: Started parsing
+15:15:07.014523 [info ]: Finished loading project [  0.02s]
+15:15:07.014932 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:15:07.018019 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:15:07.018318 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:15:07.018549 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:15:07.018766 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:15:07.018978 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:15:07.019188 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:15:07.019393 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:15:07.021007 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:15:07.021360 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:8:10
+15:15:07.022121 [info ]: Cached model count updated: 3 models (estimate)
+15:15:07.022127 [info ]: Cached model count updated: 3 models (accurate)
+15:15:07.022144 [info ]: Started scheduling
+15:15:07.022228 [info ]: Finished scheduling [  0.00s]
+15:15:07.022473 [info ]: Started deferring state
+15:15:07.022479 [info ]: Finished deferring state [  0.00s]
+15:15:07.022670 [info ]: Started downloading schemas
+15:15:07.022681 [debug]:    Started downloading relations
+15:15:07.022693 [debug]:   Finished [  0.00s] downloading relations
+15:15:07.022703 [info ]: Finished downloading schemas [  0.00s]
+15:15:07.111135 [info ]: Started building task graph
+15:15:07.111173 [info ]: Finished building task graph [  0.00s]
+15:15:07.111236 [info ]: Started rendering (1 nodes)
+15:15:07.111245 [info ]: Started model cleaned.stg_orders_item
+15:15:07.111253 [debug]: Started rendering model cleaned.stg_orders_item
+15:15:07.111284 [info ]: Finished parsing [  0.11s]
+15:15:07.111549 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: orders_item
+(in models/staging/stg_orders_item.sql:8:10)
+  --> models/staging/stg_orders_item.sql:8:10
+15:15:07.111571 [info ]: Started analyzing (1 nodes)
+15:15:07.111576 [debug]: Started analyzing model cleaned.stg_orders_item
+15:15:07.111585 [info ]:     Failed [-------] model cleaned.stg_orders_item (table)
+15:15:07.111596 [debug]: Finished analyzing [  0.00s] model cleaned.stg_orders_item [skipped]
+15:15:07.111601 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+15:15:07.111636 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.stg_orders_item"}
+15:15:07.115285 [info ]: Cached model count updated: 3 models (accurate)
+15:15:07.115304 [debug]: Finished rendering [  0.00s] model cleaned.stg_orders_item [error]
+15:15:07.115315 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+15:15:11.000059 [info ]: Started loading project
+15:15:11.000763 [info ]: Loading ~/.dbt/profiles.yml
+15:15:11.006708 [info ]: Started parsing
+15:15:11.025434 [info ]: Finished loading project [  0.03s]
+15:15:11.025967 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:15:11.029343 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:15:11.029750 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:15:11.030059 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:15:11.030353 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:15:11.030636 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:15:11.030911 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:15:11.031180 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:15:11.033127 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:15:11.033533 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:8:10
+15:15:11.034292 [info ]: Cached model count updated: 3 models (estimate)
+15:15:11.034299 [info ]: Cached model count updated: 3 models (accurate)
+15:15:11.034316 [info ]: Started scheduling
+15:15:11.034345 [info ]: Finished scheduling [  0.00s]
+15:15:11.034354 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+15:15:11.034359 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:15:11.034648 [info ]: Started deferring state
+15:15:11.034654 [info ]: Finished deferring state [  0.00s]
+15:15:11.034856 [info ]: Started downloading schemas
+15:15:11.034868 [debug]:    Started downloading relations
+15:15:11.034880 [debug]:   Finished [  0.00s] downloading relations
+15:15:11.034891 [info ]: Finished downloading schemas [  0.00s]
+15:15:11.114648 [info ]: Started building task graph
+15:15:11.114669 [info ]: Finished building task graph [  0.00s]
+15:15:11.114733 [debug]: Incremental compilation - 0 nodes selected: {}
+15:15:11.117786 [info ]: Cached model count updated: 3 models (accurate)
+15:15:11.117800 [info ]: Finished parsing [  0.11s]
+15:15:14.935854 [info ]: Started loading project
+15:15:14.936240 [info ]: Loading ~/.dbt/profiles.yml
+15:15:14.940451 [info ]: Started parsing
+15:15:14.956567 [info ]: Finished loading project [  0.02s]
+15:15:14.957007 [warn ]: dbt0102: No tables defined for source 'raw' in file 'models/staging/sources.yml'.
+15:15:14.957155 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:15:14.957597 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:15:14.960176 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:15:14.960605 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:15:14.960904 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:15:14.961306 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:15:14.961563 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:15:14.961815 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:15:14.962049 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:15:14.963802 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:15:14.964190 [error]: dbt1005: Source 'raw.orders_item' not found in project. Searched for 'orders_item'
+  --> models/staging/stg_orders_item.sql:8:10
+15:15:14.964974 [info ]: Cached model count updated: 3 models (estimate)
+15:15:14.964980 [info ]: Cached model count updated: 3 models (accurate)
+15:15:14.964996 [info ]: Started scheduling
+15:15:14.965027 [info ]: Finished scheduling [  0.00s]
+15:15:14.965035 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+15:15:14.965041 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:15:14.965291 [info ]: Started deferring state
+15:15:14.965298 [info ]: Finished deferring state [  0.00s]
+15:15:14.965504 [info ]: Started downloading schemas
+15:15:14.965515 [debug]:    Started downloading relations
+15:15:14.965528 [debug]:   Finished [  0.00s] downloading relations
+15:15:14.965538 [info ]: Finished downloading schemas [  0.00s]
+15:15:15.044361 [info ]: Started building task graph
+15:15:15.044385 [info ]: Finished building task graph [  0.00s]
+15:15:15.044451 [debug]: Incremental compilation - 0 nodes selected: {}
+15:15:15.047469 [info ]: Cached model count updated: 3 models (accurate)
+15:15:15.047482 [info ]: Finished parsing [  0.11s]
+15:26:56.092222 [info ]: Started loading project
+15:26:56.092681 [info ]: Loading ~/.dbt/profiles.yml
+15:26:56.094597 [info ]: Started loading project
+15:26:56.094720 [info ]: Loading ~/.dbt/profiles.yml
+15:26:56.094738 [info ]: Finished loading project [  0.00s]
+15:26:56.225857 [debug]:    Started loading packages
+15:26:56.226329 [debug]:     Loaded [  0.00s] packages
+15:26:56.226337 [debug]:    Started loading internal packages
+15:26:56.228254 [debug]:     Loaded [  0.00s] internal packages
+15:26:56.228400 [info ]: Started parsing
+15:26:56.242130 [info ]: Finished loading project [  0.15s]
+15:26:56.244047 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:26:56.244914 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:26:56.245125 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:26:56.247624 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:26:56.248007 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:26:56.250473 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:26:56.250731 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:26:56.250992 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:26:56.251187 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:26:56.251394 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:26:56.251592 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:26:56.251782 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:26:56.251979 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:26:56.252170 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:26:56.252354 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:26:56.252536 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:26:56.254464 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:26:56.254892 [info ]: Finished parsing [  0.03s]
+15:26:56.254985 [info ]: Cached model count updated: 3 models (estimate)
+15:26:56.254992 [info ]: Cached model count updated: 3 models (accurate)
+15:26:56.255006 [info ]: Started scheduling
+15:26:56.255050 [info ]: Finished scheduling [  0.00s]
+15:26:56.255056 [info ]: Started scheduling
+15:26:56.255083 [info ]: Finished scheduling [  0.00s]
+15:26:56.255349 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:26:56.255725 [info ]: Started deferring state
+15:26:56.255730 [info ]: Finished deferring state [  0.00s]
+15:26:56.255905 [info ]: Started downloading schemas
+15:26:56.255921 [debug]:    Started downloading relations
+15:26:56.255931 [debug]:   Finished [  0.00s] downloading relations
+15:26:59.641763 [info ]: Downloaded `olist-e-commerce-analytics-jfd`.`raw`.`orders_item` (schema)
+15:26:59.734389 [info ]: Started building task graph
+15:26:59.734448 [info ]: Finished building task graph [  0.00s]
+15:26:59.734526 [info ]: Started rendering (3 nodes)
+15:26:59.734536 [info ]: Started model staging.stg_orders_item
+15:26:59.734545 [debug]: Started rendering model staging.stg_orders_item
+15:26:59.734573 [info ]: Started model staging.my_first_dbt_model
+15:26:59.734583 [debug]: Started rendering model staging.my_first_dbt_model
+15:26:59.734586 [info ]: Finished downloading schemas [  3.48s]
+15:26:59.735208 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:26:59.735243 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:26:59.735255 [info ]: Started analyzing (3 nodes)
+15:26:59.735260 [debug]: Started analyzing model staging.my_first_dbt_model
+15:26:59.735311 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:26:59.735361 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+15:26:59.735374 [debug]: Started analyzing model staging.stg_orders_item
+15:26:59.735699 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+15:26:59.735710 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:26:59.735720 [info ]: Started model staging.my_second_dbt_model
+15:26:59.735724 [debug]: Started rendering model staging.my_second_dbt_model
+15:26:59.736059 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:26:59.736080 [debug]: Started analyzing model staging.my_second_dbt_model
+15:26:59.736081 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:26:59.736087 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 0 errors)
+15:26:59.736452 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+15:26:59.736463 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:26:59.741414 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:26:59.741424 [debug]: Finished analyzing [  0.01s] model staging.stg_orders_item [success]
+15:26:59.741427 [info ]: Finished analyzing [  0.01s] (3 nodes, 0 skipped, 0 errors)
+15:26:59.745343 [info ]: Cached model count updated: 3 models (accurate)
+18:30:19.056053 [info ]: Started loading project
+18:30:19.056891 [info ]: Loading ~/.dbt/profiles.yml
+18:30:19.061943 [info ]: Started parsing
+18:30:19.077003 [info ]: Finished loading project [  0.02s]
+18:30:19.077467 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+18:30:19.080416 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+18:30:19.080694 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+18:30:19.081047 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+18:30:19.081390 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+18:30:19.081616 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+18:30:19.081831 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+18:30:19.082030 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+18:30:19.083584 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+18:30:19.083998 [info ]: Finished parsing [  0.02s]
+18:30:19.084757 [info ]: Cached model count updated: 3 models (estimate)
+18:30:19.084766 [info ]: Cached model count updated: 3 models (accurate)
+18:30:19.084800 [info ]: Started scheduling
+18:30:19.084904 [info ]: Finished scheduling [  0.00s]
+18:30:19.085176 [info ]: Started deferring state
+18:30:19.085182 [info ]: Finished deferring state [  0.00s]
+18:30:19.085468 [info ]: Started downloading schemas
+18:30:19.085494 [debug]:    Started downloading relations
+18:30:19.085514 [debug]:   Finished [  0.00s] downloading relations
+18:30:19.085524 [info ]: Finished downloading schemas [  0.00s]
+18:30:19.175306 [info ]: Started building task graph
+18:30:19.175364 [info ]: Finished building task graph [  0.00s]
+18:30:19.175446 [info ]: Started rendering (1 nodes)
+18:30:19.175460 [info ]: Started model staging.stg_orders_item
+18:30:19.175472 [debug]: Started rendering model staging.stg_orders_item
+18:30:19.176053 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+18:30:19.176095 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+18:30:19.176103 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:30:19.176114 [info ]: Started analyzing (1 nodes)
+18:30:19.176119 [debug]: Started analyzing model staging.stg_orders_item
+18:30:19.177473 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+18:30:19.177486 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+18:30:19.177490 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:30:19.177537 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.stg_orders_item"}
+18:30:19.180594 [info ]: Cached model count updated: 3 models (accurate)
+18:30:23.454694 [info ]: Started loading project
+18:30:23.455135 [info ]: Loading ~/.dbt/profiles.yml
+18:30:23.459136 [info ]: Started parsing
+18:30:23.474702 [info ]: Finished loading project [  0.02s]
+18:30:23.475056 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+18:30:23.475169 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+18:30:23.478057 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+18:30:23.478420 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+18:30:23.478720 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+18:30:23.478990 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+18:30:23.479250 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+18:30:23.479518 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+18:30:23.479755 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+18:30:23.481634 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+18:30:23.481988 [info ]: Finished parsing [  0.02s]
+18:30:23.482711 [info ]: Cached model count updated: 3 models (estimate)
+18:30:23.482719 [info ]: Cached model count updated: 3 models (accurate)
+18:30:23.482737 [info ]: Started scheduling
+18:30:23.482811 [info ]: Finished scheduling [  0.00s]
+18:30:23.483073 [info ]: Started deferring state
+18:30:23.483079 [info ]: Finished deferring state [  0.00s]
+18:30:23.483265 [info ]: Started downloading schemas
+18:30:23.483280 [debug]:    Started downloading relations
+18:30:23.483291 [debug]:   Finished [  0.00s] downloading relations
+18:30:23.483301 [info ]: Finished downloading schemas [  0.00s]
+18:30:23.559376 [info ]: Started building task graph
+18:30:23.559420 [info ]: Finished building task graph [  0.00s]
+18:30:23.559479 [info ]: Started rendering (1 nodes)
+18:30:23.559488 [info ]: Started model staging.stg_orders_item
+18:30:23.559496 [debug]: Started rendering model staging.stg_orders_item
+18:30:23.560794 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+18:30:23.560826 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+18:30:23.560833 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:30:23.560842 [info ]: Started analyzing (1 nodes)
+18:30:23.560846 [debug]: Started analyzing model staging.stg_orders_item
+18:30:23.561873 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+18:30:23.561885 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+18:30:23.561888 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:30:23.561922 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.stg_orders_item"}
+18:30:23.564914 [info ]: Cached model count updated: 3 models (accurate)
+18:30:26.151672 [info ]: Started loading project
+18:30:26.152443 [info ]: Loading ~/.dbt/profiles.yml
+18:30:26.158737 [info ]: Started parsing
+18:30:26.177460 [info ]: Finished loading project [  0.03s]
+18:30:26.178018 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+18:30:26.181521 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+18:30:26.181888 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+18:30:26.182271 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+18:30:26.182543 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+18:30:26.182803 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+18:30:26.183048 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+18:30:26.183291 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+18:30:26.185483 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+18:30:26.185980 [info ]: Finished parsing [  0.03s]
+18:30:26.186862 [info ]: Cached model count updated: 3 models (estimate)
+18:30:26.186871 [info ]: Cached model count updated: 3 models (accurate)
+18:30:26.186890 [info ]: Started scheduling
+18:30:26.186919 [info ]: Finished scheduling [  0.00s]
+18:30:26.186928 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+18:30:26.186935 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+18:30:26.187241 [info ]: Started deferring state
+18:30:26.187247 [info ]: Finished deferring state [  0.00s]
+18:30:26.187471 [info ]: Started downloading schemas
+18:30:26.187484 [debug]:    Started downloading relations
+18:30:26.187497 [debug]:   Finished [  0.00s] downloading relations
+18:30:26.187508 [info ]: Finished downloading schemas [  0.00s]
+18:30:26.267283 [info ]: Started building task graph
+18:30:26.267305 [info ]: Finished building task graph [  0.00s]
+18:30:26.267372 [debug]: Incremental compilation - 0 nodes selected: {}
+18:30:26.270587 [info ]: Cached model count updated: 3 models (accurate)
+==================== 2026-03-07T09:58:06.836995Z | b77881f9-ea02-4e76-b4ce-37c836868b41 ====================
+09:58:06.837212 [info ]: Starting dbt LSP server
+09:58:06.837353 [info ]: Connecting to LSP client on port 8000
+09:58:06.837543 [info ]: Successfully connected to LSP client
+09:58:06.837551 [info ]: Creating LSP service...
+09:58:06.892182 [info ]: Creating LSP server...
+09:58:06.892193 [info ]: Starting LSP server...
+09:58:06.904507 [info ]: Started loading project
+09:58:06.906938 [info ]: Loading ~/.dbt/profiles.yml
+09:58:07.023638 [debug]:    Started loading packages
+09:58:07.025668 [debug]:     Loaded [  0.00s] packages
+09:58:07.026572 [info ]: Finished loading project [  0.12s]
+09:58:07.026594 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+09:58:07.026951 [info ]: Started parsing
+09:58:07.042397 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+09:58:07.042702 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+09:58:07.043026 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+09:58:07.046525 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+09:58:07.047080 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+09:58:07.050798 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+09:58:07.051201 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+09:58:07.051677 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+09:58:07.051897 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+09:58:07.052145 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+09:58:07.052339 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+09:58:07.052521 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+09:58:07.052699 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+09:58:07.052898 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+09:58:07.053085 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+09:58:07.053264 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+09:58:07.055231 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+09:58:07.055806 [info ]: Finished parsing [  0.03s]
+09:58:07.055964 [info ]: Cached model count updated: 3 models (estimate)
+09:58:07.055971 [info ]: Cached model count updated: 3 models (accurate)
+09:58:07.056088 [info ]: Started scheduling
+09:58:07.056315 [info ]: Finished scheduling [  0.00s]
+09:58:07.056347 [info ]: Started scheduling
+09:58:07.056370 [info ]: Finished scheduling [  0.00s]
+09:58:07.056663 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+09:58:07.056955 [info ]: Started deferring state
+09:58:07.056968 [info ]: Finished deferring state [  0.00s]
+09:58:07.127108 [info ]: Started building task graph
+09:58:07.127377 [info ]: Finished building task graph [  0.00s]
+09:58:07.127757 [info ]: Started rendering (3 nodes)
+09:58:07.127813 [info ]: Started model staging.stg_orders_item
+09:58:07.127852 [debug]: Started rendering model staging.stg_orders_item
+09:58:07.127872 [info ]: Started model staging.my_first_dbt_model
+09:58:07.127876 [debug]: Started rendering model staging.my_first_dbt_model
+09:58:07.128948 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+09:58:07.128948 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+09:58:07.129073 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+09:58:07.129099 [info ]: Started analyzing (3 nodes)
+09:58:07.129104 [debug]: Started analyzing model staging.stg_orders_item
+09:58:07.129128 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+09:58:07.129135 [debug]: Started analyzing model staging.my_first_dbt_model
+09:58:07.142593 [info ]:  Succeeded [  0.01s] model staging.my_first_dbt_model (table)
+09:58:07.142620 [debug]: Finished analyzing [  0.01s] model staging.my_first_dbt_model [success]
+09:58:07.142635 [info ]: Started model staging.my_second_dbt_model
+09:58:07.142643 [debug]: Started rendering model staging.my_second_dbt_model
+09:58:07.142656 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+09:58:07.142663 [debug]: Finished analyzing [  0.01s] model staging.stg_orders_item [success]
+09:58:07.143032 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+09:58:07.143055 [debug]: Started analyzing model staging.my_second_dbt_model
+09:58:07.143055 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+09:58:07.143062 [info ]: Finished rendering [  0.02s] (3 nodes, 0 skipped, 0 errors)
+09:58:07.144411 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+09:58:07.144425 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+09:58:07.144429 [info ]: Finished analyzing [  0.02s] (3 nodes, 0 skipped, 0 errors)
+09:58:07.147319 [info ]: Cached model count updated: 3 models (accurate)
+09:58:07.541130 [info ]: Loading ~/.dbt/profiles.yml
+11:30:04.386959 [info ]: Started loading project
+11:30:04.387898 [info ]: Loading ~/.dbt/profiles.yml
+11:30:04.390437 [info ]: Started loading project
+11:30:04.390574 [info ]: Loading ~/.dbt/profiles.yml
+11:30:04.390592 [info ]: Finished loading project [  0.00s]
+11:30:04.504542 [debug]:    Started loading packages
+11:30:04.505006 [debug]:     Loaded [  0.00s] packages
+11:30:04.505315 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+11:30:04.505330 [info ]: Finished loading project [  0.11s]
+11:30:04.505450 [info ]: Started parsing
+11:30:04.519701 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+11:30:04.519941 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+11:30:04.520330 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+11:30:04.521422 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+11:30:04.521848 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+11:30:04.524382 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+11:30:04.524624 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+11:30:04.524832 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+11:30:04.525017 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+11:30:04.525289 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+11:30:04.525479 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+11:30:04.525654 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+11:30:04.525835 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+11:30:04.526010 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+11:30:04.526224 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+11:30:04.526416 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+11:30:04.528327 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+11:30:04.528588 [info ]: Finished parsing [  0.02s]
+11:30:04.528677 [info ]: Cached model count updated: 3 models (estimate)
+11:30:04.528684 [info ]: Cached model count updated: 3 models (accurate)
+11:30:04.528712 [info ]: Started scheduling
+11:30:04.528773 [info ]: Finished scheduling [  0.00s]
+11:30:04.528783 [info ]: Started scheduling
+11:30:04.528811 [info ]: Finished scheduling [  0.00s]
+11:30:04.528860 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+11:30:04.529160 [info ]: Started deferring state
+11:30:04.529166 [info ]: Finished deferring state [  0.00s]
+11:30:04.596936 [info ]: Started building task graph
+11:30:04.597003 [info ]: Finished building task graph [  0.00s]
+11:30:04.597090 [info ]: Started rendering (3 nodes)
+11:30:04.597101 [info ]: Started model staging.stg_orders_item
+11:30:04.597110 [debug]: Started rendering model staging.stg_orders_item
+11:30:04.597123 [info ]: Started model staging.my_first_dbt_model
+11:30:04.597127 [debug]: Started rendering model staging.my_first_dbt_model
+11:30:04.597607 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+11:30:04.597648 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+11:30:04.597663 [info ]: Started analyzing (3 nodes)
+11:30:04.597667 [debug]: Started analyzing model staging.my_first_dbt_model
+11:30:04.598266 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+11:30:04.598287 [debug]: Started analyzing model staging.stg_orders_item
+11:30:04.598292 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+11:30:04.598599 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+11:30:04.598609 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+11:30:04.598619 [info ]: Started model staging.my_second_dbt_model
+11:30:04.598624 [debug]: Started rendering model staging.my_second_dbt_model
+11:30:04.598946 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+11:30:04.598976 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+11:30:04.598981 [info ]: Finished rendering [  0.00s] (3 nodes, 0 skipped, 0 errors)
+11:30:04.598990 [debug]: Started analyzing model staging.my_second_dbt_model
+11:30:04.599360 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+11:30:04.599369 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+11:30:04.599840 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+11:30:04.599849 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+11:30:04.599852 [info ]: Finished analyzing [  0.00s] (3 nodes, 0 skipped, 0 errors)
+11:30:04.603105 [info ]: Cached model count updated: 3 models (accurate)

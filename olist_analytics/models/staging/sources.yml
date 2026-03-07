@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw 
+    database: olist-e-commerce-analytics-jfd
+    schema: raw
+    tables: 
+      - name: orders_item
+        description: "Order items raw table"
