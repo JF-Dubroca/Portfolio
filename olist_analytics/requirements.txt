@@ -93,7 +93,7 @@ datashader @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs
 db-dtypes==1.5.0
 dbt-adapters==1.22.6
 dbt-bigquery==1.11.0
-dbt-common==1.37.2
+dbt-common==1.37.3
 dbt-core==1.11.6
 dbt-extractor==0.6.0
 dbt-protos==1.0.431
@@ -125,7 +125,7 @@ fsspec @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_436
 gensim @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5cdoei19at/croot/gensim_1725057952958/work
 geodatasets==2024.8.0
 geographiclib==2.1
-geopandas==1.0.1
+geopandas==1.1.2
 geopy==2.4.1
 gitdb @ file:///tmp/build/80754af9/gitdb_1617117951232/work
 GitPython @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_ebpnpowk3c/croot/gitpython_1720455037823/work
@@ -215,7 +215,7 @@ loro==1.5.4
 lxml @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_e656pjhd5l/croot/lxml_1722882197113/work
 lz4 @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/lz4_1699258569924/work
 Mako @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/mako_1699241257653/work
-marimo==0.15.1
+marimo==0.16.4
 Markdown==3.8.2
 markdown-it-py @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/markdown-it-py_1699237863445/work
 MarkupSafe @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/markupsafe_1707339878470/work
@@ -252,7 +252,7 @@ numpydoc @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_6
 oauthlib==3.3.1
 openpyxl @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_96hhik4ygv/croot/openpyxl_1721752931204/work
 orderly-set==5.5.0
-orjson==3.10.18
+orjson==3.11.5
 overrides @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/overrides_1701803470591/work
 packaging==25.0
 pandas==2.2.3
@@ -373,7 +373,7 @@ semver @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_99u
 Send2Trash @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/send2trash_1701803532643/work
 sentry-sdk @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4dcc1avjs2/croot/sentry-sdk_1732198183579/work
 service-identity @ file:///Users/ktietz/demo/mc3/conda-bld/service_identity_1629460757137/work
-setuptools==75.1.0
+setuptools==78.1.1
 shapely==2.0.7
 shellingham @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/shellingham_1699238695807/work
 simplejson==3.20.1
@@ -399,7 +399,7 @@ spyder-kernels @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T
 SQLAlchemy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_3frqduvs8h/croot/sqlalchemy_1725885054432/work
 sqlparse==0.5.4
 stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
-starlette==0.47.3
+starlette==0.49.1
 statsmodels @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_af8vmuwbis/croot/statsmodels_1718381196260/work
 streamlit @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_52t8o6xfs8/croot/streamlit_1724335169234/work
 summarytools==0.3.0
@@ -446,7 +446,7 @@ websocket-client @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp
 websockets==15.0.1
 Werkzeug @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5bnbxlhunm/croot/werkzeug_1716533322814/work
 whatthepatch @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/whatthepatch_1699243659982/work
-wheel==0.44.0
+wheel==0.46.2
 widgetsnbextension @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_45ynevdsp5/croot/widgetsnbextension_1710960054121/work
 wrapt @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/wrapt_1699240702378/work
 wurlitzer @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/wurlitzer_1699265832005/work
