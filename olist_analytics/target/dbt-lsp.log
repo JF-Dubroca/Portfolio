@@ -1097,3 +1097,2282 @@
 11:30:04.599849 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
 11:30:04.599852 [info ]: Finished analyzing [  0.00s] (3 nodes, 0 skipped, 0 errors)
 11:30:04.603105 [info ]: Cached model count updated: 3 models (accurate)
+==================== 2026-03-09T13:31:26.571224Z | 93883de9-e6bb-4824-a346-6aaa01cbea70 ====================
+13:31:26.573731 [info ]: Starting dbt LSP server
+13:31:26.574412 [info ]: Connecting to LSP client on port 8000
+13:31:26.575424 [info ]: Successfully connected to LSP client
+13:31:26.575432 [info ]: Creating LSP service...
+13:31:26.636897 [info ]: Creating LSP server...
+13:31:26.636916 [info ]: Starting LSP server...
+13:31:26.672343 [info ]: Started loading project
+13:31:26.687895 [info ]: Loading ~/.dbt/profiles.yml
+13:31:26.827838 [debug]:    Started loading packages
+13:31:26.835140 [debug]:     Loaded [  0.01s] packages
+13:31:26.842193 [info ]: Finished loading project [  0.17s]
+13:31:26.842784 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+13:31:26.845065 [info ]: Started parsing
+13:31:26.876014 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+13:31:26.876427 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+13:31:26.876979 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+13:31:26.887592 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+13:31:26.888346 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+13:31:26.893988 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.01s]
+13:31:26.894282 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+13:31:26.894529 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+13:31:26.894719 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+13:31:26.894925 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+13:31:26.895122 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+13:31:26.895334 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+13:31:26.895545 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+13:31:26.895735 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+13:31:26.895973 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+13:31:26.896169 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+13:31:26.898202 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+13:31:26.900491 [info ]: Finished parsing [  0.06s]
+13:31:26.901281 [info ]: Cached model count updated: 3 models (estimate)
+13:31:26.901289 [info ]: Cached model count updated: 3 models (accurate)
+13:31:26.902703 [info ]: Started scheduling
+13:31:26.905049 [info ]: Finished scheduling [  0.00s]
+13:31:26.905606 [info ]: Started scheduling
+13:31:26.905640 [info ]: Finished scheduling [  0.00s]
+13:31:26.908888 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+13:31:26.909375 [info ]: Started deferring state
+13:31:26.909575 [info ]: Finished deferring state [  0.00s]
+13:31:27.005914 [info ]: Started building task graph
+13:31:27.007369 [info ]: Finished building task graph [  0.00s]
+13:31:27.010765 [info ]: Started rendering (3 nodes)
+13:31:27.010944 [info ]: Started model staging.stg_orders_item
+13:31:27.011245 [debug]: Started rendering model staging.stg_orders_item
+13:31:27.011267 [info ]: Started model staging.my_first_dbt_model
+13:31:27.011273 [debug]: Started rendering model staging.my_first_dbt_model
+13:31:27.016367 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+13:31:27.016367 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+13:31:27.017217 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+13:31:27.017408 [info ]: Started analyzing (3 nodes)
+13:31:27.017417 [debug]: Started analyzing model staging.my_first_dbt_model
+13:31:27.017497 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+13:31:27.017504 [debug]: Started analyzing model staging.stg_orders_item
+13:31:27.052725 [info ]:  Succeeded [  0.04s] model staging.my_first_dbt_model (table)
+13:31:27.052874 [debug]: Finished analyzing [  0.04s] model staging.my_first_dbt_model [success]
+13:31:27.052899 [info ]: Started model staging.my_second_dbt_model
+13:31:27.052907 [debug]: Started rendering model staging.my_second_dbt_model
+13:31:27.052918 [info ]:  Succeeded [  0.04s] model staging.stg_orders_item (table)
+13:31:27.052926 [debug]: Finished analyzing [  0.04s] model staging.stg_orders_item [success]
+13:31:27.053619 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+13:31:27.053645 [debug]: Started analyzing model staging.my_second_dbt_model
+13:31:27.053644 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+13:31:27.053654 [info ]: Finished rendering [  0.04s] (3 nodes, 0 skipped, 0 errors)
+13:31:27.055421 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+13:31:27.055435 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+13:31:27.055440 [info ]: Finished analyzing [  0.04s] (3 nodes, 0 skipped, 0 errors)
+13:31:27.062298 [info ]: Cached model count updated: 3 models (accurate)
+13:31:27.454027 [info ]: Loading ~/.dbt/profiles.yml
+13:32:31.118281 [info ]: Started loading project
+13:32:31.118892 [info ]: Loading ~/.dbt/profiles.yml
+13:32:31.124564 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+13:32:31.124595 [info ]: Finished loading project [  0.01s]
+13:32:31.126338 [info ]: Started parsing
+13:32:31.144886 [info ]: Finished parsing [  0.02s]
+13:32:31.146839 [info ]: Cached model count updated: 3 models (estimate)
+13:32:31.146849 [info ]: Cached model count updated: 3 models (accurate)
+13:32:31.146875 [info ]: Started scheduling
+13:32:31.147246 [info ]: Finished scheduling [  0.00s]
+13:32:31.147255 [debug]: Incremental compilation - 0 nodes selected: {}
+13:32:31.147265 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+13:32:31.147270 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+13:32:31.147631 [info ]: Started deferring state
+13:32:31.147643 [info ]: Finished deferring state [  0.00s]
+13:32:31.226315 [info ]: Started building task graph
+13:32:31.226343 [info ]: Finished building task graph [  0.00s]
+13:32:31.230919 [info ]: Cached model count updated: 3 models (accurate)
+13:33:09.758216 [info ]: Started loading project
+13:33:09.758504 [info ]: Loading ~/.dbt/profiles.yml
+13:33:09.760623 [info ]: Started loading project
+13:33:09.760760 [info ]: Loading ~/.dbt/profiles.yml
+13:33:09.760780 [info ]: Finished loading project [  0.00s]
+13:33:09.876929 [debug]:    Started loading packages
+13:33:09.877424 [debug]:     Loaded [  0.00s] packages
+13:33:09.877691 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+13:33:09.877709 [info ]: Finished loading project [  0.12s]
+13:33:09.877802 [info ]: Started parsing
+13:33:09.892000 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+13:33:09.892224 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+13:33:09.892457 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+13:33:09.893334 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+13:33:09.893618 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+13:33:09.895683 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+13:33:09.896302 [debug]: Finished parsing analyses/raw/raw_orders_item.sql [  0.00s]
+13:33:09.896518 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+13:33:09.896780 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+13:33:09.896955 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+13:33:09.897135 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+13:33:09.897421 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+13:33:09.897624 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+13:33:09.897808 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+13:33:09.897987 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+13:33:09.898165 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+13:33:09.898341 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+13:33:09.900292 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+13:33:09.900609 [info ]: Finished parsing [  0.02s]
+13:33:09.900697 [info ]: Cached model count updated: 3 models (estimate)
+13:33:09.900703 [info ]: Cached model count updated: 3 models (accurate)
+13:33:09.900722 [info ]: Started scheduling
+13:33:09.900939 [info ]: Finished scheduling [  0.00s]
+13:33:09.900947 [info ]: Started scheduling
+13:33:09.900978 [info ]: Finished scheduling [  0.00s]
+13:33:09.901140 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+13:33:09.901378 [info ]: Started deferring state
+13:33:09.901383 [info ]: Finished deferring state [  0.00s]
+13:33:09.971370 [info ]: Started building task graph
+13:33:09.971423 [info ]: Finished building task graph [  0.00s]
+13:33:09.971493 [info ]: Started rendering (4 nodes)
+13:33:09.971501 [info ]: Started model staging.stg_orders_item
+13:33:09.971508 [debug]: Started rendering model staging.stg_orders_item
+13:33:09.971521 [info ]: Started model staging.my_first_dbt_model
+13:33:09.971526 [debug]: Started rendering model staging.my_first_dbt_model
+13:33:09.971536 [info ]: Started analysis staging.raw_orders_item
+13:33:09.971542 [debug]: Started rendering analysis staging.raw_orders_item
+13:33:09.972066 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+13:33:09.972087 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+13:33:09.972094 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+13:33:09.972105 [info ]: Started analyzing (4 nodes)
+13:33:09.972109 [debug]: Started analyzing model staging.my_first_dbt_model
+13:33:09.972118 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+13:33:09.972125 [debug]: Started analyzing model staging.stg_orders_item
+13:33:09.972531 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+13:33:09.972544 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+13:33:09.972555 [info ]: Started model staging.my_second_dbt_model
+13:33:09.972561 [debug]: Started rendering model staging.my_second_dbt_model
+13:33:09.972925 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/raw/raw_orders_item.sql
+13:33:09.972938 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+13:33:09.972945 [debug]: Started analyzing analysis staging.raw_orders_item
+13:33:09.972964 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+13:33:09.972992 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+13:33:09.972997 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+13:33:09.973007 [debug]: Started analyzing model staging.my_second_dbt_model
+13:33:09.973397 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+13:33:09.973406 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+13:33:09.973440 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+13:33:09.973451 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+13:33:09.973460 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+13:33:09.973469 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+13:33:09.973472 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+13:33:09.977750 [info ]: Cached model count updated: 3 models (accurate)
+13:52:03.749627 [info ]: Started loading project
+13:52:03.750548 [info ]: Loading ~/.dbt/profiles.yml
+13:52:03.754394 [info ]: Started loading project
+13:52:03.754581 [info ]: Loading ~/.dbt/profiles.yml
+13:52:03.754607 [info ]: Finished loading project [  0.00s]
+13:52:03.879283 [debug]:    Started loading packages
+13:52:03.879766 [debug]:     Loaded [  0.00s] packages
+13:52:03.880071 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+13:52:03.880087 [info ]: Finished loading project [  0.13s]
+13:52:03.880200 [info ]: Started parsing
+13:52:03.894496 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+13:52:03.894707 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+13:52:03.895140 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+13:52:03.896275 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+13:52:03.896685 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+13:52:03.899000 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+13:52:03.899560 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+13:52:03.899805 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+13:52:03.900021 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+13:52:03.900257 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+13:52:03.900446 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+13:52:03.900711 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+13:52:03.900914 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+13:52:03.901110 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+13:52:03.901288 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+13:52:03.901466 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+13:52:03.901642 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+13:52:03.903545 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+13:52:03.903898 [info ]: Finished parsing [  0.02s]
+13:52:03.903984 [info ]: Cached model count updated: 3 models (estimate)
+13:52:03.903990 [info ]: Cached model count updated: 3 models (accurate)
+13:52:03.904015 [info ]: Started scheduling
+13:52:03.904073 [info ]: Finished scheduling [  0.00s]
+13:52:03.904082 [info ]: Started scheduling
+13:52:03.904113 [info ]: Finished scheduling [  0.00s]
+13:52:03.904148 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+13:52:03.904406 [info ]: Started deferring state
+13:52:03.904411 [info ]: Finished deferring state [  0.00s]
+13:52:03.972772 [info ]: Started building task graph
+13:52:03.972836 [info ]: Finished building task graph [  0.00s]
+13:52:03.972918 [info ]: Started rendering (4 nodes)
+13:52:03.972929 [info ]: Started model staging.stg_orders_item
+13:52:03.972940 [debug]: Started rendering model staging.stg_orders_item
+13:52:03.972952 [info ]: Started model staging.my_first_dbt_model
+13:52:03.972956 [debug]: Started rendering model staging.my_first_dbt_model
+13:52:03.972966 [info ]: Started analysis staging.raw_orders_item
+13:52:03.972971 [debug]: Started rendering analysis staging.raw_orders_item
+13:52:03.973433 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+13:52:03.973465 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+13:52:03.973478 [info ]: Started analyzing (4 nodes)
+13:52:03.973484 [debug]: Started analyzing model staging.my_first_dbt_model
+13:52:03.973944 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+13:52:03.973987 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+13:52:03.973995 [debug]: Started analyzing model staging.stg_orders_item
+13:52:03.974079 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+13:52:03.974093 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+13:52:03.974102 [debug]: Started analyzing analysis staging.raw_orders_item
+13:52:03.974163 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+13:52:03.974172 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+13:52:03.974182 [info ]: Started model staging.my_second_dbt_model
+13:52:03.974187 [debug]: Started rendering model staging.my_second_dbt_model
+13:52:03.974222 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+13:52:03.974233 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+13:52:03.974502 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+13:52:03.974515 [debug]: Started analyzing model staging.my_second_dbt_model
+13:52:03.974518 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+13:52:03.974524 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+13:52:03.974894 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+13:52:03.974902 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+13:52:03.975323 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+13:52:03.975334 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+13:52:03.975338 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+13:52:03.978841 [info ]: Cached model count updated: 3 models (accurate)
+14:41:31.567518 [info ]: Started loading project
+14:41:31.568098 [info ]: Loading ~/.dbt/profiles.yml
+14:41:31.571120 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+14:41:31.571155 [info ]: Finished loading project [  0.00s]
+14:41:31.571981 [info ]: Started parsing
+14:41:31.590366 [info ]: Finished parsing [  0.02s]
+14:41:31.591127 [info ]: Cached model count updated: 3 models (estimate)
+14:41:31.591136 [info ]: Cached model count updated: 3 models (accurate)
+14:41:31.591168 [info ]: Started scheduling
+14:41:31.591207 [info ]: Finished scheduling [  0.00s]
+14:41:31.591215 [debug]: Incremental compilation - 0 nodes selected: {}
+14:41:31.591224 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+14:41:31.591229 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+14:41:31.591578 [info ]: Started deferring state
+14:41:31.591588 [info ]: Finished deferring state [  0.00s]
+14:41:31.665337 [info ]: Started building task graph
+14:41:31.665361 [info ]: Finished building task graph [  0.00s]
+14:41:31.668889 [info ]: Cached model count updated: 3 models (accurate)
+14:41:42.871783 [info ]: Started loading project
+14:41:42.872083 [info ]: Loading ~/.dbt/profiles.yml
+14:41:42.873915 [info ]: Started loading project
+14:41:42.874038 [info ]: Loading ~/.dbt/profiles.yml
+14:41:42.874056 [info ]: Finished loading project [  0.00s]
+14:41:42.990763 [debug]:    Started loading packages
+14:41:42.991300 [debug]:     Loaded [  0.00s] packages
+14:41:42.991621 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+14:41:42.991639 [info ]: Finished loading project [  0.12s]
+14:41:42.991735 [info ]: Started parsing
+14:41:43.006234 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:41:43.006476 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+14:41:43.006903 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+14:41:43.007686 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:41:43.007977 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:41:43.008252 [debug]: Finished parsing models/sandbox/test.sql [  0.00s]
+14:41:43.010671 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:41:43.011200 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+14:41:43.011410 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:41:43.011602 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:41:43.011776 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:41:43.012035 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:41:43.012245 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+14:41:43.012433 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+14:41:43.012695 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+14:41:43.012886 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+14:41:43.013077 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+14:41:43.013257 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+14:41:43.015128 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+14:41:43.015374 [info ]: Finished parsing [  0.02s]
+14:41:43.015481 [info ]: Cached model count updated: 4 models (estimate)
+14:41:43.015487 [info ]: Cached model count updated: 4 models (accurate)
+14:41:43.015508 [info ]: Started scheduling
+14:41:43.015558 [info ]: Finished scheduling [  0.00s]
+14:41:43.015566 [info ]: Started scheduling
+14:41:43.015597 [info ]: Finished scheduling [  0.00s]
+14:41:43.015640 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+14:41:43.015923 [info ]: Started deferring state
+14:41:43.015928 [info ]: Finished deferring state [  0.00s]
+14:41:43.083112 [info ]: Started building task graph
+14:41:43.083172 [info ]: Finished building task graph [  0.00s]
+14:41:43.083243 [info ]: Started rendering (4 nodes)
+14:41:43.083251 [info ]: Started model staging.stg_orders_item
+14:41:43.083260 [debug]: Started rendering model staging.stg_orders_item
+14:41:43.083270 [info ]: Started model staging.my_first_dbt_model
+14:41:43.083275 [debug]: Started rendering model staging.my_first_dbt_model
+14:41:43.083283 [info ]: Started analysis staging.raw_orders_item
+14:41:43.083288 [debug]: Started rendering analysis staging.raw_orders_item
+14:41:43.083758 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:41:43.083802 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+14:41:43.083823 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+14:41:43.083836 [info ]: Started analyzing (4 nodes)
+14:41:43.083841 [debug]: Started analyzing model staging.my_first_dbt_model
+14:41:43.083849 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+14:41:43.083856 [debug]: Started analyzing model staging.stg_orders_item
+14:41:43.084310 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+14:41:43.084326 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+14:41:43.084336 [debug]: Started analyzing analysis staging.raw_orders_item
+14:41:43.084616 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+14:41:43.084627 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+14:41:43.084635 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+14:41:43.084642 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+14:41:43.084651 [info ]: Started model staging.my_second_dbt_model
+14:41:43.084656 [debug]: Started rendering model staging.my_second_dbt_model
+14:41:43.084966 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:41:43.084982 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+14:41:43.084982 [debug]: Started analyzing model staging.my_second_dbt_model
+14:41:43.084988 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+14:41:43.085325 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+14:41:43.085338 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+14:41:43.085445 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+14:41:43.085455 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+14:41:43.085458 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+14:41:43.088739 [info ]: Cached model count updated: 4 models (accurate)
+14:42:07.251128 [info ]: Started loading project
+14:42:07.251433 [info ]: Loading ~/.dbt/profiles.yml
+14:42:07.253837 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+14:42:07.253851 [info ]: Finished loading project [  0.00s]
+14:42:07.254695 [info ]: Started parsing
+14:42:07.270722 [debug]: Finished parsing models/sandbox/test.sql [  0.00s]
+14:42:07.271059 [info ]: Finished parsing [  0.02s]
+14:42:07.271963 [info ]: Cached model count updated: 4 models (estimate)
+14:42:07.271973 [info ]: Cached model count updated: 4 models (accurate)
+14:42:07.272009 [info ]: Started scheduling
+14:42:07.272582 [info ]: Finished scheduling [  0.00s]
+14:42:07.272593 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.test"}
+14:42:07.272855 [info ]: Started deferring state
+14:42:07.272862 [info ]: Finished deferring state [  0.00s]
+14:42:07.347465 [info ]: Started building task graph
+14:42:07.347506 [info ]: Finished building task graph [  0.00s]
+14:42:07.347568 [info ]: Started rendering (1 nodes)
+14:42:07.347577 [info ]: Started model staging.test
+14:42:07.347585 [debug]: Started rendering model staging.test
+14:42:07.348178 [debug]: Compiled SQL for node model.olist_analytics.test at target/.lsp/compiled/models/sandbox/test.sql
+14:42:07.348204 [debug]: Finished rendering [  0.00s] model staging.test [success]
+14:42:07.348209 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:42:07.348217 [info ]: Started analyzing (1 nodes)
+14:42:07.348221 [debug]: Started analyzing model staging.test
+14:42:07.350708 [info ]:  Succeeded [  0.00s] model staging.test (view)
+14:42:07.350722 [debug]: Finished analyzing [  0.00s] model staging.test [success]
+14:42:07.350726 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:42:07.353868 [info ]: Cached model count updated: 4 models (accurate)
+14:42:13.575783 [info ]: Started loading project
+14:42:13.576117 [info ]: Loading ~/.dbt/profiles.yml
+14:42:13.578208 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+14:42:13.578230 [info ]: Finished loading project [  0.00s]
+14:42:13.579069 [info ]: Started parsing
+14:42:13.595972 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+14:42:13.596373 [info ]: Finished parsing [  0.02s]
+14:42:13.597223 [info ]: Cached model count updated: 4 models (estimate)
+14:42:13.597232 [info ]: Cached model count updated: 4 models (accurate)
+14:42:13.597270 [info ]: Started scheduling
+14:42:13.597355 [info ]: Finished scheduling [  0.00s]
+14:42:13.597372 [debug]: Incremental compilation - 1 nodes selected: {"analysis.olist_analytics.raw_orders_item"}
+14:42:13.597700 [info ]: Started deferring state
+14:42:13.597707 [info ]: Finished deferring state [  0.00s]
+14:42:13.675017 [info ]: Started building task graph
+14:42:13.675063 [info ]: Finished building task graph [  0.00s]
+14:42:13.675129 [info ]: Started rendering (1 nodes)
+14:42:13.675138 [info ]: Started analysis staging.raw_orders_item
+14:42:13.675146 [debug]: Started rendering analysis staging.raw_orders_item
+14:42:13.675624 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+14:42:13.675656 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+14:42:13.675662 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:42:13.675671 [info ]: Started analyzing (1 nodes)
+14:42:13.675674 [debug]: Started analyzing analysis staging.raw_orders_item
+14:42:13.676131 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+14:42:13.676142 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+14:42:13.676145 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:42:13.679655 [info ]: Cached model count updated: 4 models (accurate)
+15:20:18.981041 [info ]: Started loading project
+15:20:18.981528 [info ]: Loading ~/.dbt/profiles.yml
+15:20:18.984113 [info ]: Started loading project
+15:20:18.984209 [info ]: Loading ~/.dbt/profiles.yml
+15:20:18.984226 [info ]: Finished loading project [  0.00s]
+15:20:19.106723 [debug]:    Started loading packages
+15:20:19.107350 [debug]:     Loaded [  0.00s] packages
+15:20:19.107673 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:20:19.107694 [info ]: Finished loading project [  0.12s]
+15:20:19.107801 [info ]: Started parsing
+15:20:19.126752 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:20:19.127011 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:20:19.127814 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:20:19.130502 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:20:19.131516 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:20:19.136064 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:20:19.137089 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:20:19.137452 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:20:19.137694 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:20:19.137953 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:20:19.138287 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:20:19.138652 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:20:19.138843 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:20:19.139023 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:20:19.139197 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:20:19.139369 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:20:19.139544 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:20:19.141575 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:20:19.141934 [info ]: Finished parsing [  0.03s]
+15:20:19.142092 [info ]: Cached model count updated: 3 models (estimate)
+15:20:19.142101 [info ]: Cached model count updated: 3 models (accurate)
+15:20:19.142135 [info ]: Started scheduling
+15:20:19.142196 [info ]: Finished scheduling [  0.00s]
+15:20:19.142205 [info ]: Started scheduling
+15:20:19.142239 [info ]: Finished scheduling [  0.00s]
+15:20:19.142303 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:20:19.142731 [info ]: Started deferring state
+15:20:19.142737 [info ]: Finished deferring state [  0.00s]
+15:20:19.211867 [info ]: Started building task graph
+15:20:19.211949 [info ]: Finished building task graph [  0.00s]
+15:20:19.212073 [info ]: Started rendering (4 nodes)
+15:20:19.212085 [info ]: Started model staging.stg_orders_item
+15:20:19.212095 [debug]: Started rendering model staging.stg_orders_item
+15:20:19.212109 [info ]: Started model staging.my_first_dbt_model
+15:20:19.212115 [debug]: Started rendering model staging.my_first_dbt_model
+15:20:19.212128 [info ]: Started analysis staging.raw_orders_item
+15:20:19.212133 [debug]: Started rendering analysis staging.raw_orders_item
+15:20:19.212834 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:20:19.212878 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:20:19.212890 [info ]: Started analyzing (4 nodes)
+15:20:19.212893 [debug]: Started analyzing model staging.my_first_dbt_model
+15:20:19.213648 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:20:19.213679 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:20:19.213691 [debug]: Started analyzing analysis staging.raw_orders_item
+15:20:19.213884 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:20:19.213905 [debug]: Started analyzing model staging.stg_orders_item
+15:20:19.213922 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+15:20:19.214107 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+15:20:19.214119 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:20:19.214130 [info ]: Started model staging.my_second_dbt_model
+15:20:19.214136 [debug]: Started rendering model staging.my_second_dbt_model
+15:20:19.214709 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+15:20:19.214718 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:20:19.214834 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:20:19.214853 [debug]: Started analyzing model staging.my_second_dbt_model
+15:20:19.214856 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:20:19.214860 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:20:19.215005 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+15:20:19.215015 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:20:19.215211 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+15:20:19.215220 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:20:19.215223 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:20:19.220041 [info ]: Cached model count updated: 3 models (accurate)
+15:20:26.520739 [info ]: Started loading project
+15:20:26.521238 [info ]: Loading ~/.dbt/profiles.yml
+15:20:26.524304 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:20:26.524337 [info ]: Finished loading project [  0.00s]
+15:20:26.525450 [info ]: Started parsing
+15:20:26.546138 [info ]: Finished parsing [  0.02s]
+15:20:26.547196 [info ]: Cached model count updated: 3 models (estimate)
+15:20:26.547209 [info ]: Cached model count updated: 3 models (accurate)
+15:20:26.547245 [info ]: Started scheduling
+15:20:26.547297 [info ]: Finished scheduling [  0.00s]
+15:20:26.547310 [debug]: Incremental compilation - 0 nodes selected: {}
+15:20:26.547322 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+15:20:26.547329 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:20:26.547678 [info ]: Started deferring state
+15:20:26.547687 [info ]: Finished deferring state [  0.00s]
+15:20:26.628249 [info ]: Started building task graph
+15:20:26.628285 [info ]: Finished building task graph [  0.00s]
+15:20:26.631617 [info ]: Cached model count updated: 3 models (accurate)
+15:32:01.932691 [info ]: Started loading project
+15:32:01.932982 [info ]: Loading ~/.dbt/profiles.yml
+15:32:01.935083 [info ]: Started loading project
+15:32:01.935273 [info ]: Loading ~/.dbt/profiles.yml
+15:32:01.935291 [info ]: Finished loading project [  0.00s]
+15:32:02.073510 [debug]:    Started loading packages
+15:32:02.074016 [debug]:     Loaded [  0.00s] packages
+15:32:02.074288 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:32:02.074308 [info ]: Finished loading project [  0.14s]
+15:32:02.074395 [info ]: Started parsing
+15:32:02.088927 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:32:02.089159 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:32:02.089512 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:32:02.090382 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:32:02.090774 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:32:02.092883 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:32:02.093546 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:32:02.093772 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:32:02.094051 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:32:02.094254 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:32:02.094464 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:32:02.094662 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:32:02.094915 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:32:02.095115 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:32:02.095303 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:32:02.095484 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:32:02.095678 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:32:02.097610 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:32:02.097881 [info ]: Finished parsing [  0.02s]
+15:32:02.097968 [info ]: Cached model count updated: 3 models (estimate)
+15:32:02.097975 [info ]: Cached model count updated: 3 models (accurate)
+15:32:02.097995 [info ]: Started scheduling
+15:32:02.098043 [info ]: Finished scheduling [  0.00s]
+15:32:02.098051 [info ]: Started scheduling
+15:32:02.098083 [info ]: Finished scheduling [  0.00s]
+15:32:02.098103 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:32:02.098371 [info ]: Started deferring state
+15:32:02.098376 [info ]: Finished deferring state [  0.00s]
+15:32:02.165123 [info ]: Started building task graph
+15:32:02.165175 [info ]: Finished building task graph [  0.00s]
+15:32:02.165241 [info ]: Started rendering (4 nodes)
+15:32:02.165248 [info ]: Started model staging.stg_orders_item
+15:32:02.165255 [debug]: Started rendering model staging.stg_orders_item
+15:32:02.165268 [info ]: Started model staging.my_first_dbt_model
+15:32:02.165273 [debug]: Started rendering model staging.my_first_dbt_model
+15:32:02.165283 [info ]: Started analysis staging.raw_orders_item
+15:32:02.165288 [debug]: Started rendering analysis staging.raw_orders_item
+15:32:02.166101 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:32:02.166132 [info ]: Started analyzing (4 nodes)
+15:32:02.166137 [debug]: Started analyzing model staging.my_first_dbt_model
+15:32:02.166139 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:32:02.166143 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:32:02.166157 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:32:02.166190 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:32:02.166202 [debug]: Started analyzing analysis staging.raw_orders_item
+15:32:02.166209 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+15:32:02.166215 [debug]: Started analyzing model staging.stg_orders_item
+15:32:02.166702 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+15:32:02.166717 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:32:02.166726 [info ]: Started model staging.my_second_dbt_model
+15:32:02.166732 [debug]: Started rendering model staging.my_second_dbt_model
+15:32:02.166870 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+15:32:02.166879 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:32:02.167043 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:32:02.167059 [debug]: Started analyzing model staging.my_second_dbt_model
+15:32:02.167061 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:32:02.167065 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:32:02.167319 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+15:32:02.167329 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:32:02.167369 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+15:32:02.167378 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:32:02.167382 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:32:02.171052 [info ]: Cached model count updated: 3 models (accurate)
+15:32:02.496877 [info ]: Started loading project
+15:32:02.497675 [info ]: Loading ~/.dbt/profiles.yml
+15:32:02.503775 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:32:02.503876 [info ]: Finished loading project [  0.01s]
+15:32:02.505704 [info ]: Started parsing
+15:32:02.527269 [info ]: Finished parsing [  0.02s]
+15:32:02.528382 [info ]: Cached model count updated: 3 models (estimate)
+15:32:02.528393 [info ]: Cached model count updated: 3 models (accurate)
+15:32:02.528423 [info ]: Started scheduling
+15:32:02.528467 [info ]: Finished scheduling [  0.00s]
+15:32:02.528475 [debug]: Incremental compilation - 0 nodes selected: {}
+15:32:02.528484 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+15:32:02.528491 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:32:02.528970 [info ]: Started deferring state
+15:32:02.528978 [info ]: Finished deferring state [  0.00s]
+15:32:02.609218 [info ]: Started building task graph
+15:32:02.609249 [info ]: Finished building task graph [  0.00s]
+15:32:02.612536 [info ]: Cached model count updated: 3 models (accurate)
+15:33:27.552719 [info ]: Loading ~/.dbt/profiles.yml
+15:33:27.570036 [info ]: Started loading project
+15:33:27.570486 [info ]: Loading ~/.dbt/profiles.yml
+15:33:27.573410 [info ]: Started loading project
+15:33:27.573599 [info ]: Loading ~/.dbt/profiles.yml
+15:33:27.573631 [info ]: Finished loading project [  0.00s]
+15:33:27.697841 [debug]:    Started loading packages
+15:33:27.698296 [debug]:     Loaded [  0.00s] packages
+15:33:27.698555 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:33:27.698568 [info ]: Finished loading project [  0.13s]
+15:33:27.698671 [info ]: Started parsing
+15:33:27.711547 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:33:27.711629 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:33:27.711719 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:33:27.712954 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:33:27.713316 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:33:27.713569 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:33:27.715407 [debug]: Finished parsing models/staging/test.sql [  0.00s]
+15:33:27.715977 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:33:27.716235 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:33:27.716458 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:33:27.716659 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:33:27.716889 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:33:27.717155 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:33:27.717361 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:33:27.717568 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:33:27.717759 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:33:27.717946 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:33:27.718130 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:33:27.720149 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:33:27.720494 [info ]: Finished parsing [  0.02s]
+15:33:27.720589 [info ]: Cached model count updated: 4 models (estimate)
+15:33:27.720595 [info ]: Cached model count updated: 4 models (accurate)
+15:33:27.720616 [info ]: Started scheduling
+15:33:27.720663 [info ]: Finished scheduling [  0.00s]
+15:33:27.720670 [info ]: Started scheduling
+15:33:27.720699 [info ]: Finished scheduling [  0.00s]
+15:33:27.721071 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:33:27.721341 [info ]: Started deferring state
+15:33:27.721346 [info ]: Finished deferring state [  0.00s]
+15:33:27.786957 [info ]: Started building task graph
+15:33:27.787011 [info ]: Finished building task graph [  0.00s]
+15:33:27.787079 [info ]: Started rendering (4 nodes)
+15:33:27.787087 [info ]: Started model staging.stg_orders_item
+15:33:27.787095 [debug]: Started rendering model staging.stg_orders_item
+15:33:27.787107 [info ]: Started model staging.my_first_dbt_model
+15:33:27.787112 [debug]: Started rendering model staging.my_first_dbt_model
+15:33:27.787122 [info ]: Started analysis staging.raw_orders_item
+15:33:27.787128 [debug]: Started rendering analysis staging.raw_orders_item
+15:33:27.787646 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:33:27.787658 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:33:27.787673 [info ]: Started analyzing (4 nodes)
+15:33:27.787677 [debug]: Started analyzing model staging.stg_orders_item
+15:33:27.787677 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+15:33:27.787685 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:33:27.787692 [debug]: Started analyzing analysis staging.raw_orders_item
+15:33:27.787795 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:33:27.787848 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:33:27.787859 [debug]: Started analyzing model staging.my_first_dbt_model
+15:33:27.788195 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+15:33:27.788205 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:33:27.788213 [info ]: Started model staging.my_second_dbt_model
+15:33:27.788217 [debug]: Started rendering model staging.my_second_dbt_model
+15:33:27.788225 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+15:33:27.788231 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:33:27.788566 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:33:27.788582 [debug]: Started analyzing model staging.my_second_dbt_model
+15:33:27.788584 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:33:27.788589 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:33:27.788693 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+15:33:27.788702 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:33:27.788894 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+15:33:27.788905 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:33:27.788909 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:33:27.792116 [info ]: Cached model count updated: 4 models (accurate)
+15:34:42.743492 [info ]: Started loading project
+15:34:42.744083 [info ]: Loading ~/.dbt/profiles.yml
+15:34:42.747234 [info ]: Started loading project
+15:34:42.747413 [info ]: Loading ~/.dbt/profiles.yml
+15:34:42.747447 [info ]: Finished loading project [  0.00s]
+15:34:42.877022 [debug]:    Started loading packages
+15:34:42.877543 [debug]:     Loaded [  0.00s] packages
+15:34:42.877840 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:34:42.877854 [info ]: Finished loading project [  0.13s]
+15:34:42.877956 [info ]: Started parsing
+15:34:42.891491 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:34:42.891572 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:34:42.891658 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:34:42.892810 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:34:42.893241 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:34:42.895058 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:34:42.895622 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:34:42.895838 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:34:42.896029 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:34:42.896202 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:34:42.896446 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:34:42.896638 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:34:42.896814 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:34:42.896990 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:34:42.897166 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:34:42.897329 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:34:42.897487 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:34:42.899221 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:34:42.899557 [info ]: Finished parsing [  0.02s]
+15:34:42.899645 [info ]: Cached model count updated: 3 models (estimate)
+15:34:42.899651 [info ]: Cached model count updated: 3 models (accurate)
+15:34:42.899670 [info ]: Started scheduling
+15:34:42.899718 [info ]: Finished scheduling [  0.00s]
+15:34:42.899725 [info ]: Started scheduling
+15:34:42.899756 [info ]: Finished scheduling [  0.00s]
+15:34:42.899774 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:34:42.900019 [info ]: Started deferring state
+15:34:42.900024 [info ]: Finished deferring state [  0.00s]
+15:34:42.968855 [info ]: Started building task graph
+15:34:42.968899 [info ]: Finished building task graph [  0.00s]
+15:34:42.968953 [info ]: Started rendering (4 nodes)
+15:34:42.968973 [info ]: Started model staging.stg_orders_item
+15:34:42.968984 [debug]: Started rendering model staging.stg_orders_item
+15:34:42.968998 [info ]: Started model staging.my_first_dbt_model
+15:34:42.969006 [debug]: Started rendering model staging.my_first_dbt_model
+15:34:42.969016 [info ]: Started analysis staging.raw_orders_item
+15:34:42.969023 [debug]: Started rendering analysis staging.raw_orders_item
+15:34:42.969472 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:34:42.969494 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:34:42.969505 [info ]: Started analyzing (4 nodes)
+15:34:42.969504 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:34:42.969509 [debug]: Started analyzing analysis staging.raw_orders_item
+15:34:42.969518 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+15:34:42.969519 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:34:42.969525 [debug]: Started analyzing model staging.stg_orders_item
+15:34:42.969532 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:34:42.969538 [debug]: Started analyzing model staging.my_first_dbt_model
+15:34:42.969933 [info ]:  Succeeded [-------] model staging.my_first_dbt_model (table)
+15:34:42.969942 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:34:42.969949 [info ]: Started model staging.my_second_dbt_model
+15:34:42.969953 [debug]: Started rendering model staging.my_second_dbt_model
+15:34:42.970018 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+15:34:42.970036 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:34:42.970273 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:34:42.970290 [debug]: Started analyzing model staging.my_second_dbt_model
+15:34:42.970293 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:34:42.970297 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:34:42.970509 [info ]:  Succeeded [-------] model staging.stg_orders_item (table)
+15:34:42.970523 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:34:42.970606 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+15:34:42.970616 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:34:42.970619 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+15:34:42.973723 [info ]: Cached model count updated: 3 models (accurate)
+18:35:39.048999 [info ]: Started loading project
+18:35:39.049778 [info ]: Loading ~/.dbt/profiles.yml
+18:35:39.054172 [info ]: Started loading project
+18:35:39.054371 [info ]: Loading ~/.dbt/profiles.yml
+18:35:39.054433 [info ]: Finished loading project [  0.01s]
+18:35:39.182096 [debug]:    Started loading packages
+18:35:39.182623 [debug]:     Loaded [  0.00s] packages
+18:35:39.182905 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+18:35:39.182923 [info ]: Finished loading project [  0.13s]
+18:35:39.183026 [info ]: Started parsing
+18:35:39.197895 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+18:35:39.197969 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+18:35:39.198332 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+18:35:39.199515 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+18:35:39.199982 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+18:35:39.202914 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+18:35:39.203597 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+18:35:39.203838 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+18:35:39.204061 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+18:35:39.204259 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+18:35:39.204467 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+18:35:39.204750 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+18:35:39.204984 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+18:35:39.205182 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+18:35:39.205365 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+18:35:39.205542 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+18:35:39.205715 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+18:35:39.207728 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+18:35:39.208097 [info ]: Finished parsing [  0.03s]
+18:35:39.208189 [info ]: Cached model count updated: 3 models (estimate)
+18:35:39.208195 [info ]: Cached model count updated: 3 models (accurate)
+18:35:39.208221 [info ]: Started scheduling
+18:35:39.208273 [info ]: Finished scheduling [  0.00s]
+18:35:39.208281 [info ]: Started scheduling
+18:35:39.208311 [info ]: Finished scheduling [  0.00s]
+18:35:39.208352 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+18:35:39.208665 [info ]: Started deferring state
+18:35:39.208670 [info ]: Finished deferring state [  0.00s]
+18:35:39.278779 [info ]: Started building task graph
+18:35:39.278835 [info ]: Finished building task graph [  0.00s]
+18:35:39.278920 [info ]: Started rendering (4 nodes)
+18:35:39.278929 [info ]: Started model staging.stg_orders_item
+18:35:39.278936 [debug]: Started rendering model staging.stg_orders_item
+18:35:39.278951 [info ]: Started model staging.my_first_dbt_model
+18:35:39.278956 [debug]: Started rendering model staging.my_first_dbt_model
+18:35:39.278966 [info ]: Started analysis staging.raw_orders_item
+18:35:39.278971 [debug]: Started rendering analysis staging.raw_orders_item
+18:35:39.280176 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+18:35:39.280230 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+18:35:39.280233 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+18:35:39.280241 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+18:35:39.280252 [info ]: Started analyzing (4 nodes)
+18:35:39.280256 [debug]: Started analyzing analysis staging.raw_orders_item
+18:35:39.280264 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+18:35:39.280271 [debug]: Started analyzing model staging.my_first_dbt_model
+18:35:39.280278 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+18:35:39.280285 [debug]: Started analyzing model staging.stg_orders_item
+18:35:39.280984 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+18:35:39.280994 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+18:35:39.281005 [info ]: Started model staging.my_second_dbt_model
+18:35:39.281010 [debug]: Started rendering model staging.my_second_dbt_model
+18:35:39.281270 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+18:35:39.281279 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+18:35:39.281321 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+18:35:39.281342 [debug]: Started analyzing model staging.my_second_dbt_model
+18:35:39.281344 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+18:35:39.281350 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+18:35:39.281664 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+18:35:39.281675 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+18:35:39.281759 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+18:35:39.281768 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+18:35:39.281770 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+18:35:39.285203 [info ]: Cached model count updated: 3 models (accurate)
+18:36:46.061202 [info ]: Started loading project
+18:36:46.061756 [info ]: Loading ~/.dbt/profiles.yml
+18:36:46.064770 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+18:36:46.064797 [info ]: Finished loading project [  0.00s]
+18:36:46.065786 [info ]: Started parsing
+18:36:46.085566 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+18:36:46.086049 [info ]: Finished parsing [  0.02s]
+18:36:46.086953 [info ]: Cached model count updated: 3 models (estimate)
+18:36:46.086963 [info ]: Cached model count updated: 3 models (accurate)
+18:36:46.087001 [info ]: Started scheduling
+18:36:46.087108 [info ]: Finished scheduling [  0.00s]
+18:36:46.087120 [debug]: Incremental compilation - 1 nodes selected: {"analysis.olist_analytics.raw_orders_item"}
+18:36:46.087451 [info ]: Started deferring state
+18:36:46.087458 [info ]: Finished deferring state [  0.00s]
+18:36:46.164191 [info ]: Started building task graph
+18:36:46.164232 [info ]: Finished building task graph [  0.00s]
+18:36:46.164294 [info ]: Started rendering (1 nodes)
+18:36:46.164302 [info ]: Started analysis staging.raw_orders_item
+18:36:46.164310 [debug]: Started rendering analysis staging.raw_orders_item
+18:36:46.164780 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+18:36:46.164808 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+18:36:46.164816 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:36:46.164824 [info ]: Started analyzing (1 nodes)
+18:36:46.164828 [debug]: Started analyzing analysis staging.raw_orders_item
+18:36:46.165234 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+18:36:46.165245 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+18:36:46.165248 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:36:46.168374 [info ]: Cached model count updated: 3 models (accurate)
+18:36:54.289622 [info ]: Started loading project
+18:36:54.290136 [info ]: Loading ~/.dbt/profiles.yml
+18:36:54.294568 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+18:36:54.294595 [info ]: Finished loading project [  0.00s]
+18:36:54.295471 [info ]: Started parsing
+18:36:54.312836 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+18:36:54.315846 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+18:36:54.316240 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+18:36:54.316587 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+18:36:54.316849 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+18:36:54.317188 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+18:36:54.317473 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+18:36:54.317761 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+18:36:54.319517 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+18:36:54.319974 [info ]: Finished parsing [  0.02s]
+18:36:54.320945 [info ]: Cached model count updated: 3 models (estimate)
+18:36:54.320953 [info ]: Cached model count updated: 3 models (accurate)
+18:36:54.320984 [info ]: Started scheduling
+18:36:54.321079 [info ]: Finished scheduling [  0.00s]
+18:36:54.321087 [debug]: Incremental compilation - 1 nodes selected: {"model.olist_analytics.stg_orders_item"}
+18:36:54.321369 [info ]: Started deferring state
+18:36:54.321375 [info ]: Finished deferring state [  0.00s]
+18:36:54.396597 [info ]: Started building task graph
+18:36:54.396639 [info ]: Finished building task graph [  0.00s]
+18:36:54.396700 [info ]: Started rendering (1 nodes)
+18:36:54.396708 [info ]: Started model staging.stg_orders_item
+18:36:54.396716 [debug]: Started rendering model staging.stg_orders_item
+18:36:54.397264 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+18:36:54.397307 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+18:36:54.397313 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:36:54.397322 [info ]: Started analyzing (1 nodes)
+18:36:54.397326 [debug]: Started analyzing model staging.stg_orders_item
+18:36:54.398336 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+18:36:54.398348 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+18:36:54.398351 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+18:36:54.401499 [info ]: Cached model count updated: 3 models (accurate)
+==================== 2026-03-10T08:38:35.920784Z | f7e18d10-e621-498f-bd14-724cd1e1d96d ====================
+08:38:35.922747 [info ]: Starting dbt LSP server
+08:38:35.923105 [info ]: Connecting to LSP client on port 8000
+08:38:35.924001 [info ]: Successfully connected to LSP client
+08:38:35.924009 [info ]: Creating LSP service...
+08:38:35.983648 [info ]: Creating LSP server...
+08:38:35.983665 [info ]: Starting LSP server...
+08:38:36.044097 [info ]: Started loading project
+08:38:36.076984 [info ]: Loading ~/.dbt/profiles.yml
+08:38:36.231623 [debug]:    Started loading packages
+08:38:36.239440 [debug]:     Loaded [  0.01s] packages
+08:38:36.247357 [info ]: Finished loading project [  0.20s]
+08:38:36.247670 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+08:38:36.249673 [info ]: Started parsing
+08:38:36.279972 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+08:38:36.280723 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+08:38:36.281225 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+08:38:36.289633 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+08:38:36.290451 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+08:38:36.297677 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.01s]
+08:38:36.298958 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+08:38:36.299688 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+08:38:36.300506 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+08:38:36.300940 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+08:38:36.301564 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+08:38:36.302120 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+08:38:36.302438 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+08:38:36.302733 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+08:38:36.302992 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+08:38:36.303291 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+08:38:36.303553 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+08:38:36.305826 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+08:38:36.307431 [info ]: Finished parsing [  0.06s]
+08:38:36.307977 [info ]: Cached model count updated: 3 models (estimate)
+08:38:36.307988 [info ]: Cached model count updated: 3 models (accurate)
+08:38:36.309050 [info ]: Started scheduling
+08:38:36.310678 [info ]: Finished scheduling [  0.00s]
+08:38:36.310839 [info ]: Started scheduling
+08:38:36.310875 [info ]: Finished scheduling [  0.00s]
+08:38:36.313920 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+08:38:36.314414 [info ]: Started deferring state
+08:38:36.314434 [info ]: Finished deferring state [  0.00s]
+08:38:36.411206 [info ]: Started building task graph
+08:38:36.413213 [info ]: Finished building task graph [  0.00s]
+08:38:36.416999 [info ]: Started rendering (4 nodes)
+08:38:36.417156 [info ]: Started model staging.stg_orders_item
+08:38:36.417337 [debug]: Started rendering model staging.stg_orders_item
+08:38:36.417361 [info ]: Started model staging.my_first_dbt_model
+08:38:36.417367 [debug]: Started rendering model staging.my_first_dbt_model
+08:38:36.417388 [info ]: Started analysis staging.raw_orders_item
+08:38:36.417395 [debug]: Started rendering analysis staging.raw_orders_item
+08:38:36.421407 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+08:38:36.421408 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+08:38:36.421408 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+08:38:36.421794 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+08:38:36.421944 [info ]: Started analyzing (4 nodes)
+08:38:36.421949 [debug]: Started analyzing model staging.stg_orders_item
+08:38:36.422114 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+08:38:36.422122 [debug]: Started analyzing model staging.my_first_dbt_model
+08:38:36.422130 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+08:38:36.422137 [debug]: Started analyzing analysis staging.raw_orders_item
+08:38:36.454400 [info ]:  Succeeded [  0.04s] analysis staging.raw_orders_item (analysis)
+08:38:36.454431 [debug]: Finished analyzing [  0.03s] analysis staging.raw_orders_item [success]
+08:38:36.454780 [info ]:  Succeeded [  0.04s] model staging.my_first_dbt_model (table)
+08:38:36.454790 [debug]: Finished analyzing [  0.03s] model staging.my_first_dbt_model [success]
+08:38:36.454813 [info ]: Started model staging.my_second_dbt_model
+08:38:36.454822 [debug]: Started rendering model staging.my_second_dbt_model
+08:38:36.455439 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+08:38:36.455462 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+08:38:36.455464 [debug]: Started analyzing model staging.my_second_dbt_model
+08:38:36.455469 [info ]: Finished rendering [  0.04s] (4 nodes, 0 skipped, 0 errors)
+08:38:36.455983 [info ]:  Succeeded [  0.04s] model staging.stg_orders_item (table)
+08:38:36.455995 [debug]: Finished analyzing [  0.03s] model staging.stg_orders_item [success]
+08:38:36.457075 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+08:38:36.457087 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+08:38:36.457091 [info ]: Finished analyzing [  0.04s] (4 nodes, 0 skipped, 0 errors)
+08:38:36.462444 [info ]: Cached model count updated: 3 models (accurate)
+08:38:36.846710 [info ]: Loading ~/.dbt/profiles.yml
+09:31:29.554269 [info ]: Started loading project
+09:31:29.554577 [info ]: Loading ~/.dbt/profiles.yml
+09:31:29.558438 [info ]: Started loading project
+09:31:29.558627 [info ]: Loading ~/.dbt/profiles.yml
+09:31:29.558641 [info ]: Finished loading project [  0.00s]
+09:31:29.674934 [debug]:    Started loading packages
+09:31:29.675468 [debug]:     Loaded [  0.00s] packages
+09:31:29.675734 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+09:31:29.675755 [info ]: Finished loading project [  0.12s]
+09:31:29.675848 [info ]: Started parsing
+09:31:29.689768 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+09:31:29.689975 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+09:31:29.690480 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+09:31:29.691432 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+09:31:29.691950 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+09:31:29.694621 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+09:31:29.695327 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+09:31:29.695547 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+09:31:29.695787 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+09:31:29.695983 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+09:31:29.696178 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+09:31:29.696385 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+09:31:29.696590 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+09:31:29.696860 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+09:31:29.697060 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+09:31:29.697268 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+09:31:29.697472 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+09:31:29.699348 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+09:31:29.699645 [info ]: Finished parsing [  0.02s]
+09:31:29.699733 [info ]: Cached model count updated: 3 models (estimate)
+09:31:29.699739 [info ]: Cached model count updated: 3 models (accurate)
+09:31:29.699759 [info ]: Started scheduling
+09:31:29.699808 [info ]: Finished scheduling [  0.00s]
+09:31:29.699816 [info ]: Started scheduling
+09:31:29.699848 [info ]: Finished scheduling [  0.00s]
+09:31:29.699867 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+09:31:29.700093 [info ]: Started deferring state
+09:31:29.700097 [info ]: Finished deferring state [  0.00s]
+09:31:29.771251 [info ]: Started building task graph
+09:31:29.771304 [info ]: Finished building task graph [  0.00s]
+09:31:29.771375 [info ]: Started rendering (4 nodes)
+09:31:29.771383 [info ]: Started model staging.stg_orders_item
+09:31:29.771390 [debug]: Started rendering model staging.stg_orders_item
+09:31:29.771403 [info ]: Started model staging.my_first_dbt_model
+09:31:29.771407 [debug]: Started rendering model staging.my_first_dbt_model
+09:31:29.771417 [info ]: Started analysis staging.raw_orders_item
+09:31:29.771422 [debug]: Started rendering analysis staging.raw_orders_item
+09:31:29.772649 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+09:31:29.772688 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+09:31:29.772691 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+09:31:29.772694 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+09:31:29.772705 [info ]: Started analyzing (4 nodes)
+09:31:29.772710 [debug]: Started analyzing model staging.my_first_dbt_model
+09:31:29.772718 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+09:31:29.772724 [debug]: Started analyzing analysis staging.raw_orders_item
+09:31:29.772732 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+09:31:29.772737 [debug]: Started analyzing model staging.stg_orders_item
+09:31:29.773322 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+09:31:29.773337 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+09:31:29.773351 [info ]: Started model staging.my_second_dbt_model
+09:31:29.773356 [debug]: Started rendering model staging.my_second_dbt_model
+09:31:29.773520 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+09:31:29.773533 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+09:31:29.773672 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+09:31:29.773687 [debug]: Started analyzing model staging.my_second_dbt_model
+09:31:29.773688 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+09:31:29.773694 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:31:29.773935 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+09:31:29.773944 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+09:31:29.773995 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+09:31:29.774004 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+09:31:29.774008 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:31:29.777707 [info ]: Cached model count updated: 3 models (accurate)
+09:31:30.174776 [info ]: Loading ~/.dbt/profiles.yml
+09:44:36.873620 [info ]: Started loading project
+09:44:36.874023 [info ]: Loading ~/.dbt/profiles.yml
+09:44:36.876709 [info ]: Started loading project
+09:44:36.876876 [info ]: Loading ~/.dbt/profiles.yml
+09:44:36.876898 [info ]: Finished loading project [  0.00s]
+09:44:36.995611 [debug]:    Started loading packages
+09:44:36.996107 [debug]:     Loaded [  0.00s] packages
+09:44:36.996375 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+09:44:36.996393 [info ]: Finished loading project [  0.12s]
+09:44:36.996492 [info ]: Started parsing
+09:44:37.010463 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+09:44:37.010680 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+09:44:37.011038 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+09:44:37.012133 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+09:44:37.012776 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+09:44:37.015128 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+09:44:37.015839 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+09:44:37.016062 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+09:44:37.016303 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+09:44:37.016483 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+09:44:37.016691 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+09:44:37.016894 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+09:44:37.017089 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+09:44:37.017364 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+09:44:37.017606 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+09:44:37.017779 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+09:44:37.017952 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+09:44:37.019817 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+09:44:37.020157 [info ]: Finished parsing [  0.02s]
+09:44:37.020248 [info ]: Cached model count updated: 3 models (estimate)
+09:44:37.020254 [info ]: Cached model count updated: 3 models (accurate)
+09:44:37.020274 [info ]: Started scheduling
+09:44:37.020322 [info ]: Finished scheduling [  0.00s]
+09:44:37.020330 [info ]: Started scheduling
+09:44:37.020360 [info ]: Finished scheduling [  0.00s]
+09:44:37.020378 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+09:44:37.020642 [info ]: Started deferring state
+09:44:37.020647 [info ]: Finished deferring state [  0.00s]
+09:44:37.090611 [info ]: Started building task graph
+09:44:37.090664 [info ]: Finished building task graph [  0.00s]
+09:44:37.090734 [info ]: Started rendering (4 nodes)
+09:44:37.090742 [info ]: Started model staging.stg_orders_item
+09:44:37.090750 [debug]: Started rendering model staging.stg_orders_item
+09:44:37.090761 [info ]: Started model staging.my_first_dbt_model
+09:44:37.090766 [debug]: Started rendering model staging.my_first_dbt_model
+09:44:37.090775 [info ]: Started analysis staging.raw_orders_item
+09:44:37.090781 [debug]: Started rendering analysis staging.raw_orders_item
+09:44:37.092076 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+09:44:37.092080 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+09:44:37.092100 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+09:44:37.092104 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+09:44:37.092118 [info ]: Started analyzing (4 nodes)
+09:44:37.092123 [debug]: Started analyzing analysis staging.raw_orders_item
+09:44:37.092129 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+09:44:37.092136 [debug]: Started analyzing model staging.my_first_dbt_model
+09:44:37.092145 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+09:44:37.092152 [debug]: Started analyzing model staging.stg_orders_item
+09:44:37.092644 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+09:44:37.092659 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+09:44:37.092678 [info ]: Started model staging.my_second_dbt_model
+09:44:37.092683 [debug]: Started rendering model staging.my_second_dbt_model
+09:44:37.092846 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+09:44:37.092854 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+09:44:37.092999 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+09:44:37.093014 [debug]: Started analyzing model staging.my_second_dbt_model
+09:44:37.093022 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+09:44:37.093028 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:44:37.093296 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+09:44:37.093308 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+09:44:37.093317 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+09:44:37.093326 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+09:44:37.093330 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:44:37.096498 [info ]: Cached model count updated: 3 models (accurate)
+09:44:37.419022 [info ]: Loading ~/.dbt/profiles.yml
+11:03:55.463434 [info ]: Started loading project
+11:03:55.463743 [info ]: Loading ~/.dbt/profiles.yml
+11:03:55.465853 [info ]: Started loading project
+11:03:55.466035 [info ]: Loading ~/.dbt/profiles.yml
+11:03:55.466057 [info ]: Finished loading project [  0.00s]
+11:03:55.584326 [debug]:    Started loading packages
+11:03:55.584812 [debug]:     Loaded [  0.00s] packages
+11:03:55.585082 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+11:03:55.585100 [info ]: Finished loading project [  0.12s]
+11:03:55.585207 [info ]: Started parsing
+11:03:55.599387 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+11:03:55.599621 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+11:03:55.599997 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+11:03:55.600960 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+11:03:55.601405 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+11:03:55.603637 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+11:03:55.604355 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+11:03:55.604581 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+11:03:55.604782 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+11:03:55.604961 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+11:03:55.605240 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+11:03:55.605451 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+11:03:55.605702 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+11:03:55.605900 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+11:03:55.606087 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+11:03:55.606279 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+11:03:55.606464 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+11:03:55.608543 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+11:03:55.608812 [info ]: Finished parsing [  0.02s]
+11:03:55.608903 [info ]: Cached model count updated: 3 models (estimate)
+11:03:55.608910 [info ]: Cached model count updated: 3 models (accurate)
+11:03:55.608929 [info ]: Started scheduling
+11:03:55.608976 [info ]: Finished scheduling [  0.00s]
+11:03:55.608984 [info ]: Started scheduling
+11:03:55.609014 [info ]: Finished scheduling [  0.00s]
+11:03:55.609032 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+11:03:55.609283 [info ]: Started deferring state
+11:03:55.609287 [info ]: Finished deferring state [  0.00s]
+11:03:55.679858 [info ]: Started building task graph
+11:03:55.679915 [info ]: Finished building task graph [  0.00s]
+11:03:55.679982 [info ]: Started rendering (4 nodes)
+11:03:55.679990 [info ]: Started model staging.stg_orders_item
+11:03:55.679998 [debug]: Started rendering model staging.stg_orders_item
+11:03:55.680009 [info ]: Started model staging.my_first_dbt_model
+11:03:55.680013 [debug]: Started rendering model staging.my_first_dbt_model
+11:03:55.680022 [info ]: Started analysis staging.raw_orders_item
+11:03:55.680028 [debug]: Started rendering analysis staging.raw_orders_item
+11:03:55.681268 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+11:03:55.681270 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+11:03:55.681316 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+11:03:55.681325 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+11:03:55.681355 [info ]: Started analyzing (4 nodes)
+11:03:55.681360 [debug]: Started analyzing model staging.stg_orders_item
+11:03:55.681371 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+11:03:55.681379 [debug]: Started analyzing model staging.my_first_dbt_model
+11:03:55.681423 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+11:03:55.681432 [debug]: Started analyzing analysis staging.raw_orders_item
+11:03:55.681972 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+11:03:55.681987 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+11:03:55.681998 [info ]: Started model staging.my_second_dbt_model
+11:03:55.682003 [debug]: Started rendering model staging.my_second_dbt_model
+11:03:55.682102 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+11:03:55.682116 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+11:03:55.682351 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+11:03:55.682371 [debug]: Started analyzing model staging.my_second_dbt_model
+11:03:55.682375 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+11:03:55.682379 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+11:03:55.682545 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+11:03:55.682554 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+11:03:55.682693 [info ]:  Succeeded [-------] model staging.my_second_dbt_model (view)
+11:03:55.682701 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+11:03:55.682705 [info ]: Finished analyzing [  0.00s] (4 nodes, 0 skipped, 0 errors)
+11:03:55.686072 [info ]: Cached model count updated: 3 models (accurate)
+11:03:56.006668 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-03-11T09:15:30.923819Z | 7a905a1f-ccac-4bbe-a689-3d2f6b164e89 ====================
+09:15:30.924563 [info ]: Starting dbt LSP server
+09:15:30.924655 [info ]: Connecting to LSP client on port 8000
+09:15:30.925180 [info ]: Successfully connected to LSP client
+09:15:30.925189 [info ]: Creating LSP service...
+09:15:30.980088 [info ]: Creating LSP server...
+09:15:30.980106 [info ]: Starting LSP server...
+09:15:31.037393 [info ]: Started loading project
+09:15:31.050019 [info ]: Loading ~/.dbt/profiles.yml
+09:15:31.249247 [debug]:    Started loading packages
+09:15:31.256272 [debug]:     Loaded [  0.01s] packages
+09:15:31.262090 [info ]: Finished loading project [  0.22s]
+09:15:31.262220 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+09:15:31.264292 [info ]: Started parsing
+09:15:31.295940 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+09:15:31.296225 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+09:15:31.296523 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+09:15:31.306414 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+09:15:31.308039 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+09:15:31.313139 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.01s]
+09:15:31.314021 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+09:15:31.314573 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+09:15:31.314963 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+09:15:31.315258 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+09:15:31.315516 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+09:15:31.315727 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+09:15:31.315953 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+09:15:31.316143 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+09:15:31.316329 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+09:15:31.316515 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+09:15:31.316710 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+09:15:31.318810 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+09:15:31.320470 [info ]: Finished parsing [  0.06s]
+09:15:31.321026 [info ]: Cached model count updated: 3 models (estimate)
+09:15:31.321033 [info ]: Cached model count updated: 3 models (accurate)
+09:15:31.322022 [info ]: Started scheduling
+09:15:31.323572 [info ]: Finished scheduling [  0.00s]
+09:15:31.323812 [info ]: Started scheduling
+09:15:31.323852 [info ]: Finished scheduling [  0.00s]
+09:15:31.326978 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+09:15:31.327645 [info ]: Started deferring state
+09:15:31.327661 [info ]: Finished deferring state [  0.00s]
+09:15:31.427495 [info ]: Started building task graph
+09:15:31.428985 [info ]: Finished building task graph [  0.00s]
+09:15:31.433119 [info ]: Started rendering (4 nodes)
+09:15:31.433198 [info ]: Started model staging.stg_orders_item
+09:15:31.433244 [debug]: Started rendering model staging.stg_orders_item
+09:15:31.433268 [info ]: Started model staging.my_first_dbt_model
+09:15:31.433274 [debug]: Started rendering model staging.my_first_dbt_model
+09:15:31.433294 [info ]: Started analysis staging.raw_orders_item
+09:15:31.433300 [debug]: Started rendering analysis staging.raw_orders_item
+09:15:31.438246 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+09:15:31.438246 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+09:15:31.438296 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+09:15:31.439010 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+09:15:31.439200 [info ]: Started analyzing (4 nodes)
+09:15:31.439207 [debug]: Started analyzing analysis staging.raw_orders_item
+09:15:31.439275 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+09:15:31.439282 [debug]: Started analyzing model staging.my_first_dbt_model
+09:15:31.439291 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+09:15:31.439297 [debug]: Started analyzing model staging.stg_orders_item
+09:15:31.476702 [info ]:  Succeeded [  0.04s] analysis staging.raw_orders_item (analysis)
+09:15:31.476734 [debug]: Finished analyzing [  0.04s] analysis staging.raw_orders_item [success]
+09:15:31.477249 [info ]:  Succeeded [  0.04s] model staging.my_first_dbt_model (table)
+09:15:31.477261 [debug]: Finished analyzing [  0.04s] model staging.my_first_dbt_model [success]
+09:15:31.477276 [info ]: Started model staging.my_second_dbt_model
+09:15:31.477285 [debug]: Started rendering model staging.my_second_dbt_model
+09:15:31.477910 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+09:15:31.477938 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+09:15:31.477945 [info ]: Finished rendering [  0.04s] (4 nodes, 0 skipped, 0 errors)
+09:15:31.477954 [debug]: Started analyzing model staging.my_second_dbt_model
+09:15:31.479125 [info ]:  Succeeded [  0.04s] model staging.stg_orders_item (table)
+09:15:31.479136 [debug]: Finished analyzing [  0.04s] model staging.stg_orders_item [success]
+09:15:31.479713 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+09:15:31.479724 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+09:15:31.479728 [info ]: Finished analyzing [  0.04s] (4 nodes, 0 skipped, 0 errors)
+09:15:31.486506 [info ]: Cached model count updated: 3 models (accurate)
+09:15:31.874153 [info ]: Loading ~/.dbt/profiles.yml
+09:33:43.162592 [info ]: Started loading project
+09:33:43.163395 [info ]: Loading ~/.dbt/profiles.yml
+09:33:43.168641 [info ]: Started loading project
+09:33:43.168889 [info ]: Loading ~/.dbt/profiles.yml
+09:33:43.168919 [info ]: Finished loading project [  0.01s]
+09:33:43.290294 [debug]:    Started loading packages
+09:33:43.290888 [debug]:     Loaded [  0.00s] packages
+09:33:43.291175 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+09:33:43.291191 [info ]: Finished loading project [  0.12s]
+09:33:43.291299 [info ]: Started parsing
+09:33:43.305340 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+09:33:43.305545 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+09:33:43.305774 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+09:33:43.334371 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+09:33:43.334775 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+09:33:43.336890 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+09:33:43.337592 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+09:33:43.337841 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+09:33:43.338128 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+09:33:43.338333 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+09:33:43.338543 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+09:33:43.338747 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+09:33:43.338940 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+09:33:43.339144 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+09:33:43.339422 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+09:33:43.339652 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+09:33:43.339857 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+09:33:43.341915 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+09:33:43.342274 [info ]: Finished parsing [  0.05s]
+09:33:43.342394 [info ]: Cached model count updated: 3 models (estimate)
+09:33:43.342401 [info ]: Cached model count updated: 3 models (accurate)
+09:33:43.342427 [info ]: Started scheduling
+09:33:43.342512 [info ]: Finished scheduling [  0.00s]
+09:33:43.342521 [info ]: Started scheduling
+09:33:43.342577 [info ]: Finished scheduling [  0.00s]
+09:33:43.342611 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+09:33:43.342870 [info ]: Started deferring state
+09:33:43.342875 [info ]: Finished deferring state [  0.00s]
+09:33:43.409648 [info ]: Started building task graph
+09:33:43.410533 [info ]: Finished building task graph [  0.00s]
+09:33:43.410618 [info ]: Started rendering (12 nodes)
+09:33:43.410627 [info ]: Started seed staging.product_category_name_translation
+09:33:43.410636 [debug]: Started rendering seed staging.product_category_name_translation
+09:33:43.410648 [info ]: Started seed staging.olist_sellers_dataset
+09:33:43.410653 [debug]: Started rendering seed staging.olist_sellers_dataset
+09:33:43.410661 [info ]: Started seed staging.olist_products_dataset
+09:33:43.410667 [debug]: Started rendering seed staging.olist_products_dataset
+09:33:43.410675 [info ]: Started seed staging.olist_orders_dataset
+09:33:43.410682 [debug]: Started rendering seed staging.olist_orders_dataset
+09:33:43.410690 [info ]: Started seed staging.olist_order_reviews_dataset
+09:33:43.410700 [debug]: Started rendering seed staging.olist_order_reviews_dataset
+09:33:43.410709 [info ]: Started seed staging.olist_order_payments_dataset
+09:33:43.410716 [debug]: Started rendering seed staging.olist_order_payments_dataset
+09:33:43.410725 [info ]: Started seed staging.olist_order_items_dataset
+09:33:43.410731 [debug]: Started rendering seed staging.olist_order_items_dataset
+09:33:43.410738 [info ]: Started seed staging.olist_customers_dataset
+09:33:43.410745 [debug]: Started rendering seed staging.olist_customers_dataset
+09:33:43.410754 [info ]: Started model staging.stg_orders_item
+09:33:43.410761 [debug]: Started rendering model staging.stg_orders_item
+09:33:43.410768 [info ]: Started model staging.my_first_dbt_model
+09:33:43.410774 [debug]: Started rendering model staging.my_first_dbt_model
+09:33:43.410781 [info ]: Started analysis staging.raw_orders_item
+09:33:43.410786 [debug]: Started rendering analysis staging.raw_orders_item
+09:33:43.433901 [debug]: Finished rendering [  0.02s] seed staging.olist_sellers_dataset [success]
+09:33:43.433950 [info ]: Started analyzing (12 nodes)
+09:33:43.433959 [debug]: Started analyzing seed staging.olist_sellers_dataset
+09:33:43.434148 [debug]: Finished rendering [  0.02s] seed staging.product_category_name_translation [success]
+09:33:43.434169 [debug]: Started analyzing seed staging.product_category_name_translation
+09:33:43.434179 [info ]:  Succeeded [  0.02s] seed  staging.olist_sellers_dataset (table)
+09:33:43.434193 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+09:33:43.434213 [info ]:  Succeeded [  0.02s] seed  staging.product_category_name_translation (table)
+09:33:43.434221 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+09:33:43.435454 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+09:33:43.435478 [debug]: Finished rendering [  0.02s] analysis staging.raw_orders_item [success]
+09:33:43.435488 [debug]: Started analyzing analysis staging.raw_orders_item
+09:33:43.435597 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+09:33:43.435654 [debug]: Started analyzing model staging.my_first_dbt_model
+09:33:43.436391 [info ]:  Succeeded [  0.02s] model staging.my_first_dbt_model (table)
+09:33:43.436403 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+09:33:43.436415 [info ]: Started model staging.my_second_dbt_model
+09:33:43.436421 [debug]: Started rendering model staging.my_second_dbt_model
+09:33:43.436436 [debug]: Finished rendering [  0.03s] model staging.my_first_dbt_model [success]
+09:33:43.436560 [info ]:  Succeeded [  0.03s] analysis staging.raw_orders_item (analysis)
+09:33:43.436586 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+09:33:43.436868 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+09:33:43.436945 [debug]: Started analyzing model staging.stg_orders_item
+09:33:43.438400 [info ]:  Succeeded [  0.03s] model staging.stg_orders_item (table)
+09:33:43.438414 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+09:33:43.438425 [debug]: Finished rendering [  0.03s] model staging.stg_orders_item [success]
+09:33:43.439391 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+09:33:43.439512 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+09:33:43.439555 [debug]: Started analyzing model staging.my_second_dbt_model
+09:33:43.440581 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+09:33:43.440639 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+09:33:43.579464 [debug]: Finished rendering [  0.17s] seed staging.olist_products_dataset [success]
+09:33:43.579504 [debug]: Started analyzing seed staging.olist_products_dataset
+09:33:43.579523 [info ]:  Succeeded [  0.17s] seed  staging.olist_products_dataset (table)
+09:33:43.579552 [debug]: Finished analyzing [  0.00s] seed staging.olist_products_dataset [success]
+09:33:43.750259 [debug]: Finished rendering [  0.34s] seed staging.olist_order_payments_dataset [success]
+09:33:43.750295 [debug]: Started analyzing seed staging.olist_order_payments_dataset
+09:33:43.750316 [info ]:  Succeeded [  0.34s] seed  staging.olist_order_payments_dataset (table)
+09:33:43.750326 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_payments_dataset [success]
+09:33:43.761560 [debug]: Finished rendering [  0.35s] seed staging.olist_customers_dataset [success]
+09:33:43.761585 [debug]: Started analyzing seed staging.olist_customers_dataset
+09:33:43.761605 [info ]:  Succeeded [  0.35s] seed  staging.olist_customers_dataset (table)
+09:33:43.761616 [debug]: Finished analyzing [  0.00s] seed staging.olist_customers_dataset [success]
+09:33:43.860726 [debug]: Finished rendering [  0.45s] seed staging.olist_order_reviews_dataset [success]
+09:33:43.860758 [debug]: Started analyzing seed staging.olist_order_reviews_dataset
+09:33:43.860777 [info ]:  Succeeded [  0.45s] seed  staging.olist_order_reviews_dataset (table)
+09:33:43.860788 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_reviews_dataset [success]
+09:33:43.896633 [debug]: Finished rendering [  0.49s] seed staging.olist_order_items_dataset [success]
+09:33:43.896664 [debug]: Started analyzing seed staging.olist_order_items_dataset
+09:33:43.896685 [info ]:  Succeeded [  0.48s] seed  staging.olist_order_items_dataset (table)
+09:33:43.896697 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_items_dataset [success]
+09:33:43.969583 [debug]: Finished rendering [  0.56s] seed staging.olist_orders_dataset [success]
+09:33:43.969600 [info ]: Finished rendering [  0.56s] (12 nodes, 0 skipped, 0 errors)
+09:33:43.969622 [debug]: Started analyzing seed staging.olist_orders_dataset
+09:33:43.969652 [info ]:  Succeeded [  0.56s] seed  staging.olist_orders_dataset (table)
+09:33:43.969666 [debug]: Finished analyzing [  0.00s] seed staging.olist_orders_dataset [success]
+09:33:43.969670 [info ]: Finished analyzing [  0.54s] (12 nodes, 0 skipped, 0 errors)
+09:33:43.974420 [info ]: Cached model count updated: 3 models (accurate)
+15:40:53.553595 [info ]: Started loading project
+15:40:53.554964 [info ]: Loading ~/.dbt/profiles.yml
+15:40:53.563057 [info ]: Started loading project
+15:40:53.563394 [info ]: Loading ~/.dbt/profiles.yml
+15:40:53.563429 [info ]: Finished loading project [  0.01s]
+15:40:53.689928 [debug]:    Started loading packages
+15:40:53.690478 [debug]:     Loaded [  0.00s] packages
+15:40:53.690769 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:40:53.690788 [info ]: Finished loading project [  0.13s]
+15:40:53.690915 [info ]: Started parsing
+15:40:53.706782 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:40:53.707037 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:40:53.707425 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:40:53.727293 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:40:53.727736 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:40:53.730088 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:40:53.730900 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:40:53.731181 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:40:53.731428 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:40:53.731647 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:40:53.731906 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:40:53.732173 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:40:53.732385 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:40:53.732598 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:40:53.732795 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:40:53.732999 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:40:53.733182 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:40:53.735204 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:40:53.735692 [info ]: Finished parsing [  0.04s]
+15:40:53.735784 [info ]: Cached model count updated: 3 models (estimate)
+15:40:53.735791 [info ]: Cached model count updated: 3 models (accurate)
+15:40:53.735825 [info ]: Started scheduling
+15:40:53.735924 [info ]: Finished scheduling [  0.00s]
+15:40:53.735934 [info ]: Started scheduling
+15:40:53.735987 [info ]: Finished scheduling [  0.00s]
+15:40:53.736078 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:40:53.736356 [info ]: Started deferring state
+15:40:53.736361 [info ]: Finished deferring state [  0.00s]
+15:40:53.804652 [info ]: Started building task graph
+15:40:53.804762 [info ]: Finished building task graph [  0.00s]
+15:40:53.804879 [info ]: Started rendering (12 nodes)
+15:40:53.804891 [info ]: Started seed staging.product_category_name_translation
+15:40:53.804901 [debug]: Started rendering seed staging.product_category_name_translation
+15:40:53.804911 [info ]: Started seed staging.olist_sellers_dataset
+15:40:53.804917 [debug]: Started rendering seed staging.olist_sellers_dataset
+15:40:53.804926 [info ]: Started seed staging.olist_products_dataset
+15:40:53.804931 [debug]: Started rendering seed staging.olist_products_dataset
+15:40:53.804938 [info ]: Started seed staging.olist_orders_dataset
+15:40:53.804942 [debug]: Started rendering seed staging.olist_orders_dataset
+15:40:53.804949 [info ]: Started seed staging.olist_order_reviews_dataset
+15:40:53.804954 [debug]: Started rendering seed staging.olist_order_reviews_dataset
+15:40:53.804960 [info ]: Started seed staging.olist_order_payments_dataset
+15:40:53.804965 [debug]: Started rendering seed staging.olist_order_payments_dataset
+15:40:53.804981 [info ]: Started seed staging.olist_order_items_dataset
+15:40:53.804987 [debug]: Started rendering seed staging.olist_order_items_dataset
+15:40:53.804992 [info ]: Started seed staging.custormers
+15:40:53.804996 [debug]: Started rendering seed staging.custormers
+15:40:53.805002 [info ]: Started model staging.stg_orders_item
+15:40:53.805006 [debug]: Started rendering model staging.stg_orders_item
+15:40:53.805011 [info ]: Started model staging.my_first_dbt_model
+15:40:53.805014 [debug]: Started rendering model staging.my_first_dbt_model
+15:40:53.805020 [info ]: Started analysis staging.raw_orders_item
+15:40:53.805023 [debug]: Started rendering analysis staging.raw_orders_item
+15:40:53.807555 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:40:53.807574 [info ]: Started analyzing (12 nodes)
+15:40:53.807578 [debug]: Started analyzing seed staging.product_category_name_translation
+15:40:53.807604 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:40:53.807619 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:40:53.808797 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:40:53.808888 [debug]: Started analyzing model staging.my_first_dbt_model
+15:40:53.810135 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+15:40:53.810150 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:40:53.810163 [info ]: Started model staging.my_second_dbt_model
+15:40:53.810169 [debug]: Started rendering model staging.my_second_dbt_model
+15:40:53.810185 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+15:40:53.810796 [debug]: Finished rendering [  0.01s] seed staging.olist_sellers_dataset [success]
+15:40:53.810845 [debug]: Started analyzing seed staging.olist_sellers_dataset
+15:40:53.810871 [info ]:  Succeeded [  0.01s] seed  staging.olist_sellers_dataset (table)
+15:40:53.810902 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+15:40:53.811045 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:40:53.811084 [debug]: Started analyzing model staging.stg_orders_item
+15:40:53.811629 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:40:53.811644 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+15:40:53.811724 [debug]: Started analyzing analysis staging.raw_orders_item
+15:40:53.812558 [info ]:  Succeeded [  0.01s] analysis staging.raw_orders_item (analysis)
+15:40:53.812596 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:40:53.812747 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:40:53.812761 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:40:53.812776 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+15:40:53.813569 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:40:53.813645 [debug]: Started analyzing model staging.my_second_dbt_model
+15:40:53.813669 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:40:53.814232 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+15:40:53.814242 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:40:53.942660 [debug]: Finished rendering [  0.14s] seed staging.olist_products_dataset [success]
+15:40:53.942689 [debug]: Started analyzing seed staging.olist_products_dataset
+15:40:53.942708 [info ]:  Succeeded [  0.14s] seed  staging.olist_products_dataset (table)
+15:40:53.942720 [debug]: Finished analyzing [  0.00s] seed staging.olist_products_dataset [success]
+15:40:54.101969 [debug]: Finished rendering [  0.30s] seed staging.custormers [success]
+15:40:54.101994 [debug]: Started analyzing seed staging.custormers
+15:40:54.102013 [info ]:  Succeeded [  0.30s] seed  staging.custormers (table)
+15:40:54.102023 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:40:54.115296 [debug]: Finished rendering [  0.31s] seed staging.olist_order_payments_dataset [success]
+15:40:54.115320 [debug]: Started analyzing seed staging.olist_order_payments_dataset
+15:40:54.115338 [info ]:  Succeeded [  0.31s] seed  staging.olist_order_payments_dataset (table)
+15:40:54.115349 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_payments_dataset [success]
+15:40:54.249228 [debug]: Finished rendering [  0.44s] seed staging.olist_order_items_dataset [success]
+15:40:54.249255 [debug]: Started analyzing seed staging.olist_order_items_dataset
+15:40:54.249274 [info ]:  Succeeded [  0.44s] seed  staging.olist_order_items_dataset (table)
+15:40:54.249283 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_items_dataset [success]
+15:40:54.274405 [debug]: Finished rendering [  0.47s] seed staging.olist_order_reviews_dataset [success]
+15:40:54.274436 [debug]: Started analyzing seed staging.olist_order_reviews_dataset
+15:40:54.274457 [info ]:  Succeeded [  0.47s] seed  staging.olist_order_reviews_dataset (table)
+15:40:54.274468 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_reviews_dataset [success]
+15:40:54.335255 [debug]: Finished rendering [  0.53s] seed staging.olist_orders_dataset [success]
+15:40:54.335272 [info ]: Finished rendering [  0.53s] (12 nodes, 0 skipped, 0 errors)
+15:40:54.335286 [debug]: Started analyzing seed staging.olist_orders_dataset
+15:40:54.335307 [info ]:  Succeeded [  0.53s] seed  staging.olist_orders_dataset (table)
+15:40:54.335320 [debug]: Finished analyzing [  0.00s] seed staging.olist_orders_dataset [success]
+15:40:54.335324 [info ]: Finished analyzing [  0.53s] (12 nodes, 0 skipped, 0 errors)
+15:40:54.339371 [info ]: Cached model count updated: 3 models (accurate)
+15:41:12.495460 [info ]: Started loading project
+15:41:12.495913 [info ]: Loading ~/.dbt/profiles.yml
+15:41:12.498493 [info ]: Started loading project
+15:41:12.498635 [info ]: Loading ~/.dbt/profiles.yml
+15:41:12.498656 [info ]: Finished loading project [  0.00s]
+15:41:12.618517 [debug]:    Started loading packages
+15:41:12.619023 [debug]:     Loaded [  0.00s] packages
+15:41:12.619275 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:41:12.619292 [info ]: Finished loading project [  0.12s]
+15:41:12.619398 [info ]: Started parsing
+15:41:12.632348 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:41:12.632435 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:41:12.632535 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:41:12.643263 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:41:12.643527 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:41:12.645301 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:41:12.645814 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:41:12.646062 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:41:12.646332 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:41:12.646538 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:41:12.646735 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:41:12.646933 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:41:12.647118 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:41:12.647298 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:41:12.647484 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:41:12.647659 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:41:12.647831 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:41:12.649826 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:41:12.650158 [info ]: Finished parsing [  0.03s]
+15:41:12.650243 [info ]: Cached model count updated: 3 models (estimate)
+15:41:12.650249 [info ]: Cached model count updated: 3 models (accurate)
+15:41:12.650271 [info ]: Started scheduling
+15:41:12.650349 [info ]: Finished scheduling [  0.00s]
+15:41:12.650357 [info ]: Started scheduling
+15:41:12.650412 [info ]: Finished scheduling [  0.00s]
+15:41:12.650708 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:41:12.650956 [info ]: Started deferring state
+15:41:12.650960 [info ]: Finished deferring state [  0.00s]
+15:41:12.717650 [info ]: Started building task graph
+15:41:12.717723 [info ]: Finished building task graph [  0.00s]
+15:41:12.717796 [info ]: Started rendering (12 nodes)
+15:41:12.717804 [info ]: Started seed staging.product_category_name_translation
+15:41:12.717811 [debug]: Started rendering seed staging.product_category_name_translation
+15:41:12.717822 [info ]: Started seed staging.orders_items
+15:41:12.717827 [debug]: Started rendering seed staging.orders_items
+15:41:12.717836 [info ]: Started seed staging.olist_sellers_dataset
+15:41:12.717841 [debug]: Started rendering seed staging.olist_sellers_dataset
+15:41:12.717848 [info ]: Started seed staging.olist_products_dataset
+15:41:12.717854 [debug]: Started rendering seed staging.olist_products_dataset
+15:41:12.717862 [info ]: Started seed staging.olist_orders_dataset
+15:41:12.717866 [debug]: Started rendering seed staging.olist_orders_dataset
+15:41:12.717871 [info ]: Started seed staging.olist_order_reviews_dataset
+15:41:12.717874 [debug]: Started rendering seed staging.olist_order_reviews_dataset
+15:41:12.717879 [info ]: Started seed staging.olist_order_payments_dataset
+15:41:12.717883 [debug]: Started rendering seed staging.olist_order_payments_dataset
+15:41:12.717888 [info ]: Started seed staging.custormers
+15:41:12.717892 [debug]: Started rendering seed staging.custormers
+15:41:12.717899 [info ]: Started model staging.stg_orders_item
+15:41:12.717903 [debug]: Started rendering model staging.stg_orders_item
+15:41:12.717908 [info ]: Started model staging.my_first_dbt_model
+15:41:12.717912 [debug]: Started rendering model staging.my_first_dbt_model
+15:41:12.717918 [info ]: Started analysis staging.raw_orders_item
+15:41:12.717921 [debug]: Started rendering analysis staging.raw_orders_item
+15:41:12.719543 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:41:12.719561 [info ]: Started analyzing (12 nodes)
+15:41:12.719566 [debug]: Started analyzing seed staging.product_category_name_translation
+15:41:12.719582 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:41:12.719595 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:41:12.722332 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:41:12.722399 [debug]: Started analyzing model staging.stg_orders_item
+15:41:12.723029 [debug]: Finished rendering [  0.01s] seed staging.olist_sellers_dataset [success]
+15:41:12.723043 [debug]: Started analyzing seed staging.olist_sellers_dataset
+15:41:12.723057 [info ]:  Succeeded [  0.01s] seed  staging.olist_sellers_dataset (table)
+15:41:12.723068 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+15:41:12.723079 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:41:12.723098 [debug]: Started analyzing analysis staging.raw_orders_item
+15:41:12.723565 [info ]:  Succeeded [  0.01s] analysis staging.raw_orders_item (analysis)
+15:41:12.723575 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:41:12.723585 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:41:12.723600 [debug]: Started analyzing model staging.my_first_dbt_model
+15:41:12.723880 [info ]:  Succeeded [  0.01s] model staging.my_first_dbt_model (table)
+15:41:12.723889 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:41:12.723898 [info ]: Started model staging.my_second_dbt_model
+15:41:12.723904 [debug]: Started rendering model staging.my_second_dbt_model
+15:41:12.723916 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+15:41:12.723934 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+15:41:12.723941 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+15:41:12.724524 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:41:12.724534 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:41:12.726006 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:41:12.726095 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:41:12.726136 [debug]: Started analyzing model staging.my_second_dbt_model
+15:41:12.727068 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+15:41:12.727110 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:41:12.884757 [debug]: Finished rendering [  0.17s] seed staging.olist_products_dataset [success]
+15:41:12.884796 [debug]: Started analyzing seed staging.olist_products_dataset
+15:41:12.884831 [info ]:  Succeeded [  0.17s] seed  staging.olist_products_dataset (table)
+15:41:12.884850 [debug]: Finished analyzing [  0.00s] seed staging.olist_products_dataset [success]
+15:41:12.998099 [debug]: Finished rendering [  0.28s] seed staging.olist_order_payments_dataset [success]
+15:41:12.998129 [debug]: Started analyzing seed staging.olist_order_payments_dataset
+15:41:12.998148 [info ]:  Succeeded [  0.28s] seed  staging.olist_order_payments_dataset (table)
+15:41:12.998158 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_payments_dataset [success]
+15:41:13.049029 [debug]: Finished rendering [  0.33s] seed staging.custormers [success]
+15:41:13.049055 [debug]: Started analyzing seed staging.custormers
+15:41:13.049073 [info ]:  Succeeded [  0.33s] seed  staging.custormers (table)
+15:41:13.049102 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:41:13.079064 [debug]: Finished rendering [  0.36s] seed staging.orders_items [success]
+15:41:13.079088 [debug]: Started analyzing seed staging.orders_items
+15:41:13.079104 [info ]:  Succeeded [  0.36s] seed  staging.orders_items (table)
+15:41:13.079115 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+15:41:13.145091 [debug]: Finished rendering [  0.43s] seed staging.olist_order_reviews_dataset [success]
+15:41:13.145116 [debug]: Started analyzing seed staging.olist_order_reviews_dataset
+15:41:13.145135 [info ]:  Succeeded [  0.43s] seed  staging.olist_order_reviews_dataset (table)
+15:41:13.145146 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_reviews_dataset [success]
+15:41:13.216480 [debug]: Finished rendering [  0.50s] seed staging.olist_orders_dataset [success]
+15:41:13.216496 [info ]: Finished rendering [  0.50s] (12 nodes, 0 skipped, 0 errors)
+15:41:13.216509 [debug]: Started analyzing seed staging.olist_orders_dataset
+15:41:13.216527 [info ]:  Succeeded [  0.50s] seed  staging.olist_orders_dataset (table)
+15:41:13.216539 [debug]: Finished analyzing [  0.00s] seed staging.olist_orders_dataset [success]
+15:41:13.216543 [info ]: Finished analyzing [  0.50s] (12 nodes, 0 skipped, 0 errors)
+15:41:13.220151 [info ]: Cached model count updated: 3 models (accurate)
+15:41:34.317469 [info ]: Started loading project
+15:41:34.318033 [info ]: Loading ~/.dbt/profiles.yml
+15:41:34.321203 [info ]: Started loading project
+15:41:34.321374 [info ]: Loading ~/.dbt/profiles.yml
+15:41:34.321402 [info ]: Finished loading project [  0.00s]
+15:41:34.446883 [debug]:    Started loading packages
+15:41:34.447494 [debug]:     Loaded [  0.00s] packages
+15:41:34.447763 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:41:34.447781 [info ]: Finished loading project [  0.13s]
+15:41:34.447891 [info ]: Started parsing
+15:41:34.461004 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:41:34.461217 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:41:34.461335 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:41:34.472480 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:41:34.472825 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:41:34.474508 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:41:34.475056 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:41:34.475281 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:41:34.475475 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:41:34.475647 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:41:34.475827 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:41:34.476009 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:41:34.476199 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:41:34.476383 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:41:34.476571 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:41:34.476749 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:41:34.476921 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:41:34.478793 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:41:34.479145 [info ]: Finished parsing [  0.03s]
+15:41:34.479235 [info ]: Cached model count updated: 3 models (estimate)
+15:41:34.479241 [info ]: Cached model count updated: 3 models (accurate)
+15:41:34.479262 [info ]: Started scheduling
+15:41:34.479338 [info ]: Finished scheduling [  0.00s]
+15:41:34.479345 [info ]: Started scheduling
+15:41:34.479398 [info ]: Finished scheduling [  0.00s]
+15:41:34.479435 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:41:34.479691 [info ]: Started deferring state
+15:41:34.479696 [info ]: Finished deferring state [  0.00s]
+15:41:34.549647 [info ]: Started building task graph
+15:41:34.549727 [info ]: Finished building task graph [  0.00s]
+15:41:34.549807 [info ]: Started rendering (12 nodes)
+15:41:34.549815 [info ]: Started seed staging.product_category_name_translation
+15:41:34.549824 [debug]: Started rendering seed staging.product_category_name_translation
+15:41:34.549835 [info ]: Started seed staging.orders_payments
+15:41:34.549840 [debug]: Started rendering seed staging.orders_payments
+15:41:34.549849 [info ]: Started seed staging.orders_items
+15:41:34.549854 [debug]: Started rendering seed staging.orders_items
+15:41:34.549861 [info ]: Started seed staging.olist_sellers_dataset
+15:41:34.549867 [debug]: Started rendering seed staging.olist_sellers_dataset
+15:41:34.549875 [info ]: Started seed staging.olist_products_dataset
+15:41:34.549880 [debug]: Started rendering seed staging.olist_products_dataset
+15:41:34.549886 [info ]: Started seed staging.olist_orders_dataset
+15:41:34.549889 [debug]: Started rendering seed staging.olist_orders_dataset
+15:41:34.549896 [info ]: Started seed staging.olist_order_reviews_dataset
+15:41:34.549901 [debug]: Started rendering seed staging.olist_order_reviews_dataset
+15:41:34.549907 [info ]: Started seed staging.custormers
+15:41:34.549911 [debug]: Started rendering seed staging.custormers
+15:41:34.549918 [info ]: Started model staging.stg_orders_item
+15:41:34.549922 [debug]: Started rendering model staging.stg_orders_item
+15:41:34.549928 [info ]: Started model staging.my_first_dbt_model
+15:41:34.549931 [debug]: Started rendering model staging.my_first_dbt_model
+15:41:34.549937 [info ]: Started analysis staging.raw_orders_item
+15:41:34.549944 [debug]: Started rendering analysis staging.raw_orders_item
+15:41:34.551170 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:41:34.551216 [info ]: Started analyzing (12 nodes)
+15:41:34.551224 [debug]: Started analyzing seed staging.product_category_name_translation
+15:41:34.551341 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:41:34.551382 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:41:34.552966 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:41:34.552999 [debug]: Started analyzing model staging.my_first_dbt_model
+15:41:34.553904 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+15:41:34.553921 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:41:34.553931 [info ]: Started model staging.my_second_dbt_model
+15:41:34.553936 [debug]: Started rendering model staging.my_second_dbt_model
+15:41:34.553948 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:41:34.553965 [debug]: Started analyzing analysis staging.raw_orders_item
+15:41:34.554535 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+15:41:34.554545 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:41:34.554562 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:41:34.554909 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:41:34.555650 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:41:34.555915 [debug]: Started analyzing model staging.stg_orders_item
+15:41:34.557957 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:41:34.557999 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:41:34.558023 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+15:41:34.558512 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:41:34.558581 [debug]: Started analyzing model staging.my_second_dbt_model
+15:41:34.559529 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+15:41:34.559573 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:41:34.559600 [debug]: Finished rendering [  0.01s] model staging.my_second_dbt_model [success]
+15:41:34.560484 [debug]: Finished rendering [  0.01s] seed staging.olist_sellers_dataset [success]
+15:41:34.560503 [debug]: Started analyzing seed staging.olist_sellers_dataset
+15:41:34.560517 [info ]:  Succeeded [  0.01s] seed  staging.olist_sellers_dataset (table)
+15:41:34.560527 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+15:41:34.719792 [debug]: Finished rendering [  0.17s] seed staging.olist_products_dataset [success]
+15:41:34.719858 [debug]: Started analyzing seed staging.olist_products_dataset
+15:41:34.719893 [info ]:  Succeeded [  0.17s] seed  staging.olist_products_dataset (table)
+15:41:34.719933 [debug]: Finished analyzing [  0.00s] seed staging.olist_products_dataset [success]
+15:41:34.858963 [debug]: Finished rendering [  0.31s] seed staging.orders_payments [success]
+15:41:34.858989 [debug]: Started analyzing seed staging.orders_payments
+15:41:34.859009 [info ]:  Succeeded [  0.31s] seed  staging.orders_payments (table)
+15:41:34.859020 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+15:41:34.864469 [debug]: Finished rendering [  0.31s] seed staging.custormers [success]
+15:41:34.864488 [debug]: Started analyzing seed staging.custormers
+15:41:34.864505 [info ]:  Succeeded [  0.31s] seed  staging.custormers (table)
+15:41:34.864518 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:41:35.027915 [debug]: Finished rendering [  0.48s] seed staging.orders_items [success]
+15:41:35.027942 [debug]: Started analyzing seed staging.orders_items
+15:41:35.027964 [info ]:  Succeeded [  0.48s] seed  staging.orders_items (table)
+15:41:35.027975 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+15:41:35.031204 [debug]: Finished rendering [  0.48s] seed staging.olist_order_reviews_dataset [success]
+15:41:35.031220 [debug]: Started analyzing seed staging.olist_order_reviews_dataset
+15:41:35.031235 [info ]:  Succeeded [  0.48s] seed  staging.olist_order_reviews_dataset (table)
+15:41:35.031245 [debug]: Finished analyzing [  0.00s] seed staging.olist_order_reviews_dataset [success]
+15:41:35.079624 [debug]: Finished rendering [  0.53s] seed staging.olist_orders_dataset [success]
+15:41:35.079640 [info ]: Finished rendering [  0.53s] (12 nodes, 0 skipped, 0 errors)
+15:41:35.079655 [debug]: Started analyzing seed staging.olist_orders_dataset
+15:41:35.079675 [info ]:  Succeeded [  0.53s] seed  staging.olist_orders_dataset (table)
+15:41:35.079686 [debug]: Finished analyzing [  0.00s] seed staging.olist_orders_dataset [success]
+15:41:35.079690 [info ]: Finished analyzing [  0.53s] (12 nodes, 0 skipped, 0 errors)
+15:41:35.083872 [info ]: Cached model count updated: 3 models (accurate)
+15:41:45.238861 [info ]: Started loading project
+15:41:45.239423 [info ]: Loading ~/.dbt/profiles.yml
+15:41:45.242707 [info ]: Started loading project
+15:41:45.242896 [info ]: Loading ~/.dbt/profiles.yml
+15:41:45.242925 [info ]: Finished loading project [  0.00s]
+15:41:45.369578 [debug]:    Started loading packages
+15:41:45.370102 [debug]:     Loaded [  0.00s] packages
+15:41:45.370375 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:41:45.370393 [info ]: Finished loading project [  0.13s]
+15:41:45.370493 [info ]: Started parsing
+15:41:45.383548 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:41:45.383619 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:41:45.383699 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:41:45.394764 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:41:45.395023 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:41:45.396668 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:41:45.397249 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:41:45.397488 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:41:45.397721 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:41:45.397918 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:41:45.398145 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:41:45.398392 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:41:45.398622 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:41:45.398821 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:41:45.399051 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:41:45.399228 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:41:45.399394 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:41:45.401191 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:41:45.401557 [info ]: Finished parsing [  0.03s]
+15:41:45.401643 [info ]: Cached model count updated: 3 models (estimate)
+15:41:45.401649 [info ]: Cached model count updated: 3 models (accurate)
+15:41:45.401672 [info ]: Started scheduling
+15:41:45.401746 [info ]: Finished scheduling [  0.00s]
+15:41:45.401754 [info ]: Started scheduling
+15:41:45.401806 [info ]: Finished scheduling [  0.00s]
+15:41:45.401846 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:41:45.402089 [info ]: Started deferring state
+15:41:45.402094 [info ]: Finished deferring state [  0.00s]
+15:41:45.468247 [info ]: Started building task graph
+15:41:45.468318 [info ]: Finished building task graph [  0.00s]
+15:41:45.468388 [info ]: Started rendering (12 nodes)
+15:41:45.468396 [info ]: Started seed staging.product_category_name_translation
+15:41:45.468404 [debug]: Started rendering seed staging.product_category_name_translation
+15:41:45.468415 [info ]: Started seed staging.orders_reviews
+15:41:45.468419 [debug]: Started rendering seed staging.orders_reviews
+15:41:45.468427 [info ]: Started seed staging.orders_payments
+15:41:45.468432 [debug]: Started rendering seed staging.orders_payments
+15:41:45.468438 [info ]: Started seed staging.orders_items
+15:41:45.468443 [debug]: Started rendering seed staging.orders_items
+15:41:45.468450 [info ]: Started seed staging.olist_sellers_dataset
+15:41:45.468456 [debug]: Started rendering seed staging.olist_sellers_dataset
+15:41:45.468462 [info ]: Started seed staging.olist_products_dataset
+15:41:45.468466 [debug]: Started rendering seed staging.olist_products_dataset
+15:41:45.468471 [info ]: Started seed staging.olist_orders_dataset
+15:41:45.468475 [debug]: Started rendering seed staging.olist_orders_dataset
+15:41:45.468480 [info ]: Started seed staging.custormers
+15:41:45.468483 [debug]: Started rendering seed staging.custormers
+15:41:45.468489 [info ]: Started model staging.stg_orders_item
+15:41:45.468493 [debug]: Started rendering model staging.stg_orders_item
+15:41:45.468499 [info ]: Started model staging.my_first_dbt_model
+15:41:45.468502 [debug]: Started rendering model staging.my_first_dbt_model
+15:41:45.468508 [info ]: Started analysis staging.raw_orders_item
+15:41:45.468511 [debug]: Started rendering analysis staging.raw_orders_item
+15:41:45.469531 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:41:45.469550 [info ]: Started analyzing (12 nodes)
+15:41:45.469554 [debug]: Started analyzing seed staging.product_category_name_translation
+15:41:45.469569 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:41:45.469580 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:41:45.470883 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:41:45.470906 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:41:45.470914 [debug]: Started analyzing analysis staging.raw_orders_item
+15:41:45.471601 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+15:41:45.471614 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:41:45.471623 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:41:45.471644 [debug]: Started analyzing model staging.stg_orders_item
+15:41:45.472529 [info ]:  Succeeded [  0.00s] model staging.stg_orders_item (table)
+15:41:45.472540 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:41:45.472547 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:41:45.472562 [debug]: Started analyzing model staging.my_first_dbt_model
+15:41:45.472785 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+15:41:45.472793 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:41:45.472803 [info ]: Started model staging.my_second_dbt_model
+15:41:45.472808 [debug]: Started rendering model staging.my_second_dbt_model
+15:41:45.472821 [debug]: Finished rendering [  0.00s] model staging.stg_orders_item [success]
+15:41:45.472831 [debug]: Finished rendering [  0.00s] model staging.my_first_dbt_model [success]
+15:41:45.475613 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:41:45.475635 [debug]: Started analyzing model staging.my_second_dbt_model
+15:41:45.476075 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+15:41:45.476085 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:41:45.476098 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:41:45.479663 [debug]: Finished rendering [  0.01s] seed staging.olist_sellers_dataset [success]
+15:41:45.479682 [debug]: Started analyzing seed staging.olist_sellers_dataset
+15:41:45.479697 [info ]:  Succeeded [  0.01s] seed  staging.olist_sellers_dataset (table)
+15:41:45.479705 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+15:41:45.642089 [debug]: Finished rendering [  0.17s] seed staging.olist_products_dataset [success]
+15:41:45.642115 [debug]: Started analyzing seed staging.olist_products_dataset
+15:41:45.642133 [info ]:  Succeeded [  0.17s] seed  staging.olist_products_dataset (table)
+15:41:45.642151 [debug]: Finished analyzing [  0.00s] seed staging.olist_products_dataset [success]
+15:41:45.752489 [debug]: Finished rendering [  0.28s] seed staging.orders_payments [success]
+15:41:45.752513 [debug]: Started analyzing seed staging.orders_payments
+15:41:45.752531 [info ]:  Succeeded [  0.28s] seed  staging.orders_payments (table)
+15:41:45.752541 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+15:41:45.756718 [debug]: Finished rendering [  0.29s] seed staging.custormers [success]
+15:41:45.756739 [debug]: Started analyzing seed staging.custormers
+15:41:45.756756 [info ]:  Succeeded [  0.29s] seed  staging.custormers (table)
+15:41:45.756766 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:41:45.891404 [debug]: Finished rendering [  0.42s] seed staging.orders_reviews [success]
+15:41:45.891431 [debug]: Started analyzing seed staging.orders_reviews
+15:41:45.891451 [info ]:  Succeeded [  0.42s] seed  staging.orders_reviews (table)
+15:41:45.891461 [debug]: Finished analyzing [  0.00s] seed staging.orders_reviews [success]
+15:41:45.911394 [debug]: Finished rendering [  0.44s] seed staging.orders_items [success]
+15:41:45.911415 [debug]: Started analyzing seed staging.orders_items
+15:41:45.911432 [info ]:  Succeeded [  0.44s] seed  staging.orders_items (table)
+15:41:45.911442 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+15:41:45.971621 [debug]: Finished rendering [  0.50s] seed staging.olist_orders_dataset [success]
+15:41:45.971644 [info ]: Finished rendering [  0.50s] (12 nodes, 0 skipped, 0 errors)
+15:41:45.971658 [debug]: Started analyzing seed staging.olist_orders_dataset
+15:41:45.971679 [info ]:  Succeeded [  0.50s] seed  staging.olist_orders_dataset (table)
+15:41:45.971691 [debug]: Finished analyzing [  0.00s] seed staging.olist_orders_dataset [success]
+15:41:45.971696 [info ]: Finished analyzing [  0.50s] (12 nodes, 0 skipped, 0 errors)
+15:41:45.975488 [info ]: Cached model count updated: 3 models (accurate)
+15:41:55.138453 [info ]: Started loading project
+15:41:55.138779 [info ]: Loading ~/.dbt/profiles.yml
+15:41:55.141023 [info ]: Started loading project
+15:41:55.141170 [info ]: Loading ~/.dbt/profiles.yml
+15:41:55.141188 [info ]: Finished loading project [  0.00s]
+15:41:55.257975 [debug]:    Started loading packages
+15:41:55.258532 [debug]:     Loaded [  0.00s] packages
+15:41:55.258808 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:41:55.258825 [info ]: Finished loading project [  0.12s]
+15:41:55.258924 [info ]: Started parsing
+15:41:55.271982 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:41:55.272120 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:41:55.272366 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:41:55.282605 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:41:55.282891 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:41:55.284611 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:41:55.285358 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:41:55.285587 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:41:55.285869 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:41:55.286089 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:41:55.286299 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:41:55.286496 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:41:55.286672 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:41:55.286839 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:41:55.287001 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:41:55.287232 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:41:55.287396 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:41:55.289157 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:41:55.289499 [info ]: Finished parsing [  0.03s]
+15:41:55.289587 [info ]: Cached model count updated: 3 models (estimate)
+15:41:55.289594 [info ]: Cached model count updated: 3 models (accurate)
+15:41:55.289615 [info ]: Started scheduling
+15:41:55.289690 [info ]: Finished scheduling [  0.00s]
+15:41:55.289698 [info ]: Started scheduling
+15:41:55.289751 [info ]: Finished scheduling [  0.00s]
+15:41:55.289789 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:41:55.290057 [info ]: Started deferring state
+15:41:55.290062 [info ]: Finished deferring state [  0.00s]
+15:41:55.357821 [info ]: Started building task graph
+15:41:55.357894 [info ]: Finished building task graph [  0.00s]
+15:41:55.357965 [info ]: Started rendering (12 nodes)
+15:41:55.357972 [info ]: Started seed staging.product_category_name_translation
+15:41:55.357980 [debug]: Started rendering seed staging.product_category_name_translation
+15:41:55.357991 [info ]: Started seed staging.orders_reviews
+15:41:55.357995 [debug]: Started rendering seed staging.orders_reviews
+15:41:55.358003 [info ]: Started seed staging.orders_payments
+15:41:55.358009 [debug]: Started rendering seed staging.orders_payments
+15:41:55.358014 [info ]: Started seed staging.orders_items
+15:41:55.358019 [debug]: Started rendering seed staging.orders_items
+15:41:55.358026 [info ]: Started seed staging.orders
+15:41:55.358031 [debug]: Started rendering seed staging.orders
+15:41:55.358036 [info ]: Started seed staging.olist_sellers_dataset
+15:41:55.358041 [debug]: Started rendering seed staging.olist_sellers_dataset
+15:41:55.358047 [info ]: Started seed staging.olist_products_dataset
+15:41:55.358051 [debug]: Started rendering seed staging.olist_products_dataset
+15:41:55.358056 [info ]: Started seed staging.custormers
+15:41:55.358060 [debug]: Started rendering seed staging.custormers
+15:41:55.358066 [info ]: Started model staging.stg_orders_item
+15:41:55.358070 [debug]: Started rendering model staging.stg_orders_item
+15:41:55.358076 [info ]: Started model staging.my_first_dbt_model
+15:41:55.358080 [debug]: Started rendering model staging.my_first_dbt_model
+15:41:55.358086 [info ]: Started analysis staging.raw_orders_item
+15:41:55.358089 [debug]: Started rendering analysis staging.raw_orders_item
+15:41:55.359925 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:41:55.359937 [info ]: Started analyzing (12 nodes)
+15:41:55.359940 [debug]: Started analyzing seed staging.product_category_name_translation
+15:41:55.359955 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:41:55.359966 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:41:55.360473 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:41:55.360544 [debug]: Started analyzing analysis staging.raw_orders_item
+15:41:55.362431 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+15:41:55.362495 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:41:55.362554 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:41:55.362681 [debug]: Started analyzing model staging.stg_orders_item
+15:41:55.365166 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:41:55.365184 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:41:55.365204 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:41:55.365232 [debug]: Started analyzing model staging.my_first_dbt_model
+15:41:55.365610 [info ]:  Succeeded [  0.01s] model staging.my_first_dbt_model (table)
+15:41:55.365621 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:41:55.365632 [info ]: Started model staging.my_second_dbt_model
+15:41:55.365637 [debug]: Started rendering model staging.my_second_dbt_model
+15:41:55.365653 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+15:41:55.365662 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+15:41:55.365694 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+15:41:55.366734 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:41:55.366801 [debug]: Started analyzing model staging.my_second_dbt_model
+15:41:55.367545 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+15:41:55.367594 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:41:55.368369 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:41:55.372533 [debug]: Finished rendering [  0.01s] seed staging.olist_sellers_dataset [success]
+15:41:55.372571 [debug]: Started analyzing seed staging.olist_sellers_dataset
+15:41:55.372597 [info ]:  Succeeded [  0.01s] seed  staging.olist_sellers_dataset (table)
+15:41:55.372623 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+15:41:55.518800 [debug]: Finished rendering [  0.16s] seed staging.olist_products_dataset [success]
+15:41:55.518822 [debug]: Started analyzing seed staging.olist_products_dataset
+15:41:55.518839 [info ]:  Succeeded [  0.16s] seed  staging.olist_products_dataset (table)
+15:41:55.518847 [debug]: Finished analyzing [  0.00s] seed staging.olist_products_dataset [success]
+15:41:55.585233 [debug]: Finished rendering [  0.23s] seed staging.orders_payments [success]
+15:41:55.585265 [debug]: Started analyzing seed staging.orders_payments
+15:41:55.585284 [info ]:  Succeeded [  0.23s] seed  staging.orders_payments (table)
+15:41:55.585299 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+15:41:55.645528 [debug]: Finished rendering [  0.29s] seed staging.custormers [success]
+15:41:55.645552 [debug]: Started analyzing seed staging.custormers
+15:41:55.645570 [info ]:  Succeeded [  0.29s] seed  staging.custormers (table)
+15:41:55.645580 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:41:55.759946 [debug]: Finished rendering [  0.40s] seed staging.orders_reviews [success]
+15:41:55.759971 [debug]: Started analyzing seed staging.orders_reviews
+15:41:55.759991 [info ]:  Succeeded [  0.40s] seed  staging.orders_reviews (table)
+15:41:55.760001 [debug]: Finished analyzing [  0.00s] seed staging.orders_reviews [success]
+15:41:55.780888 [debug]: Finished rendering [  0.42s] seed staging.orders_items [success]
+15:41:55.780912 [debug]: Started analyzing seed staging.orders_items
+15:41:55.780932 [info ]:  Succeeded [  0.42s] seed  staging.orders_items (table)
+15:41:55.780943 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+15:41:55.845285 [debug]: Finished rendering [  0.49s] seed staging.orders [success]
+15:41:55.845300 [info ]: Finished rendering [  0.49s] (12 nodes, 0 skipped, 0 errors)
+15:41:55.845312 [debug]: Started analyzing seed staging.orders
+15:41:55.845330 [info ]:  Succeeded [  0.49s] seed  staging.orders (table)
+15:41:55.845340 [debug]: Finished analyzing [  0.00s] seed staging.orders [success]
+15:41:55.845344 [info ]: Finished analyzing [  0.49s] (12 nodes, 0 skipped, 0 errors)
+15:41:55.849131 [info ]: Cached model count updated: 3 models (accurate)
+15:42:04.732920 [info ]: Started loading project
+15:42:04.733459 [info ]: Loading ~/.dbt/profiles.yml
+15:42:04.736544 [info ]: Started loading project
+15:42:04.736725 [info ]: Loading ~/.dbt/profiles.yml
+15:42:04.736753 [info ]: Finished loading project [  0.00s]
+15:42:04.862453 [debug]:    Started loading packages
+15:42:04.862949 [debug]:     Loaded [  0.00s] packages
+15:42:04.863210 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:42:04.863227 [info ]: Finished loading project [  0.13s]
+15:42:04.863331 [info ]: Started parsing
+15:42:04.876200 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:42:04.876270 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:42:04.876348 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:42:04.886893 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:42:04.887123 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:42:04.888825 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:42:04.889370 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:42:04.889574 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:42:04.889749 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:42:04.889963 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:42:04.890169 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:42:04.890337 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:42:04.890513 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:42:04.890682 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:42:04.890844 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:42:04.891091 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:42:04.891291 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:42:04.893243 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:42:04.893572 [info ]: Finished parsing [  0.03s]
+15:42:04.893656 [info ]: Cached model count updated: 3 models (estimate)
+15:42:04.893662 [info ]: Cached model count updated: 3 models (accurate)
+15:42:04.893684 [info ]: Started scheduling
+15:42:04.893753 [info ]: Finished scheduling [  0.00s]
+15:42:04.893761 [info ]: Started scheduling
+15:42:04.893806 [info ]: Finished scheduling [  0.00s]
+15:42:04.893839 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:42:04.894070 [info ]: Started deferring state
+15:42:04.894074 [info ]: Finished deferring state [  0.00s]
+15:42:04.959812 [info ]: Started building task graph
+15:42:04.959885 [info ]: Finished building task graph [  0.00s]
+15:42:04.959955 [info ]: Started rendering (12 nodes)
+15:42:04.959963 [info ]: Started seed staging.products
+15:42:04.959970 [debug]: Started rendering seed staging.products
+15:42:04.959981 [info ]: Started seed staging.product_category_name_translation
+15:42:04.959986 [debug]: Started rendering seed staging.product_category_name_translation
+15:42:04.959995 [info ]: Started seed staging.orders_reviews
+15:42:04.960001 [debug]: Started rendering seed staging.orders_reviews
+15:42:04.960007 [info ]: Started seed staging.orders_payments
+15:42:04.960012 [debug]: Started rendering seed staging.orders_payments
+15:42:04.960020 [info ]: Started seed staging.orders_items
+15:42:04.960024 [debug]: Started rendering seed staging.orders_items
+15:42:04.960030 [info ]: Started seed staging.orders
+15:42:04.960033 [debug]: Started rendering seed staging.orders
+15:42:04.960042 [info ]: Started seed staging.olist_sellers_dataset
+15:42:04.960046 [debug]: Started rendering seed staging.olist_sellers_dataset
+15:42:04.960051 [info ]: Started seed staging.custormers
+15:42:04.960055 [debug]: Started rendering seed staging.custormers
+15:42:04.960061 [info ]: Started model staging.stg_orders_item
+15:42:04.960065 [debug]: Started rendering model staging.stg_orders_item
+15:42:04.960070 [info ]: Started model staging.my_first_dbt_model
+15:42:04.960075 [debug]: Started rendering model staging.my_first_dbt_model
+15:42:04.960081 [info ]: Started analysis staging.raw_orders_item
+15:42:04.960085 [debug]: Started rendering analysis staging.raw_orders_item
+15:42:04.961082 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:42:04.961099 [info ]: Started analyzing (12 nodes)
+15:42:04.961103 [debug]: Started analyzing seed staging.product_category_name_translation
+15:42:04.961122 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:42:04.961136 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:42:04.962782 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:42:04.962842 [debug]: Started analyzing model staging.my_first_dbt_model
+15:42:04.965078 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+15:42:04.965120 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:42:04.965143 [info ]: Started model staging.my_second_dbt_model
+15:42:04.965176 [debug]: Started rendering model staging.my_second_dbt_model
+15:42:04.965222 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+15:42:04.965333 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:42:04.965400 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+15:42:04.965433 [debug]: Started analyzing analysis staging.raw_orders_item
+15:42:04.966787 [info ]:  Succeeded [  0.01s] analysis staging.raw_orders_item (analysis)
+15:42:04.966831 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:42:04.966899 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:42:04.966953 [debug]: Started analyzing model staging.stg_orders_item
+15:42:04.968815 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:42:04.968829 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:42:04.968838 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+15:42:04.971215 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:42:04.971265 [debug]: Started analyzing model staging.my_second_dbt_model
+15:42:04.971931 [debug]: Finished rendering [  0.01s] seed staging.olist_sellers_dataset [success]
+15:42:04.971944 [debug]: Started analyzing seed staging.olist_sellers_dataset
+15:42:04.971956 [info ]:  Succeeded [  0.01s] seed  staging.olist_sellers_dataset (table)
+15:42:04.971964 [debug]: Finished analyzing [  0.00s] seed staging.olist_sellers_dataset [success]
+15:42:04.971976 [debug]: Finished rendering [  0.01s] model staging.my_second_dbt_model [success]
+15:42:04.972055 [info ]:  Succeeded [  0.01s] model staging.my_second_dbt_model (view)
+15:42:04.972078 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:42:05.135051 [debug]: Finished rendering [  0.18s] seed staging.products [success]
+15:42:05.135079 [debug]: Started analyzing seed staging.products
+15:42:05.135099 [info ]:  Succeeded [  0.17s] seed  staging.products (table)
+15:42:05.135110 [debug]: Finished analyzing [  0.00s] seed staging.products [success]
+15:42:05.223425 [debug]: Finished rendering [  0.26s] seed staging.custormers [success]
+15:42:05.223453 [debug]: Started analyzing seed staging.custormers
+15:42:05.223473 [info ]:  Succeeded [  0.26s] seed  staging.custormers (table)
+15:42:05.223486 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:42:05.246380 [debug]: Finished rendering [  0.29s] seed staging.orders_payments [success]
+15:42:05.246407 [debug]: Started analyzing seed staging.orders_payments
+15:42:05.246424 [info ]:  Succeeded [  0.29s] seed  staging.orders_payments (table)
+15:42:05.246435 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+15:42:05.351941 [debug]: Finished rendering [  0.39s] seed staging.orders_reviews [success]
+15:42:05.351971 [debug]: Started analyzing seed staging.orders_reviews
+15:42:05.351991 [info ]:  Succeeded [  0.39s] seed  staging.orders_reviews (table)
+15:42:05.352001 [debug]: Finished analyzing [  0.00s] seed staging.orders_reviews [success]
+15:42:05.408979 [debug]: Finished rendering [  0.45s] seed staging.orders_items [success]
+15:42:05.409003 [debug]: Started analyzing seed staging.orders_items
+15:42:05.409023 [info ]:  Succeeded [  0.45s] seed  staging.orders_items (table)
+15:42:05.409033 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+15:42:05.468499 [debug]: Finished rendering [  0.51s] seed staging.orders [success]
+15:42:05.468515 [info ]: Finished rendering [  0.51s] (12 nodes, 0 skipped, 0 errors)
+15:42:05.468527 [debug]: Started analyzing seed staging.orders
+15:42:05.468546 [info ]:  Succeeded [  0.51s] seed  staging.orders (table)
+15:42:05.468557 [debug]: Finished analyzing [  0.00s] seed staging.orders [success]
+15:42:05.468560 [info ]: Finished analyzing [  0.51s] (12 nodes, 0 skipped, 0 errors)
+15:42:05.472347 [info ]: Cached model count updated: 3 models (accurate)
+15:42:15.875731 [info ]: Started loading project
+15:42:15.876315 [info ]: Loading ~/.dbt/profiles.yml
+15:42:15.879655 [info ]: Started loading project
+15:42:15.879859 [info ]: Loading ~/.dbt/profiles.yml
+15:42:15.879886 [info ]: Finished loading project [  0.00s]
+15:42:16.004557 [debug]:    Started loading packages
+15:42:16.005106 [debug]:     Loaded [  0.00s] packages
+15:42:16.005375 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:42:16.005394 [info ]: Finished loading project [  0.13s]
+15:42:16.005495 [info ]: Started parsing
+15:42:16.018516 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+15:42:16.018627 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+15:42:16.018711 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+15:42:16.029375 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+15:42:16.029680 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+15:42:16.031337 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+15:42:16.031924 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:42:16.032149 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+15:42:16.032412 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+15:42:16.032588 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+15:42:16.032820 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+15:42:16.033176 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+15:42:16.033403 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+15:42:16.033613 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+15:42:16.033801 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+15:42:16.034003 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+15:42:16.034190 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+15:42:16.036073 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+15:42:16.036385 [info ]: Finished parsing [  0.03s]
+15:42:16.036471 [info ]: Cached model count updated: 3 models (estimate)
+15:42:16.036477 [info ]: Cached model count updated: 3 models (accurate)
+15:42:16.036501 [info ]: Started scheduling
+15:42:16.036573 [info ]: Finished scheduling [  0.00s]
+15:42:16.036580 [info ]: Started scheduling
+15:42:16.036630 [info ]: Finished scheduling [  0.00s]
+15:42:16.036667 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+15:42:16.036905 [info ]: Started deferring state
+15:42:16.036910 [info ]: Finished deferring state [  0.00s]
+15:42:16.104745 [info ]: Started building task graph
+15:42:16.104831 [info ]: Finished building task graph [  0.00s]
+15:42:16.104913 [info ]: Started rendering (12 nodes)
+15:42:16.104921 [info ]: Started seed staging.sellers
+15:42:16.104928 [debug]: Started rendering seed staging.sellers
+15:42:16.104939 [info ]: Started seed staging.products
+15:42:16.104943 [debug]: Started rendering seed staging.products
+15:42:16.104953 [info ]: Started seed staging.product_category_name_translation
+15:42:16.104959 [debug]: Started rendering seed staging.product_category_name_translation
+15:42:16.104965 [info ]: Started seed staging.orders_reviews
+15:42:16.104970 [debug]: Started rendering seed staging.orders_reviews
+15:42:16.104978 [info ]: Started seed staging.orders_payments
+15:42:16.104983 [debug]: Started rendering seed staging.orders_payments
+15:42:16.104987 [info ]: Started seed staging.orders_items
+15:42:16.104991 [debug]: Started rendering seed staging.orders_items
+15:42:16.104996 [info ]: Started seed staging.orders
+15:42:16.104999 [debug]: Started rendering seed staging.orders
+15:42:16.105004 [info ]: Started seed staging.custormers
+15:42:16.105008 [debug]: Started rendering seed staging.custormers
+15:42:16.105014 [info ]: Started model staging.stg_orders_item
+15:42:16.105018 [debug]: Started rendering model staging.stg_orders_item
+15:42:16.105024 [info ]: Started model staging.my_first_dbt_model
+15:42:16.105027 [debug]: Started rendering model staging.my_first_dbt_model
+15:42:16.105034 [info ]: Started analysis staging.raw_orders_item
+15:42:16.105038 [debug]: Started rendering analysis staging.raw_orders_item
+15:42:16.106030 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+15:42:16.106046 [info ]: Started analyzing (12 nodes)
+15:42:16.106050 [debug]: Started analyzing seed staging.product_category_name_translation
+15:42:16.106064 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+15:42:16.106074 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+15:42:16.107270 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:42:16.107390 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:42:16.107402 [debug]: Started analyzing analysis staging.raw_orders_item
+15:42:16.107899 [info ]:  Succeeded [  0.00s] analysis staging.raw_orders_item (analysis)
+15:42:16.107910 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:42:16.107922 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+15:42:16.108179 [debug]: Started analyzing model staging.my_first_dbt_model
+15:42:16.108952 [info ]:  Succeeded [  0.00s] model staging.my_first_dbt_model (table)
+15:42:16.108987 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+15:42:16.109013 [info ]: Started model staging.my_second_dbt_model
+15:42:16.109025 [debug]: Started rendering model staging.my_second_dbt_model
+15:42:16.109050 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+15:42:16.109112 [debug]: Started analyzing model staging.stg_orders_item
+15:42:16.111306 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+15:42:16.111317 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+15:42:16.111331 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+15:42:16.111360 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+15:42:16.112782 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+15:42:16.112839 [debug]: Started analyzing model staging.my_second_dbt_model
+15:42:16.113829 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+15:42:16.113839 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+15:42:16.113853 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+15:42:16.116710 [debug]: Finished rendering [  0.01s] seed staging.sellers [success]
+15:42:16.116756 [debug]: Started analyzing seed staging.sellers
+15:42:16.116790 [info ]:  Succeeded [  0.01s] seed  staging.sellers (table)
+15:42:16.116822 [debug]: Finished analyzing [  0.00s] seed staging.sellers [success]
+15:42:16.231339 [debug]: Finished rendering [  0.13s] seed staging.products [success]
+15:42:16.231377 [debug]: Started analyzing seed staging.products
+15:42:16.231397 [info ]:  Succeeded [  0.13s] seed  staging.products (table)
+15:42:16.231419 [debug]: Finished analyzing [  0.00s] seed staging.products [success]
+15:42:16.432929 [debug]: Finished rendering [  0.33s] seed staging.custormers [success]
+15:42:16.433000 [debug]: Started analyzing seed staging.custormers
+15:42:16.433033 [info ]:  Succeeded [  0.33s] seed  staging.custormers (table)
+15:42:16.433053 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+15:42:16.462641 [debug]: Finished rendering [  0.36s] seed staging.orders_payments [success]
+15:42:16.462668 [debug]: Started analyzing seed staging.orders_payments
+15:42:16.462687 [info ]:  Succeeded [  0.36s] seed  staging.orders_payments (table)
+15:42:16.462698 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+15:42:16.593222 [debug]: Finished rendering [  0.49s] seed staging.orders_items [success]
+15:42:16.593248 [debug]: Started analyzing seed staging.orders_items
+15:42:16.593275 [info ]:  Succeeded [  0.49s] seed  staging.orders_items (table)
+15:42:16.593285 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+15:42:16.594894 [debug]: Finished rendering [  0.49s] seed staging.orders_reviews [success]
+15:42:16.594908 [debug]: Started analyzing seed staging.orders_reviews
+15:42:16.594926 [info ]:  Succeeded [  0.49s] seed  staging.orders_reviews (table)
+15:42:16.594935 [debug]: Finished analyzing [  0.00s] seed staging.orders_reviews [success]
+15:42:16.653089 [debug]: Finished rendering [  0.55s] seed staging.orders [success]
+15:42:16.653102 [info ]: Finished rendering [  0.55s] (12 nodes, 0 skipped, 0 errors)
+15:42:16.653114 [debug]: Started analyzing seed staging.orders
+15:42:16.653134 [info ]:  Succeeded [  0.55s] seed  staging.orders (table)
+15:42:16.653146 [debug]: Finished analyzing [  0.00s] seed staging.orders [success]
+15:42:16.653150 [info ]: Finished analyzing [  0.55s] (12 nodes, 0 skipped, 0 errors)
+15:42:16.656972 [info ]: Cached model count updated: 3 models (accurate)
+15:44:32.678091 [info ]: Started loading project
+15:44:32.678440 [info ]: Loading ~/.dbt/profiles.yml
+15:44:32.683366 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+15:44:32.683458 [info ]: Finished loading project [  0.01s]
+15:44:32.685034 [info ]: Started parsing
+15:44:32.701296 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+15:44:32.702167 [info ]: Finished parsing [  0.02s]
+15:44:32.703053 [info ]: Cached model count updated: 3 models (estimate)
+15:44:32.703064 [info ]: Cached model count updated: 3 models (accurate)
+15:44:32.703112 [info ]: Started scheduling
+15:44:32.703947 [info ]: Finished scheduling [  0.00s]
+15:44:32.703959 [debug]: Incremental compilation - 1 nodes selected: {"analysis.olist_analytics.raw_orders_item"}
+15:44:32.704314 [info ]: Started deferring state
+15:44:32.704321 [info ]: Finished deferring state [  0.00s]
+15:44:32.783589 [info ]: Started building task graph
+15:44:32.783637 [info ]: Finished building task graph [  0.00s]
+15:44:32.783706 [info ]: Started rendering (1 nodes)
+15:44:32.783716 [info ]: Started analysis staging.raw_orders_item
+15:44:32.783724 [debug]: Started rendering analysis staging.raw_orders_item
+15:44:32.784197 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+15:44:32.784226 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+15:44:32.784232 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:44:32.784242 [info ]: Started analyzing (1 nodes)
+15:44:32.784246 [debug]: Started analyzing analysis staging.raw_orders_item
+15:44:32.784733 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+15:44:32.784743 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+15:44:32.784747 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:44:32.787830 [info ]: Cached model count updated: 3 models (accurate)
+19:05:39.536860 [info ]: Started loading project
+19:05:39.538109 [info ]: Loading ~/.dbt/profiles.yml
+19:05:39.543180 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+19:05:39.543215 [info ]: Finished loading project [  0.01s]
+19:05:39.544207 [info ]: Started parsing
+19:05:39.563750 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+19:05:39.564321 [info ]: Finished parsing [  0.02s]
+19:05:39.565278 [info ]: Cached model count updated: 3 models (estimate)
+19:05:39.565286 [info ]: Cached model count updated: 3 models (accurate)
+19:05:39.565342 [info ]: Started scheduling
+19:05:39.565436 [info ]: Finished scheduling [  0.00s]
+19:05:39.565445 [debug]: Incremental compilation - 1 nodes selected: {"analysis.olist_analytics.raw_orders_item"}
+19:05:39.565747 [info ]: Started deferring state
+19:05:39.565754 [info ]: Finished deferring state [  0.00s]
+19:05:39.640877 [info ]: Started building task graph
+19:05:39.640929 [info ]: Finished building task graph [  0.00s]
+19:05:39.641005 [info ]: Started rendering (1 nodes)
+19:05:39.641014 [info ]: Started analysis staging.raw_orders_item
+19:05:39.641022 [debug]: Started rendering analysis staging.raw_orders_item
+19:05:39.641886 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+19:05:39.641918 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+19:05:39.641925 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+19:05:39.641935 [info ]: Started analyzing (1 nodes)
+19:05:39.641940 [debug]: Started analyzing analysis staging.raw_orders_item
+19:05:39.642771 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+19:05:39.642784 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+19:05:39.642788 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+19:05:39.649416 [info ]: Cached model count updated: 3 models (accurate)
+19:05:58.128575 [info ]: Started loading project
+19:05:58.129079 [info ]: Loading ~/.dbt/profiles.yml
+19:05:58.131748 [warn ]: dbt1007: `--compute inline` is not supported for adapter 'bigquery'. Falling back to `--compute remote`.
+19:05:58.131778 [info ]: Finished loading project [  0.00s]
+19:05:58.132797 [info ]: Started parsing
+19:05:58.152399 [debug]: Finished parsing analyses/exploration/raw_orders_item.sql [  0.00s]
+19:05:58.152927 [info ]: Finished parsing [  0.02s]
+19:05:58.153831 [info ]: Cached model count updated: 3 models (estimate)
+19:05:58.153840 [info ]: Cached model count updated: 3 models (accurate)
+19:05:58.153878 [info ]: Started scheduling
+19:05:58.153966 [info ]: Finished scheduling [  0.00s]
+19:05:58.153977 [debug]: Incremental compilation - 1 nodes selected: {"analysis.olist_analytics.raw_orders_item"}
+19:05:58.154304 [info ]: Started deferring state
+19:05:58.154311 [info ]: Finished deferring state [  0.00s]
+19:05:58.231996 [info ]: Started building task graph
+19:05:58.232042 [info ]: Finished building task graph [  0.00s]
+19:05:58.232102 [info ]: Started rendering (1 nodes)
+19:05:58.232120 [info ]: Started analysis staging.raw_orders_item
+19:05:58.232128 [debug]: Started rendering analysis staging.raw_orders_item
+19:05:58.232616 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/exploration/raw_orders_item.sql
+19:05:58.232643 [debug]: Finished rendering [  0.00s] analysis staging.raw_orders_item [success]
+19:05:58.232650 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+19:05:58.232659 [info ]: Started analyzing (1 nodes)
+19:05:58.232664 [debug]: Started analyzing analysis staging.raw_orders_item
+19:05:58.233078 [info ]:  Succeeded [-------] analysis staging.raw_orders_item (analysis)
+19:05:58.233090 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+19:05:58.233093 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+19:05:58.236631 [info ]: Cached model count updated: 3 models (accurate)

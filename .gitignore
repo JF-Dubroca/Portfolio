@@ -2,3 +2,7 @@ venv/
 targat/
 dbt-packages/
 logs/
+olist_analytics/olist-e-commerce-analytics-jfd-7553988f5727.json
+.DS_Store
+*.csv
+dev.db
