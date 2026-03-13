@@ -7,3 +7,17 @@ sources:
     tables: 
       - name: orders_item
         description: "Order items raw table"
+      - name: categories
+        description: "Categories name in spanish and in English"
+      - name: customer
+        description:"Customers id, zip code, customers city and custoemer state"
+      - name: orders_dataset
+        description: "order id, order status, order delivery date"
+      - name: orders_payments
+        description: "order id, order payment mode, payment value"
+      - name: orders_reviews
+        description: "orders review"
+      - name: products
+        description: "products characteristics"
+      - name: sellers
+        description: "sellers city and state"
