@@ -1,0 +1,1 @@
+{{ test_unique(column_name="product_category_name_english", model=get_where_subquery(ref('stg_categories'))) }}

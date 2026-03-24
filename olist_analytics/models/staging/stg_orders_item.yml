@@ -2,26 +2,34 @@ version: 2
 
 models: 
   - name: stg_orders_item
-    description: "cleaned orders_item table"
+    description: "Cleaned orders_item table"
+
+    data_tests: 
+      - dbt_utils.unique_combination_of_columns: 
+          arguments:
+            combination_of_columns:
+              - order_id
+              - order_item_id 
+
     columns:
       - name: order_id
-        tests:
+        data_tests:
           - not_null
       - name: order_item_id
-        tests:
+        data_tests:
           - not_null
       - name: product_id
-        tests:
+        data_tests:
           - not_null
       - name: seller_id
-        tests:
+        data_tests:
           - not_null
       - name: shipping_limit_date
-        tests:
+        data_tests:
           - not_null
       - name: price
-        tests:
+        data_tests:
           - not_null
       - name: freight_value
-        tests:
+        data_tests:
           - not_null

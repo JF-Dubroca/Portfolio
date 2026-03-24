@@ -1,0 +1,1 @@
+{{ test_category_name_english_too_long(column_name="product_category_name_english", model=get_where_subquery(ref('stg_categories'))) }}

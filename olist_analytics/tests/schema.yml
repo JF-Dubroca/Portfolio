@@ -1,0 +1,6 @@
+data_tests: 
+  - name: category_name_too_long
+    description: "Return value of product_category_name with more than 50 characters"
+  
+  - name: category_name_english_too_long  
+    description: "Return value of product_category_name_english with more than 50 characters"
