@@ -37,3 +37,19 @@ SELECT
     COUNT(DISTINCT (customer_id, customer_unique_id)) AS both_number
 FROM {{source ('raw', 'customer')}}
 -- Primary key = customer_id
+
+-- customer_zip_code_prefix extrems values
+SELECT 
+    MAX(customer_zip_code_prefix) AS max_customer_zip_code_prefix, 
+    MIN(customer_zip_code_prefix) AS min_customer_zip_code_prefix
+FROM {{source ('raw', 'customer')}}
+-- max_customer_zip_code_prefix = 99990
+-- min_customer_zip_code_prefix = 1003
+-- No aberrant value
+
+-- customer_state exploration
+SELECT DISTINCT(customer_state) FROM {{source ('raw', 'customer')}}
+SELECT MAX(LEN(customer_state)) AS max_lenght FROM {{source ('raw', 'customer')}}
+-- 27 unique values, max lenght = 2
+
+-- Does customer_zip_code_prefix, customer_city and customer_state should be limited in characters? 

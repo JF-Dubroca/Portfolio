@@ -128,5 +128,83 @@
         "index": 1214
       }
     }
+  },
+  {
+    "macro_span": {
+      "start": {
+        "line": 45,
+        "col": 6,
+        "index": 1340
+      },
+      "stop": {
+        "line": 45,
+        "col": 36,
+        "index": 1370
+      }
+    },
+    "expanded_span": {
+      "start": {
+        "line": 45,
+        "col": 6,
+        "index": 1435
+      },
+      "stop": {
+        "line": 45,
+        "col": 55,
+        "index": 1484
+      }
+    }
+  },
+  {
+    "macro_span": {
+      "start": {
+        "line": 51,
+        "col": 38,
+        "index": 1539
+      },
+      "stop": {
+        "line": 51,
+        "col": 68,
+        "index": 1569
+      }
+    },
+    "expanded_span": {
+      "start": {
+        "line": 51,
+        "col": 38,
+        "index": 1653
+      },
+      "stop": {
+        "line": 51,
+        "col": 87,
+        "index": 1702
+      }
+    }
+  },
+  {
+    "macro_span": {
+      "start": {
+        "line": 52,
+        "col": 52,
+        "index": 1621
+      },
+      "stop": {
+        "line": 52,
+        "col": 82,
+        "index": 1651
+      }
+    },
+    "expanded_span": {
+      "start": {
+        "line": 52,
+        "col": 52,
+        "index": 1754
+      },
+      "stop": {
+        "line": 52,
+        "col": 101,
+        "index": 1803
+      }
+    }
   }
 ]

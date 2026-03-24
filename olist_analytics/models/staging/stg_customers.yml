@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned customers table from raw table"
+
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        data_tests:
+          - not_null
+          - unique
+      - name: customer_unique_id
+        description: "Unique customer ID"
+        data_tests: 
+          - not_null
+      - name: customer_zip_code_prefix
+        data_tests: 
+          - not_null
+      - name: customer_city
+        data_tests: 
+          - not_null
+      - name: customer_state
+        data_tests:
+          - not_null

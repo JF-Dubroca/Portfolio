@@ -37,3 +37,19 @@ SELECT
     COUNT(DISTINCT (customer_id, customer_unique_id)) AS both_number
 FROM `olist-e-commerce-analytics-jfd`.`raw`.`customer`
 -- Primary key = customer_id
+
+-- customer_zip_code_prefix extrems values
+SELECT 
+    MAX(customer_zip_code_prefix) AS max_customer_zip_code_prefix, 
+    MIN(customer_zip_code_prefix) AS min_customer_zip_code_prefix
+FROM `olist-e-commerce-analytics-jfd`.`raw`.`customer`
+-- max_customer_zip_code_prefix = 99990
+-- min_customer_zip_code_prefix = 1003
+-- No aberrant value
+
+-- customer_state exploration
+SELECT DISTINCT(customer_state) FROM `olist-e-commerce-analytics-jfd`.`raw`.`customer`
+SELECT MAX(LEN(customer_state)) AS max_lenght FROM `olist-e-commerce-analytics-jfd`.`raw`.`customer`
+-- 27 unique values, max lenght = 2
+
+-- Does customer_zip_code_prefix, customer_city and customer_state should be limited in characters? 

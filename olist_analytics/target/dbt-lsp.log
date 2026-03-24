@@ -9308,3 +9308,795 @@ To suppress this warning, add to dbt_project.yml:
 14:03:50.732670 [debug]: Finished analyzing [  0.00s] seed staging.orders [success]
 14:03:50.732673 [info ]: Finished analyzing [  0.19s] (15 nodes, 0 skipped, 0 errors)
 14:03:50.737043 [info ]: Cached model count updated: 4 models (accurate)
+14:12:33.607024 [info ]: Started loading project
+14:12:33.607653 [info ]: Loading ~/.dbt/profiles.yml
+14:12:33.614347 [info ]: Started parsing
+14:12:33.655888 [info ]: Finished loading project [  0.05s]
+14:12:33.656632 [debug]: Finished parsing models/staging/stg_categories.yml [  0.00s]
+14:12:33.663335 [debug]: Finished parsing models/staging/stg_categories.sql [  0.01s]
+14:12:33.663811 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name.sql [  0.00s]
+14:12:33.664141 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name.sql [  0.00s]
+14:12:33.664345 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name_english.sql [  0.00s]
+14:12:33.665194 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name_english.sql [  0.00s]
+14:12:33.665723 [info ]: Finished parsing [  0.05s]
+14:12:33.666504 [info ]: Cached model count updated: 4 models (estimate)
+14:12:33.666510 [info ]: Cached model count updated: 4 models (accurate)
+14:12:33.666574 [info ]: Started scheduling
+14:12:33.666685 [info ]: Finished scheduling [  0.00s]
+14:12:33.666690 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_categories"}
+14:12:33.769081 [info ]: Started building task graph
+14:12:33.769125 [info ]: Finished building task graph [  0.00s]
+14:12:33.769205 [info ]: Started rendering (1 nodes)
+14:12:33.769215 [info ]: Started model staging.stg_categories
+14:12:33.769222 [debug]: Started rendering model staging.stg_categories
+14:12:33.769759 [debug]: Compiled SQL for node model.olist_analytics.stg_categories at target/.lsp/compiled/models/staging/stg_categories.sql
+14:12:33.769837 [debug]: Finished rendering [  0.00s] model staging.stg_categories [success]
+14:12:33.769845 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:12:33.769855 [info ]: Started analyzing (1 nodes)
+14:12:33.769861 [debug]: Started analyzing model staging.stg_categories
+14:12:33.772156 [error]: dbt0101: no viable alternative at input 'CATS(TRIM(product_category_name_english) AS'
+  --> models/staging/stg_categories.sql:13:50 (target/.lsp/compiled/models/staging/stg_categories.sql:11:50)
+14:12:33.772169 [info ]:     Failed [  0.00s] model staging.stg_categories (table)
+14:12:33.776398 [info ]: Cached model count updated: 4 models (accurate)
+14:12:33.776417 [debug]: Finished analyzing [  0.01s] model staging.stg_categories [error]
+14:12:33.776425 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+14:12:34.181872 [info ]: Started loading project
+14:12:34.182413 [info ]: Loading ~/.dbt/profiles.yml
+14:12:34.187919 [info ]: Started parsing
+14:12:34.208063 [info ]: Finished loading project [  0.03s]
+14:12:34.209659 [info ]: Finished parsing [  0.02s]
+14:12:34.210596 [info ]: Cached model count updated: 4 models (estimate)
+14:12:34.210604 [info ]: Cached model count updated: 4 models (accurate)
+14:12:34.210657 [info ]: Started scheduling
+14:12:34.210711 [info ]: Finished scheduling [  0.00s]
+14:12:34.210718 [debug]: Compilation - 0 nodes selected: {}
+14:12:34.210727 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+14:12:34.210733 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+14:12:34.315906 [info ]: Started building task graph
+14:12:34.315930 [info ]: Finished building task graph [  0.00s]
+14:12:34.320171 [info ]: Cached model count updated: 4 models (accurate)
+14:23:20.968761 [info ]: Started loading project
+14:23:20.969134 [info ]: Loading ~/.dbt/profiles.yml
+14:23:20.973161 [info ]: Started parsing
+14:23:20.988678 [info ]: Finished loading project [  0.02s]
+14:23:20.990394 [debug]: Finished parsing analyses/raw_customers.sql [  0.00s]
+14:23:20.990990 [info ]: Finished parsing [  0.02s]
+14:23:20.991898 [info ]: Cached model count updated: 4 models (estimate)
+14:23:20.991905 [info ]: Cached model count updated: 4 models (accurate)
+14:23:20.991962 [info ]: Started scheduling
+14:23:20.992070 [info ]: Finished scheduling [  0.00s]
+14:23:20.992077 [debug]: Compilation - 1 nodes selected: {"analysis.olist_analytics.raw_customers"}
+14:23:21.093463 [info ]: Started building task graph
+14:23:21.093497 [info ]: Finished building task graph [  0.00s]
+14:23:21.093557 [info ]: Started rendering (1 nodes)
+14:23:21.093566 [info ]: Started analysis staging.raw_customers
+14:23:21.093573 [debug]: Started rendering analysis staging.raw_customers
+14:23:21.094075 [debug]: Compiled SQL for node analysis.olist_analytics.raw_customers at target/.lsp/compiled/analyses/raw_customers.sql
+14:23:21.094116 [debug]: Finished rendering [  0.00s] analysis staging.raw_customers [success]
+14:23:21.094122 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:23:21.094131 [info ]: Started analyzing (1 nodes)
+14:23:21.094135 [debug]: Started analyzing analysis staging.raw_customers
+14:23:21.094528 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_customers.sql:6:1 (target/.lsp/compiled/analyses/raw_customers.sql:6:1)
+14:23:21.094544 [info ]:  Succeeded [-------] analysis staging.raw_customers (analysis)
+14:23:21.094559 [debug]: Finished analyzing [  0.00s] analysis staging.raw_customers [success]
+14:23:21.094564 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:23:21.099722 [info ]: Cached model count updated: 4 models (accurate)
+14:28:12.544255 [info ]: Started loading project
+14:28:12.544652 [info ]: Loading ~/.dbt/profiles.yml
+14:28:12.549137 [info ]: Started parsing
+14:28:12.564469 [info ]: Finished loading project [  0.02s]
+14:28:12.564928 [debug]: Finished parsing models/staging/stg_categories.yml [  0.00s]
+14:28:12.567011 [debug]: Finished parsing models/staging/stg_categories.sql [  0.00s]
+14:28:12.567320 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name.sql [  0.00s]
+14:28:12.567590 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name.sql [  0.00s]
+14:28:12.567905 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name_english.sql [  0.00s]
+14:28:12.568937 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name_english.sql [  0.00s]
+14:28:12.569497 [info ]: Finished parsing [  0.02s]
+14:28:12.570399 [info ]: Cached model count updated: 4 models (estimate)
+14:28:12.570407 [info ]: Cached model count updated: 4 models (accurate)
+14:28:12.570457 [info ]: Started scheduling
+14:28:12.570577 [info ]: Finished scheduling [  0.00s]
+14:28:12.570584 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_categories"}
+14:28:12.671607 [info ]: Started building task graph
+14:28:12.671643 [info ]: Finished building task graph [  0.00s]
+14:28:12.671705 [info ]: Started rendering (1 nodes)
+14:28:12.671714 [info ]: Started model staging.stg_categories
+14:28:12.671722 [debug]: Started rendering model staging.stg_categories
+14:28:12.672246 [debug]: Compiled SQL for node model.olist_analytics.stg_categories at target/.lsp/compiled/models/staging/stg_categories.sql
+14:28:12.672275 [debug]: Finished rendering [  0.00s] model staging.stg_categories [success]
+14:28:12.672282 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:28:12.672291 [info ]: Started analyzing (1 nodes)
+14:28:12.672296 [debug]: Started analyzing model staging.stg_categories
+14:28:12.673936 [info ]:  Succeeded [  0.00s] model staging.stg_categories (table)
+14:28:12.673949 [debug]: Finished analyzing [  0.00s] model staging.stg_categories [success]
+14:28:12.673953 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:28:12.678185 [info ]: Cached model count updated: 4 models (accurate)
+14:28:43.818678 [info ]: Started loading project
+14:28:43.819272 [info ]: Loading ~/.dbt/profiles.yml
+14:28:43.822580 [info ]: Started loading project
+14:28:43.822773 [info ]: Loading ~/.dbt/profiles.yml
+14:28:43.822805 [info ]: Finished loading project [  0.00s]
+14:28:43.948912 [info ]:    Started resolving packages from packages.yml
+14:28:44.086806 [info ]:   Finished [  0.14s] resolving packages from packages.yml (1 items)
+14:28:44.086932 [debug]:    Started loading packages
+14:28:44.089786 [debug]:     Loaded [  0.00s] packages
+14:28:44.090498 [info ]: Finished loading project [  0.27s]
+14:28:44.090717 [info ]: Started parsing
+14:28:44.119228 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:28:44.119585 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+14:28:44.119800 [debug]: Finished parsing models/staging/stg_categories.yml [  0.00s]
+14:28:44.120377 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+14:28:44.120642 [debug]: Finished parsing tests/schema.yml [  0.00s]
+14:28:44.151378 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:28:44.151739 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:28:44.152082 [debug]: Finished parsing models/staging/stg_categories.sql [  0.00s]
+14:28:44.152300 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+14:28:44.156240 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:28:44.156637 [debug]: Finished parsing analyses/raw_categories.sql [  0.00s]
+14:28:44.157031 [debug]: Finished parsing analyses/raw_customers.sql [  0.00s]
+14:28:44.158193 [debug]: Finished parsing analyses/raw_orders_item.sql [  0.00s]
+14:28:44.158563 [debug]: Finished parsing tests/category_name_english_too_long.sql [  0.00s]
+14:28:44.158865 [debug]: Finished parsing tests/category_name_too_long.sql [  0.00s]
+14:28:44.159091 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:28:44.159315 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:28:44.159500 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:28:44.159681 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:28:44.159887 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name.sql [  0.00s]
+14:28:44.160071 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name.sql [  0.00s]
+14:28:44.160258 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name_english.sql [  0.00s]
+14:28:44.160432 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name_english.sql [  0.00s]
+14:28:44.160630 [debug]: Finished parsing target/generic_tests/dbt_utils_unique_combination_o_a111775ea481dcf3fb27ccbdced728f1.sql [  0.00s]
+14:28:44.160810 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+14:28:44.160990 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+14:28:44.161169 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+14:28:44.161346 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+14:28:44.161523 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+14:28:44.161700 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+14:28:44.164641 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+14:28:44.165168 [info ]: Finished parsing [  0.07s]
+14:28:44.165276 [info ]: Cached model count updated: 5 models (estimate)
+14:28:44.165283 [info ]: Cached model count updated: 5 models (accurate)
+14:28:44.165324 [info ]: Started scheduling
+14:28:44.165438 [info ]: Finished scheduling [  0.00s]
+14:28:44.165445 [debug]: Compilation - 15 nodes selected: {"analysis.olist_analytics.raw_categories", "analysis.olist_analytics.raw_customers", "analysis.olist_analytics.raw_orders_item", "model.olist_analytics.my_first_dbt_model", "model.olist_analytics.my_second_dbt_model", "model.olist_analytics.stg_categories", "model.olist_analytics.stg_orders_item", "seed.olist_analytics.custormers", "seed.olist_analytics.orders", "seed.olist_analytics.orders_items", "seed.olist_analytics.orders_payments", "seed.olist_analytics.orders_reviews", "seed.olist_analytics.product_category_name_translation", "seed.olist_analytics.products", "seed.olist_analytics.sellers"}
+14:28:44.165453 [info ]: Started scheduling
+14:28:44.165539 [info ]: Finished scheduling [  0.00s]
+14:28:44.165625 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "customer" }) and interval: None
+14:28:44.165639 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+14:28:44.165648 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "categories" }) and interval: None
+14:28:44.262296 [info ]: Started building task graph
+14:28:44.262412 [info ]: Finished building task graph [  0.00s]
+14:28:44.262512 [info ]: Started rendering (15 nodes)
+14:28:44.262521 [info ]: Started seed staging.sellers
+14:28:44.262529 [debug]: Started rendering seed staging.sellers
+14:28:44.262545 [info ]: Started seed staging.products
+14:28:44.262552 [debug]: Started rendering seed staging.products
+14:28:44.262561 [info ]: Started seed staging.product_category_name_translation
+14:28:44.262567 [debug]: Started rendering seed staging.product_category_name_translation
+14:28:44.262576 [info ]: Started seed staging.orders_reviews
+14:28:44.262580 [debug]: Started rendering seed staging.orders_reviews
+14:28:44.262586 [info ]: Started seed staging.orders_payments
+14:28:44.262592 [debug]: Started rendering seed staging.orders_payments
+14:28:44.262598 [info ]: Started seed staging.orders_items
+14:28:44.262602 [debug]: Started rendering seed staging.orders_items
+14:28:44.262607 [info ]: Started seed staging.orders
+14:28:44.262611 [debug]: Started rendering seed staging.orders
+14:28:44.262617 [info ]: Started seed staging.custormers
+14:28:44.262621 [debug]: Started rendering seed staging.custormers
+14:28:44.262628 [info ]: Started model staging.stg_orders_item
+14:28:44.262633 [debug]: Started rendering model staging.stg_orders_item
+14:28:44.262640 [info ]: Started model staging.stg_categories
+14:28:44.262645 [debug]: Started rendering model staging.stg_categories
+14:28:44.262654 [info ]: Started model staging.my_first_dbt_model
+14:28:44.262658 [debug]: Started rendering model staging.my_first_dbt_model
+14:28:44.262665 [info ]: Started analysis staging.raw_orders_item
+14:28:44.262669 [debug]: Started rendering analysis staging.raw_orders_item
+14:28:44.262675 [info ]: Started analysis staging.raw_customers
+14:28:44.262679 [debug]: Started rendering analysis staging.raw_customers
+14:28:44.262685 [info ]: Started analysis staging.raw_categories
+14:28:44.262688 [debug]: Started rendering analysis staging.raw_categories
+14:28:44.265820 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+14:28:44.265888 [info ]: Started analyzing (15 nodes)
+14:28:44.265903 [debug]: Started analyzing seed staging.product_category_name_translation
+14:28:44.265997 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+14:28:44.266024 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+14:28:44.267745 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+14:28:44.267804 [debug]: Started analyzing model staging.stg_orders_item
+14:28:44.267834 [debug]: Finished rendering [  0.01s] model staging.stg_orders_item [success]
+14:28:44.268161 [debug]: Finished rendering [  0.01s] seed staging.sellers [success]
+14:28:44.268178 [debug]: Started analyzing seed staging.sellers
+14:28:44.268194 [info ]:  Succeeded [  0.01s] seed  staging.sellers (table)
+14:28:44.268204 [debug]: Finished analyzing [  0.00s] seed staging.sellers [success]
+14:28:44.268214 [debug]: Compiled SQL for node model.olist_analytics.stg_categories at target/.lsp/compiled/models/staging/stg_categories.sql
+14:28:44.268233 [debug]: Started analyzing model staging.stg_categories
+14:28:44.268244 [debug]: Finished rendering [  0.01s] model staging.stg_categories [success]
+14:28:44.270751 [info ]:  Succeeded [  0.01s] model staging.stg_orders_item (table)
+14:28:44.270763 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+14:28:44.271134 [info ]:  Succeeded [  0.01s] model staging.stg_categories (table)
+14:28:44.271170 [debug]: Finished analyzing [  0.00s] model staging.stg_categories [success]
+14:28:44.271208 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:28:44.271309 [debug]: Started analyzing model staging.my_first_dbt_model
+14:28:44.271330 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+14:28:44.272178 [info ]:  Succeeded [  0.01s] model staging.my_first_dbt_model (table)
+14:28:44.272205 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+14:28:44.272225 [info ]: Started model staging.my_second_dbt_model
+14:28:44.272236 [debug]: Started rendering model staging.my_second_dbt_model
+14:28:44.272317 [debug]: Compiled SQL for node analysis.olist_analytics.raw_customers at target/.lsp/compiled/analyses/raw_customers.sql
+14:28:44.272392 [debug]: Finished rendering [  0.01s] analysis staging.raw_customers [success]
+14:28:44.272405 [debug]: Started analyzing analysis staging.raw_customers
+14:28:44.272607 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/raw_orders_item.sql
+14:28:44.272635 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+14:28:44.272648 [debug]: Started analyzing analysis staging.raw_orders_item
+14:28:44.272975 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_customers.sql:6:1 (target/.lsp/compiled/analyses/raw_customers.sql:6:1)
+14:28:44.272998 [info ]:  Succeeded [  0.01s] analysis staging.raw_customers (analysis)
+14:28:44.273029 [debug]: Finished analyzing [  0.00s] analysis staging.raw_customers [success]
+14:28:44.273043 [debug]: Compiled SQL for node analysis.olist_analytics.raw_categories at target/.lsp/compiled/analyses/raw_categories.sql
+14:28:44.273066 [debug]: Finished rendering [  0.01s] analysis staging.raw_categories [success]
+14:28:44.273078 [debug]: Started analyzing analysis staging.raw_categories
+14:28:44.273304 [warn ]: dbt0101: mismatched input 'SELECT' expecting <EOF>
+  --> analyses/raw_orders_item.sql:7:1 (target/.lsp/compiled/analyses/raw_orders_item.sql:7:1)
+14:28:44.273321 [info ]:  Succeeded [  0.01s] analysis staging.raw_orders_item (analysis)
+14:28:44.273351 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+14:28:44.273489 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_categories.sql:6:1 (target/.lsp/compiled/analyses/raw_categories.sql:6:1)
+14:28:44.273534 [info ]:  Succeeded [  0.01s] analysis staging.raw_categories (analysis)
+14:28:44.273574 [debug]: Finished analyzing [  0.00s] analysis staging.raw_categories [success]
+14:28:44.273838 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:28:44.273865 [debug]: Started analyzing model staging.my_second_dbt_model
+14:28:44.273869 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+14:28:44.274310 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+14:28:44.274328 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+14:28:44.324391 [debug]: Finished rendering [  0.06s] seed staging.custormers [success]
+14:28:44.324414 [debug]: Started analyzing seed staging.custormers
+14:28:44.324439 [info ]:  Succeeded [  0.06s] seed  staging.custormers (table)
+14:28:44.324452 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+14:28:44.329817 [debug]: Finished rendering [  0.07s] seed staging.products [success]
+14:28:44.329832 [debug]: Started analyzing seed staging.products
+14:28:44.329855 [info ]:  Succeeded [  0.07s] seed  staging.products (table)
+14:28:44.329865 [debug]: Finished analyzing [  0.00s] seed staging.products [success]
+14:28:44.352209 [debug]: Finished rendering [  0.09s] seed staging.orders_payments [success]
+14:28:44.352233 [debug]: Started analyzing seed staging.orders_payments
+14:28:44.352259 [info ]:  Succeeded [  0.09s] seed  staging.orders_payments (table)
+14:28:44.352271 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+14:28:44.410145 [debug]: Finished rendering [  0.15s] seed staging.orders_items [success]
+14:28:44.410168 [debug]: Started analyzing seed staging.orders_items
+14:28:44.410193 [info ]:  Succeeded [  0.15s] seed  staging.orders_items (table)
+14:28:44.410204 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+14:28:44.410912 [debug]: Finished rendering [  0.15s] seed staging.orders_reviews [success]
+14:28:44.410923 [debug]: Started analyzing seed staging.orders_reviews
+14:28:44.410938 [info ]:  Succeeded [  0.15s] seed  staging.orders_reviews (table)
+14:28:44.410948 [debug]: Finished analyzing [  0.00s] seed staging.orders_reviews [success]
+14:28:44.454639 [debug]: Finished rendering [  0.19s] seed staging.orders [success]
+14:28:44.454653 [info ]: Finished rendering [  0.19s] (15 nodes, 0 skipped, 0 errors)
+14:28:44.454667 [debug]: Started analyzing seed staging.orders
+14:28:44.454693 [info ]:  Succeeded [  0.19s] seed  staging.orders (table)
+14:28:44.454706 [debug]: Finished analyzing [  0.00s] seed staging.orders [success]
+14:28:44.454710 [info ]: Finished analyzing [  0.19s] (15 nodes, 0 skipped, 0 errors)
+14:28:44.460126 [info ]: Cached model count updated: 5 models (accurate)
+14:28:56.203081 [info ]: Started loading project
+14:28:56.203470 [info ]: Loading ~/.dbt/profiles.yml
+14:28:56.207524 [info ]: Started parsing
+14:28:56.225516 [info ]: Finished loading project [  0.02s]
+14:28:56.227366 [debug]: Finished parsing analyses/raw_customers.sql [  0.00s]
+14:28:56.227875 [info ]: Finished parsing [  0.02s]
+14:28:56.228830 [info ]: Cached model count updated: 5 models (estimate)
+14:28:56.228838 [info ]: Cached model count updated: 5 models (accurate)
+14:28:56.228895 [info ]: Started scheduling
+14:28:56.229015 [info ]: Finished scheduling [  0.00s]
+14:28:56.229022 [debug]: Compilation - 1 nodes selected: {"analysis.olist_analytics.raw_customers"}
+14:28:56.333295 [info ]: Started building task graph
+14:28:56.333331 [info ]: Finished building task graph [  0.00s]
+14:28:56.333396 [info ]: Started rendering (1 nodes)
+14:28:56.333404 [info ]: Started analysis staging.raw_customers
+14:28:56.333412 [debug]: Started rendering analysis staging.raw_customers
+14:28:56.333899 [debug]: Compiled SQL for node analysis.olist_analytics.raw_customers at target/.lsp/compiled/analyses/raw_customers.sql
+14:28:56.333927 [debug]: Finished rendering [  0.00s] analysis staging.raw_customers [success]
+14:28:56.333934 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:28:56.333943 [info ]: Started analyzing (1 nodes)
+14:28:56.333946 [debug]: Started analyzing analysis staging.raw_customers
+14:28:56.334248 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_customers.sql:6:1 (target/.lsp/compiled/analyses/raw_customers.sql:6:1)
+14:28:56.334265 [info ]:  Succeeded [-------] analysis staging.raw_customers (analysis)
+14:28:56.334282 [debug]: Finished analyzing [  0.00s] analysis staging.raw_customers [success]
+14:28:56.334288 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:28:56.338815 [info ]: Cached model count updated: 5 models (accurate)
+14:36:12.037786 [info ]: Started loading project
+14:36:12.038628 [info ]: Loading ~/.dbt/profiles.yml
+14:36:12.043165 [info ]: Started parsing
+14:36:12.060639 [info ]: Finished loading project [  0.02s]
+14:36:12.062636 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+14:36:12.063162 [info ]: Finished parsing [  0.02s]
+14:36:12.064172 [info ]: Cached model count updated: 5 models (estimate)
+14:36:12.064179 [info ]: Cached model count updated: 5 models (accurate)
+14:36:12.064232 [info ]: Started scheduling
+14:36:12.064351 [info ]: Finished scheduling [  0.00s]
+14:36:12.064358 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+14:36:12.167799 [info ]: Started building task graph
+14:36:12.167837 [info ]: Finished building task graph [  0.00s]
+14:36:12.167904 [info ]: Started rendering (1 nodes)
+14:36:12.167913 [info ]: Started model staging.stg_customers
+14:36:12.167922 [debug]: Started rendering model staging.stg_customers
+14:36:12.169453 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+14:36:12.169486 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+14:36:12.169491 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:36:12.169500 [info ]: Started analyzing (1 nodes)
+14:36:12.169503 [debug]: Started analyzing model staging.stg_customers
+14:36:12.170744 [error]: dbt0101: no viable alternative at input 'CAST(TRIM(customer_state))'
+  --> models/staging/stg_customers.sql:15:30 (target/.lsp/compiled/models/staging/stg_customers.sql:13:30)
+14:36:12.170759 [info ]:     Failed [  0.00s] model staging.stg_customers (table)
+14:36:12.175041 [info ]: Cached model count updated: 5 models (accurate)
+14:36:12.175067 [debug]: Finished analyzing [  0.01s] model staging.stg_customers [error]
+14:36:12.175122 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+14:36:56.970446 [info ]: Started loading project
+14:36:56.971134 [info ]: Loading ~/.dbt/profiles.yml
+14:36:56.975959 [info ]: Started parsing
+14:36:56.993130 [info ]: Finished loading project [  0.02s]
+14:36:56.994933 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+14:36:56.995477 [info ]: Finished parsing [  0.02s]
+14:36:56.996396 [info ]: Cached model count updated: 5 models (estimate)
+14:36:56.996404 [info ]: Cached model count updated: 5 models (accurate)
+14:36:56.996458 [info ]: Started scheduling
+14:36:56.996576 [info ]: Finished scheduling [  0.00s]
+14:36:56.996583 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+14:36:57.099288 [info ]: Started building task graph
+14:36:57.099328 [info ]: Finished building task graph [  0.00s]
+14:36:57.099397 [info ]: Started rendering (1 nodes)
+14:36:57.099406 [info ]: Started model staging.stg_customers
+14:36:57.099413 [debug]: Started rendering model staging.stg_customers
+14:36:57.099964 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+14:36:57.099995 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+14:36:57.100001 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:36:57.100010 [info ]: Started analyzing (1 nodes)
+14:36:57.100013 [debug]: Started analyzing model staging.stg_customers
+14:36:57.104756 [info ]:  Succeeded [  0.00s] model staging.stg_customers (table)
+14:36:57.104769 [debug]: Finished analyzing [  0.00s] model staging.stg_customers [success]
+14:36:57.104773 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:36:57.109275 [info ]: Cached model count updated: 5 models (accurate)
+14:37:40.862338 [info ]: Started loading project
+14:37:40.862814 [info ]: Loading ~/.dbt/profiles.yml
+14:37:40.866069 [info ]: Started loading project
+14:37:40.866248 [info ]: Loading ~/.dbt/profiles.yml
+14:37:40.866279 [info ]: Finished loading project [  0.00s]
+14:37:40.994559 [info ]:    Started resolving packages from packages.yml
+14:37:41.156620 [info ]:   Finished [  0.16s] resolving packages from packages.yml (1 items)
+14:37:41.156738 [debug]:    Started loading packages
+14:37:41.159831 [debug]:     Loaded [  0.00s] packages
+14:37:41.160471 [info ]: Finished loading project [  0.29s]
+14:37:41.160698 [info ]: Started parsing
+14:37:41.186907 [debug]: Finished parsing models/example/schema.yml [  0.00s]
+14:37:41.187293 [debug]: Finished parsing models/staging/sources.yml [  0.00s]
+14:37:41.187642 [debug]: Finished parsing models/staging/stg_categories.yml [  0.00s]
+14:37:41.187671 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+14:37:41.187972 [debug]: Finished parsing models/staging/stg_orders_item.yml [  0.00s]
+14:37:41.188235 [debug]: Finished parsing tests/schema.yml [  0.00s]
+14:37:41.212634 [debug]: Finished parsing models/example/my_first_dbt_model.sql [  0.00s]
+14:37:41.213011 [debug]: Finished parsing models/example/my_second_dbt_model.sql [  0.00s]
+14:37:41.213503 [debug]: Finished parsing models/staging/stg_categories.sql [  0.00s]
+14:37:41.213929 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+14:37:41.217804 [debug]: Finished parsing models/staging/stg_orders_item.sql [  0.00s]
+14:37:41.218312 [debug]: Finished parsing analyses/raw_categories.sql [  0.00s]
+14:37:41.218712 [debug]: Finished parsing analyses/raw_customers.sql [  0.00s]
+14:37:41.219775 [debug]: Finished parsing analyses/raw_orders_item.sql [  0.00s]
+14:37:41.220146 [debug]: Finished parsing tests/category_name_english_too_long.sql [  0.00s]
+14:37:41.220380 [debug]: Finished parsing tests/category_name_too_long.sql [  0.00s]
+14:37:41.220589 [debug]: Finished parsing target/generic_tests/unique_my_first_dbt_model_id.sql [  0.00s]
+14:37:41.220784 [debug]: Finished parsing target/generic_tests/not_null_my_first_dbt_model_id.sql [  0.00s]
+14:37:41.220959 [debug]: Finished parsing target/generic_tests/unique_my_second_dbt_model_id.sql [  0.00s]
+14:37:41.221142 [debug]: Finished parsing target/generic_tests/not_null_my_second_dbt_model_id.sql [  0.00s]
+14:37:41.221331 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name.sql [  0.00s]
+14:37:41.221538 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name.sql [  0.00s]
+14:37:41.221734 [debug]: Finished parsing target/generic_tests/not_null_stg_categories_product_category_name_english.sql [  0.00s]
+14:37:41.221914 [debug]: Finished parsing target/generic_tests/unique_stg_categories_product_category_name_english.sql [  0.00s]
+14:37:41.222112 [debug]: Finished parsing target/generic_tests/dbt_utils_unique_combination_o_a111775ea481dcf3fb27ccbdced728f1.sql [  0.00s]
+14:37:41.222298 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_freight_value.sql [  0.00s]
+14:37:41.222480 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_id.sql [  0.00s]
+14:37:41.222757 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_order_item_id.sql [  0.00s]
+14:37:41.223036 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_price.sql [  0.00s]
+14:37:41.223249 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_product_id.sql [  0.00s]
+14:37:41.223468 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_seller_id.sql [  0.00s]
+14:37:41.226456 [debug]: Finished parsing target/generic_tests/not_null_stg_orders_item_shipping_limit_date.sql [  0.00s]
+14:37:41.226942 [info ]: Finished parsing [  0.07s]
+14:37:41.227054 [info ]: Cached model count updated: 5 models (estimate)
+14:37:41.227060 [info ]: Cached model count updated: 5 models (accurate)
+14:37:41.227101 [info ]: Started scheduling
+14:37:41.227222 [info ]: Finished scheduling [  0.00s]
+14:37:41.227228 [debug]: Compilation - 16 nodes selected: {"analysis.olist_analytics.raw_categories", "analysis.olist_analytics.raw_customers", "analysis.olist_analytics.raw_orders_item", "model.olist_analytics.my_first_dbt_model", "model.olist_analytics.my_second_dbt_model", "model.olist_analytics.stg_categories", "model.olist_analytics.stg_customers", "model.olist_analytics.stg_orders_item", "seed.olist_analytics.custormers", "seed.olist_analytics.orders", "seed.olist_analytics.orders_items", "seed.olist_analytics.orders_payments", "seed.olist_analytics.orders_reviews", "seed.olist_analytics.product_category_name_translation", "seed.olist_analytics.products", "seed.olist_analytics.sellers"}
+14:37:41.227236 [info ]: Started scheduling
+14:37:41.227320 [info ]: Finished scheduling [  0.00s]
+14:37:41.227358 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "orders_item" }) and interval: None
+14:37:41.227371 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "categories" }) and interval: None
+14:37:41.227379 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "olist-e-commerce-analytics-jfd", schema: "raw", table: "customer" }) and interval: None
+14:37:41.326025 [info ]: Started building task graph
+14:37:41.326118 [info ]: Finished building task graph [  0.00s]
+14:37:41.326215 [info ]: Started rendering (16 nodes)
+14:37:41.326223 [info ]: Started seed staging.sellers
+14:37:41.326230 [debug]: Started rendering seed staging.sellers
+14:37:41.326243 [info ]: Started seed staging.products
+14:37:41.326248 [debug]: Started rendering seed staging.products
+14:37:41.326255 [info ]: Started seed staging.product_category_name_translation
+14:37:41.326262 [debug]: Started rendering seed staging.product_category_name_translation
+14:37:41.326270 [info ]: Started seed staging.orders_reviews
+14:37:41.326274 [debug]: Started rendering seed staging.orders_reviews
+14:37:41.326279 [info ]: Started seed staging.orders_payments
+14:37:41.326282 [debug]: Started rendering seed staging.orders_payments
+14:37:41.326287 [info ]: Started seed staging.orders_items
+14:37:41.326291 [debug]: Started rendering seed staging.orders_items
+14:37:41.326296 [info ]: Started seed staging.orders
+14:37:41.326300 [debug]: Started rendering seed staging.orders
+14:37:41.326305 [info ]: Started seed staging.custormers
+14:37:41.326309 [debug]: Started rendering seed staging.custormers
+14:37:41.326315 [info ]: Started model staging.stg_orders_item
+14:37:41.326319 [debug]: Started rendering model staging.stg_orders_item
+14:37:41.326325 [info ]: Started model staging.stg_customers
+14:37:41.326328 [debug]: Started rendering model staging.stg_customers
+14:37:41.326334 [info ]: Started model staging.stg_categories
+14:37:41.326338 [debug]: Started rendering model staging.stg_categories
+14:37:41.326343 [info ]: Started model staging.my_first_dbt_model
+14:37:41.326347 [debug]: Started rendering model staging.my_first_dbt_model
+14:37:41.326353 [info ]: Started analysis staging.raw_orders_item
+14:37:41.326357 [debug]: Started rendering analysis staging.raw_orders_item
+14:37:41.326362 [info ]: Started analysis staging.raw_customers
+14:37:41.326367 [debug]: Started rendering analysis staging.raw_customers
+14:37:41.326372 [info ]: Started analysis staging.raw_categories
+14:37:41.326380 [debug]: Started rendering analysis staging.raw_categories
+14:37:41.330145 [debug]: Finished rendering [  0.00s] seed staging.product_category_name_translation [success]
+14:37:41.330195 [info ]: Started analyzing (16 nodes)
+14:37:41.330206 [debug]: Started analyzing seed staging.product_category_name_translation
+14:37:41.330254 [info ]:  Succeeded [  0.00s] seed  staging.product_category_name_translation (table)
+14:37:41.330308 [debug]: Finished analyzing [  0.00s] seed staging.product_category_name_translation [success]
+14:37:41.330606 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+14:37:41.330699 [debug]: Started analyzing model staging.stg_customers
+14:37:41.330722 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+14:37:41.331207 [debug]: Finished rendering [  0.00s] seed staging.sellers [success]
+14:37:41.331225 [debug]: Started analyzing seed staging.sellers
+14:37:41.331244 [info ]:  Succeeded [  0.00s] seed  staging.sellers (table)
+14:37:41.331253 [debug]: Finished analyzing [  0.00s] seed staging.sellers [success]
+14:37:41.331399 [debug]: Compiled SQL for node analysis.olist_analytics.raw_categories at target/.lsp/compiled/analyses/raw_categories.sql
+14:37:41.331424 [debug]: Finished rendering [  0.01s] analysis staging.raw_categories [success]
+14:37:41.331433 [debug]: Started analyzing analysis staging.raw_categories
+14:37:41.331834 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_categories.sql:6:1 (target/.lsp/compiled/analyses/raw_categories.sql:6:1)
+14:37:41.331852 [info ]:  Succeeded [  0.01s] analysis staging.raw_categories (analysis)
+14:37:41.331874 [debug]: Finished analyzing [  0.00s] analysis staging.raw_categories [success]
+14:37:41.334199 [debug]: Compiled SQL for node analysis.olist_analytics.raw_customers at target/.lsp/compiled/analyses/raw_customers.sql
+14:37:41.336904 [debug]: Finished rendering [  0.01s] analysis staging.raw_customers [success]
+14:37:41.336932 [debug]: Started analyzing analysis staging.raw_customers
+14:37:41.337457 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_customers.sql:6:1 (target/.lsp/compiled/analyses/raw_customers.sql:6:1)
+14:37:41.337483 [info ]:  Succeeded [  0.01s] analysis staging.raw_customers (analysis)
+14:37:41.337504 [debug]: Compiled SQL for node analysis.olist_analytics.raw_orders_item at target/.lsp/compiled/analyses/raw_orders_item.sql
+14:37:41.337524 [debug]: Finished rendering [  0.01s] analysis staging.raw_orders_item [success]
+14:37:41.337534 [debug]: Started analyzing analysis staging.raw_orders_item
+14:37:41.337577 [debug]: Finished analyzing [  0.00s] analysis staging.raw_customers [success]
+14:37:41.337590 [debug]: Compiled SQL for node model.olist_analytics.my_first_dbt_model at target/.lsp/compiled/models/example/my_first_dbt_model.sql
+14:37:41.337612 [debug]: Started analyzing model staging.my_first_dbt_model
+14:37:41.337905 [warn ]: dbt0101: mismatched input 'SELECT' expecting <EOF>
+  --> analyses/raw_orders_item.sql:7:1 (target/.lsp/compiled/analyses/raw_orders_item.sql:7:1)
+14:37:41.337919 [info ]:  Succeeded [  0.01s] analysis staging.raw_orders_item (analysis)
+14:37:41.337937 [debug]: Finished rendering [  0.01s] model staging.my_first_dbt_model [success]
+14:37:41.339124 [info ]:  Succeeded [  0.01s] model staging.stg_customers (table)
+14:37:41.339139 [debug]: Finished analyzing [  0.01s] model staging.stg_customers [success]
+14:37:41.339151 [debug]: Compiled SQL for node model.olist_analytics.stg_categories at target/.lsp/compiled/models/staging/stg_categories.sql
+14:37:41.339170 [debug]: Started analyzing model staging.stg_categories
+14:37:41.339183 [debug]: Finished rendering [  0.01s] model staging.stg_categories [success]
+14:37:41.339722 [info ]:  Succeeded [  0.01s] model staging.my_first_dbt_model (table)
+14:37:41.339731 [debug]: Finished analyzing [  0.00s] model staging.my_first_dbt_model [success]
+14:37:41.339740 [info ]: Started model staging.my_second_dbt_model
+14:37:41.339746 [debug]: Started rendering model staging.my_second_dbt_model
+14:37:41.341696 [debug]: Finished analyzing [  0.00s] analysis staging.raw_orders_item [success]
+14:37:41.342190 [info ]:  Succeeded [  0.01s] model staging.stg_categories (table)
+14:37:41.342202 [debug]: Finished analyzing [  0.00s] model staging.stg_categories [success]
+14:37:41.342818 [debug]: Compiled SQL for node model.olist_analytics.my_second_dbt_model at target/.lsp/compiled/models/example/my_second_dbt_model.sql
+14:37:41.342818 [debug]: Compiled SQL for node model.olist_analytics.stg_orders_item at target/.lsp/compiled/models/staging/stg_orders_item.sql
+14:37:41.342875 [debug]: Started analyzing model staging.my_second_dbt_model
+14:37:41.342895 [debug]: Finished rendering [  0.02s] model staging.stg_orders_item [success]
+14:37:41.342898 [debug]: Finished rendering [  0.00s] model staging.my_second_dbt_model [success]
+14:37:41.342909 [debug]: Started analyzing model staging.stg_orders_item
+14:37:41.343638 [info ]:  Succeeded [  0.00s] model staging.my_second_dbt_model (view)
+14:37:41.343700 [debug]: Finished analyzing [  0.00s] model staging.my_second_dbt_model [success]
+14:37:41.344490 [info ]:  Succeeded [  0.02s] model staging.stg_orders_item (table)
+14:37:41.344502 [debug]: Finished analyzing [  0.00s] model staging.stg_orders_item [success]
+14:37:41.395390 [debug]: Finished rendering [  0.07s] seed staging.products [success]
+14:37:41.395415 [debug]: Started analyzing seed staging.products
+14:37:41.395441 [info ]:  Succeeded [  0.07s] seed  staging.products (table)
+14:37:41.395452 [debug]: Finished analyzing [  0.00s] seed staging.products [success]
+14:37:41.397409 [debug]: Finished rendering [  0.07s] seed staging.custormers [success]
+14:37:41.397422 [debug]: Started analyzing seed staging.custormers
+14:37:41.397439 [info ]:  Succeeded [  0.07s] seed  staging.custormers (table)
+14:37:41.397449 [debug]: Finished analyzing [  0.00s] seed staging.custormers [success]
+14:37:41.412034 [debug]: Finished rendering [  0.09s] seed staging.orders_payments [success]
+14:37:41.412056 [debug]: Started analyzing seed staging.orders_payments
+14:37:41.412076 [info ]:  Succeeded [  0.09s] seed  staging.orders_payments (table)
+14:37:41.412088 [debug]: Finished analyzing [  0.00s] seed staging.orders_payments [success]
+14:37:41.465736 [debug]: Finished rendering [  0.14s] seed staging.orders_reviews [success]
+14:37:41.465762 [debug]: Started analyzing seed staging.orders_reviews
+14:37:41.465786 [info ]:  Succeeded [  0.14s] seed  staging.orders_reviews (table)
+14:37:41.465796 [debug]: Finished analyzing [  0.00s] seed staging.orders_reviews [success]
+14:37:41.478062 [debug]: Finished rendering [  0.15s] seed staging.orders_items [success]
+14:37:41.478084 [debug]: Started analyzing seed staging.orders_items
+14:37:41.478109 [info ]:  Succeeded [  0.15s] seed  staging.orders_items (table)
+14:37:41.478120 [debug]: Finished analyzing [  0.00s] seed staging.orders_items [success]
+14:37:41.525974 [debug]: Finished rendering [  0.20s] seed staging.orders [success]
+14:37:41.525990 [info ]: Finished rendering [  0.20s] (16 nodes, 0 skipped, 0 errors)
+14:37:41.526005 [debug]: Started analyzing seed staging.orders
+14:37:41.526030 [info ]:  Succeeded [  0.20s] seed  staging.orders (table)
+14:37:41.526043 [debug]: Finished analyzing [  0.00s] seed staging.orders [success]
+14:37:41.526046 [info ]: Finished analyzing [  0.20s] (16 nodes, 0 skipped, 0 errors)
+14:37:41.530782 [info ]: Cached model count updated: 5 models (accurate)
+14:45:25.826485 [info ]: Started loading project
+14:45:25.826928 [info ]: Loading ~/.dbt/profiles.yml
+14:45:25.831355 [info ]: Started parsing
+14:45:25.849097 [info ]: Finished loading project [  0.02s]
+14:45:25.849528 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+14:45:25.852563 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+14:45:25.852910 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+14:45:25.853265 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+14:45:25.853522 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+14:45:25.853783 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+14:45:25.854027 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+14:45:25.855629 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+14:45:25.856256 [info ]: Finished parsing [  0.02s]
+14:45:25.857149 [info ]: Cached model count updated: 5 models (estimate)
+14:45:25.857157 [info ]: Cached model count updated: 5 models (accurate)
+14:45:25.857206 [info ]: Started scheduling
+14:45:25.857260 [info ]: Finished scheduling [  0.00s]
+14:45:25.857266 [debug]: Compilation - 0 nodes selected: {}
+14:45:25.857275 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+14:45:25.857281 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+14:45:25.960984 [info ]: Started building task graph
+14:45:25.961010 [info ]: Finished building task graph [  0.00s]
+14:45:25.965495 [info ]: Cached model count updated: 5 models (accurate)
+14:46:33.089710 [info ]: Started loading project
+14:46:33.090033 [info ]: Loading ~/.dbt/profiles.yml
+14:46:33.094252 [info ]: Started parsing
+14:46:33.112290 [info ]: Finished loading project [  0.02s]
+14:46:33.114004 [debug]: Finished parsing analyses/raw_customers.sql [  0.00s]
+14:46:33.114600 [info ]: Finished parsing [  0.02s]
+14:46:33.115530 [info ]: Cached model count updated: 5 models (estimate)
+14:46:33.115538 [info ]: Cached model count updated: 5 models (accurate)
+14:46:33.115601 [info ]: Started scheduling
+14:46:33.115738 [info ]: Finished scheduling [  0.00s]
+14:46:33.115745 [debug]: Compilation - 1 nodes selected: {"analysis.olist_analytics.raw_customers"}
+14:46:33.221588 [info ]: Started building task graph
+14:46:33.221630 [info ]: Finished building task graph [  0.00s]
+14:46:33.221702 [info ]: Started rendering (1 nodes)
+14:46:33.221712 [info ]: Started analysis staging.raw_customers
+14:46:33.221721 [debug]: Started rendering analysis staging.raw_customers
+14:46:33.222238 [debug]: Compiled SQL for node analysis.olist_analytics.raw_customers at target/.lsp/compiled/analyses/raw_customers.sql
+14:46:33.222268 [debug]: Finished rendering [  0.00s] analysis staging.raw_customers [success]
+14:46:33.222274 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:46:33.222283 [info ]: Started analyzing (1 nodes)
+14:46:33.222287 [debug]: Started analyzing analysis staging.raw_customers
+14:46:33.222616 [warn ]: dbt0101: mismatched input 'SELECT' expecting one of <EOF>, ';'
+  --> analyses/raw_customers.sql:6:1 (target/.lsp/compiled/analyses/raw_customers.sql:6:1)
+14:46:33.222633 [info ]:  Succeeded [-------] analysis staging.raw_customers (analysis)
+14:46:33.222649 [debug]: Finished analyzing [  0.00s] analysis staging.raw_customers [success]
+14:46:33.222657 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+14:46:33.227877 [info ]: Cached model count updated: 5 models (accurate)
+15:20:09.061921 [info ]: Started loading project
+15:20:09.062457 [info ]: Loading ~/.dbt/profiles.yml
+15:20:09.067108 [info ]: Started parsing
+15:20:09.084990 [info ]: Finished loading project [  0.02s]
+15:20:09.085363 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:20:09.087890 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:20:09.088180 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:20:09.088502 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:20:09.088734 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:20:09.088960 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:20:09.089187 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:20:09.090556 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:20:09.091051 [info ]: Finished parsing [  0.02s]
+15:20:09.091970 [info ]: Cached model count updated: 5 models (estimate)
+15:20:09.091978 [info ]: Cached model count updated: 5 models (accurate)
+15:20:09.092063 [info ]: Started scheduling
+15:20:09.092122 [info ]: Finished scheduling [  0.00s]
+15:20:09.092128 [debug]: Compilation - 0 nodes selected: {}
+15:20:09.092138 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+15:20:09.092143 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+15:20:09.196773 [info ]: Started building task graph
+15:20:09.196794 [info ]: Finished building task graph [  0.00s]
+15:20:09.201942 [info ]: Cached model count updated: 5 models (accurate)
+15:20:21.599161 [info ]: Started loading project
+15:20:21.599465 [info ]: Loading ~/.dbt/profiles.yml
+15:20:21.603161 [info ]: Started parsing
+15:20:21.620723 [info ]: Finished loading project [  0.02s]
+15:20:21.621128 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:20:21.623495 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:20:21.623842 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:20:21.624182 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:20:21.624416 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:20:21.624727 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:20:21.624952 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:20:21.626423 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:20:21.627058 [info ]: Finished parsing [  0.02s]
+15:20:21.628120 [info ]: Cached model count updated: 5 models (estimate)
+15:20:21.628128 [info ]: Cached model count updated: 5 models (accurate)
+15:20:21.628190 [info ]: Started scheduling
+15:20:21.628333 [info ]: Finished scheduling [  0.00s]
+15:20:21.628340 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+15:20:21.729380 [info ]: Started building task graph
+15:20:21.729424 [info ]: Finished building task graph [  0.00s]
+15:20:21.729486 [info ]: Started rendering (1 nodes)
+15:20:21.729494 [info ]: Started model staging.stg_customers
+15:20:21.729503 [debug]: Started rendering model staging.stg_customers
+15:20:21.730049 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+15:20:21.730095 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+15:20:21.730102 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:20:21.730112 [info ]: Started analyzing (1 nodes)
+15:20:21.730119 [debug]: Started analyzing model staging.stg_customers
+15:20:21.734637 [error]: dbt0209: Failed to resolve function trim: Argument type mismatch: actual: (INT64); candidates: (STRING); (STRING, STRING).
+  --> models/staging/stg_customers.sql:13:10
+15:20:21.734676 [info ]:     Failed [  0.00s] model staging.stg_customers (table)
+15:20:21.734692 [debug]: Finished analyzing [  0.00s] model staging.stg_customers [error]
+15:20:21.734697 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 1 errors)
+15:20:21.740452 [info ]: Cached model count updated: 5 models (accurate)
+15:22:17.881009 [info ]: Started loading project
+15:22:17.881567 [info ]: Loading ~/.dbt/profiles.yml
+15:22:17.886292 [info ]: Started parsing
+15:22:17.904482 [info ]: Finished loading project [  0.02s]
+15:22:17.904867 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:22:17.907348 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:22:17.907723 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:22:17.907973 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:22:17.908199 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:22:17.908422 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:22:17.908642 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:22:17.910055 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:22:17.910647 [info ]: Finished parsing [  0.02s]
+15:22:17.911633 [info ]: Cached model count updated: 5 models (estimate)
+15:22:17.911641 [info ]: Cached model count updated: 5 models (accurate)
+15:22:17.911698 [info ]: Started scheduling
+15:22:17.911849 [info ]: Finished scheduling [  0.00s]
+15:22:17.911856 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+15:22:18.016379 [info ]: Started building task graph
+15:22:18.016416 [info ]: Finished building task graph [  0.00s]
+15:22:18.016477 [info ]: Started rendering (1 nodes)
+15:22:18.016486 [info ]: Started model staging.stg_customers
+15:22:18.016495 [debug]: Started rendering model staging.stg_customers
+15:22:18.017039 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+15:22:18.017069 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+15:22:18.017074 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:22:18.017083 [info ]: Started analyzing (1 nodes)
+15:22:18.017086 [debug]: Started analyzing model staging.stg_customers
+15:22:18.018662 [error]: dbt0101: no viable alternative at input 'TRIM(CAST(customer_zip_code_prefix)'
+  --> models/staging/stg_customers.sql:13:39 (target/.lsp/compiled/models/staging/stg_customers.sql:11:39)
+15:22:18.018673 [info ]:     Failed [  0.00s] model staging.stg_customers (table)
+15:22:18.023164 [info ]: Cached model count updated: 5 models (accurate)
+15:22:18.023232 [debug]: Finished analyzing [  0.01s] model staging.stg_customers [error]
+15:22:18.023254 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+15:25:18.274545 [info ]: Started loading project
+15:25:18.275106 [info ]: Loading ~/.dbt/profiles.yml
+15:25:18.281062 [info ]: Started parsing
+15:25:18.297835 [info ]: Finished loading project [  0.02s]
+15:25:18.298310 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:25:18.300508 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:25:18.300790 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:25:18.301120 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:25:18.301443 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:25:18.301695 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:25:18.301982 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:25:18.303525 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:25:18.304125 [info ]: Finished parsing [  0.02s]
+15:25:18.305219 [info ]: Cached model count updated: 5 models (estimate)
+15:25:18.305226 [info ]: Cached model count updated: 5 models (accurate)
+15:25:18.305281 [info ]: Started scheduling
+15:25:18.305418 [info ]: Finished scheduling [  0.00s]
+15:25:18.305425 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+15:25:18.408452 [info ]: Started building task graph
+15:25:18.408523 [info ]: Finished building task graph [  0.00s]
+15:25:18.408624 [info ]: Started rendering (1 nodes)
+15:25:18.408633 [info ]: Started model staging.stg_customers
+15:25:18.408641 [debug]: Started rendering model staging.stg_customers
+15:25:18.409213 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+15:25:18.409247 [info ]: Started analyzing (1 nodes)
+15:25:18.409246 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+15:25:18.409253 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:25:18.409253 [debug]: Started analyzing model staging.stg_customers
+15:25:18.410092 [error]: dbt0101: no viable alternative at input 'TRIM(CAST(customer_zip_code_prefix)'
+  --> models/staging/stg_customers.sql:13:39 (target/.lsp/compiled/models/staging/stg_customers.sql:11:39)
+15:25:18.410105 [info ]:     Failed [-------] model staging.stg_customers (table)
+15:25:18.414874 [info ]: Cached model count updated: 5 models (accurate)
+15:25:18.414901 [debug]: Finished analyzing [  0.01s] model staging.stg_customers [error]
+15:25:18.414911 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+15:26:14.217125 [info ]: Started loading project
+15:26:14.217575 [info ]: Loading ~/.dbt/profiles.yml
+15:26:14.221840 [info ]: Started parsing
+15:26:14.240799 [info ]: Finished loading project [  0.02s]
+15:26:14.241277 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:26:14.243865 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:26:14.244188 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:26:14.244541 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:26:14.244797 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:26:14.245110 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:26:14.245483 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:26:14.246967 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:26:14.247661 [info ]: Finished parsing [  0.03s]
+15:26:14.248691 [info ]: Cached model count updated: 5 models (estimate)
+15:26:14.248701 [info ]: Cached model count updated: 5 models (accurate)
+15:26:14.248763 [info ]: Started scheduling
+15:26:14.248921 [info ]: Finished scheduling [  0.00s]
+15:26:14.248929 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+15:26:14.355272 [info ]: Started building task graph
+15:26:14.355310 [info ]: Finished building task graph [  0.00s]
+15:26:14.355374 [info ]: Started rendering (1 nodes)
+15:26:14.355384 [info ]: Started model staging.stg_customers
+15:26:14.355392 [debug]: Started rendering model staging.stg_customers
+15:26:14.355933 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+15:26:14.355963 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+15:26:14.355969 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:26:14.355977 [info ]: Started analyzing (1 nodes)
+15:26:14.355981 [debug]: Started analyzing model staging.stg_customers
+15:26:14.358575 [error]: dbt0209: Failed to resolve function trim: Argument type mismatch: actual: (INT64); candidates: (STRING); (STRING, STRING).
+  --> models/staging/stg_customers.sql:13:10
+15:26:14.358609 [info ]:     Failed [  0.00s] model staging.stg_customers (table)
+15:26:14.358622 [debug]: Finished analyzing [  0.00s] model staging.stg_customers [error]
+15:26:14.358626 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 1 errors)
+15:26:14.364740 [info ]: Cached model count updated: 5 models (accurate)
+15:29:07.541779 [info ]: Started loading project
+15:29:07.542462 [info ]: Loading ~/.dbt/profiles.yml
+15:29:07.547636 [info ]: Started parsing
+15:29:07.564922 [info ]: Finished loading project [  0.02s]
+15:29:07.565293 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:29:07.567804 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:29:07.568123 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:29:07.568422 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:29:07.568687 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:29:07.568958 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:29:07.569209 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:29:07.570756 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:29:07.571422 [info ]: Finished parsing [  0.02s]
+15:29:07.572545 [info ]: Cached model count updated: 5 models (estimate)
+15:29:07.572554 [info ]: Cached model count updated: 5 models (accurate)
+15:29:07.572611 [info ]: Started scheduling
+15:29:07.572761 [info ]: Finished scheduling [  0.00s]
+15:29:07.572768 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+15:29:07.677582 [info ]: Started building task graph
+15:29:07.677622 [info ]: Finished building task graph [  0.00s]
+15:29:07.677693 [info ]: Started rendering (1 nodes)
+15:29:07.677750 [info ]: Started model staging.stg_customers
+15:29:07.677757 [debug]: Started rendering model staging.stg_customers
+15:29:07.678273 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+15:29:07.678321 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+15:29:07.678329 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:29:07.678338 [info ]: Started analyzing (1 nodes)
+15:29:07.678341 [debug]: Started analyzing model staging.stg_customers
+15:29:07.679162 [error]: dbt0101: no viable alternative at input 'TRIM(CAST(customer_zip_code_prefix)'
+  --> models/staging/stg_customers.sql:13:39 (target/.lsp/compiled/models/staging/stg_customers.sql:11:39)
+15:29:07.679172 [info ]:     Failed [-------] model staging.stg_customers (table)
+15:29:07.683697 [info ]: Cached model count updated: 5 models (accurate)
+15:29:07.683725 [debug]: Finished analyzing [  0.01s] model staging.stg_customers [error]
+15:29:07.683735 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+15:30:50.355703 [info ]: Started loading project
+15:30:50.356373 [info ]: Loading ~/.dbt/profiles.yml
+15:30:50.361793 [info ]: Started parsing
+15:30:50.380407 [info ]: Finished loading project [  0.02s]
+15:30:50.380780 [debug]: Finished parsing models/staging/stg_customers.yml [  0.00s]
+15:30:50.383294 [debug]: Finished parsing models/staging/stg_customers.sql [  0.00s]
+15:30:50.383604 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_city.sql [  0.00s]
+15:30:50.383917 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_id.sql [  0.00s]
+15:30:50.384247 [debug]: Finished parsing target/generic_tests/unique_stg_customers_customer_id.sql [  0.00s]
+15:30:50.384510 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_state.sql [  0.00s]
+15:30:50.384752 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_unique_id.sql [  0.00s]
+15:30:50.386250 [debug]: Finished parsing target/generic_tests/not_null_stg_customers_customer_zip_code_prefix.sql [  0.00s]
+15:30:50.386887 [info ]: Finished parsing [  0.03s]
+15:30:50.388010 [info ]: Cached model count updated: 5 models (estimate)
+15:30:50.388019 [info ]: Cached model count updated: 5 models (accurate)
+15:30:50.388075 [info ]: Started scheduling
+15:30:50.388216 [info ]: Finished scheduling [  0.00s]
+15:30:50.388223 [debug]: Compilation - 1 nodes selected: {"model.olist_analytics.stg_customers"}
+15:30:50.490164 [info ]: Started building task graph
+15:30:50.490202 [info ]: Finished building task graph [  0.00s]
+15:30:50.490269 [info ]: Started rendering (1 nodes)
+15:30:50.490278 [info ]: Started model staging.stg_customers
+15:30:50.490287 [debug]: Started rendering model staging.stg_customers
+15:30:50.490834 [debug]: Compiled SQL for node model.olist_analytics.stg_customers at target/.lsp/compiled/models/staging/stg_customers.sql
+15:30:50.490903 [debug]: Finished rendering [  0.00s] model staging.stg_customers [success]
+15:30:50.490911 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:30:50.490922 [info ]: Started analyzing (1 nodes)
+15:30:50.490927 [debug]: Started analyzing model staging.stg_customers
+15:30:50.495789 [info ]:  Succeeded [  0.00s] model staging.stg_customers (table)
+15:30:50.495803 [debug]: Finished analyzing [  0.00s] model staging.stg_customers [success]
+15:30:50.495806 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+15:30:50.500088 [info ]: Cached model count updated: 5 models (accurate)
