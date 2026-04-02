@@ -1,0 +1,1 @@
+{{ test_relationships(column_name="order_id", model=get_where_subquery(ref('stg_payments'))) }}

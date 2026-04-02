@@ -1,4 +1,5 @@
--- lines count
+/*
+-- Dimension
 SELECT COUNT(*) FROM `olist-e-commerce-analytics-jfd`.`raw`.`orders_item` ;
 -- 112650 lines
 
@@ -61,3 +62,4 @@ SELECT
     COUNTIF(freight_value IS NULL) AS freight_value_null
 FROM `olist-e-commerce-analytics-jfd`.`raw`.`orders_item`
 ;
+*/

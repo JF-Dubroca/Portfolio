@@ -1,0 +1,1 @@
+{{ dbt_utils.test_unique_combination_of_columns(combination_of_columns=["order_id","payment_sequential"], model=get_where_subquery(ref('stg_payments'))) }}

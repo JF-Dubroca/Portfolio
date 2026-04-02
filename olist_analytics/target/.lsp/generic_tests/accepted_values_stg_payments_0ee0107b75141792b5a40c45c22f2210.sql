@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="payment_type", model=get_where_subquery(ref('stg_payments')), values=["debit_card","credit_card","boleto","voucher","not defined"]) }}

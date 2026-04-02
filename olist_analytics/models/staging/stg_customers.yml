@@ -6,12 +6,12 @@ models:
 
     columns:
       - name: customer_id
-        description: "Primary key"
+        description: "Primary key, seems to be an order id"
         data_tests:
           - not_null
           - unique
       - name: customer_unique_id
-        description: "Unique customer ID"
+        description: "Seems to be the customer ID"
         data_tests: 
           - not_null
       - name: customer_zip_code_prefix

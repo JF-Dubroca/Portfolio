@@ -1,0 +1,1 @@
+{{ test_expected_values(column_name="payment_type", model=get_where_subquery(ref('stg_payments'))) }}

@@ -1,3 +1,4 @@
+/*
 -- Dimension
 SELECT COUNT(*) FROM {{ source('raw', 'categories')}}
 -- 71 lines
@@ -58,3 +59,4 @@ WHERE
 -- max_len_product_category_name_english = kitchen_dining_laundry_garden_furniture
 -- min_len_product_category_name_english = art
 -- No aberrant value
+*/

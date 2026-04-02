@@ -1,3 +1,4 @@
+/*
 -- Dimension
 SELECT COUNT(*) FROM {{ source('raw', 'customer')}}
 -- 99441 lines
@@ -15,7 +16,7 @@ FROM {{source ('raw', 'customer')}}
 -- Looking for duplicates
 SELECT 
     *, 
-    COUNT(*) AS number
+    COUNT(*) AS duplicates_number
 FROM {{source ('raw', 'customer')}}
 GROUP BY ALL
 HAVING NUMBER > 1
@@ -52,4 +53,25 @@ SELECT DISTINCT(customer_state) FROM {{source ('raw', 'customer')}}
 SELECT MAX(LEN(customer_state)) AS max_lenght FROM {{source ('raw', 'customer')}}
 -- 27 unique values, max lenght = 2
 
--- Does customer_zip_code_prefix, customer_city and customer_state should be limited in characters? 
+-- What's the difference between customer_id and customer_unique_id? 
+-- Retrieving customer_unique_id that appear mutiple times 
+SELECT 
+    customer_unique_id, 
+    COUNT(*) AS occurence
+FROM {{source ('raw', 'customer')}} 
+GROUP BY 1
+HAVING occurence > 2
+-- examination of some of these lines
+SELECT *
+FROM {{source ('raw', 'customer')}}
+WHERE customer_unique_id IN ('d75acd4c5b7b4dfd32b9d9172b195419', 
+                            'f50ca6544a0ed8a52cc964e15cbe9cf9', 
+                            'a1874c5550d2f0bc14cc122164603713', 
+                            '738ffcf1017b584e9d2684b36e07469c',
+                            '8cd6f80d3c3994e2060d46ec07ff0b0a')
+ORDER BY customer_unique_id
+-- customer_unique_id seems to be the real customer identifiant (same zip code, city and states)
+-- as customer_id seems to be the order identifiant (many customer_id for one customer_unique_id)
+
+-- Should customer_zip_code_prefix, customer_city and customer_state be limited in characters? 
+*/

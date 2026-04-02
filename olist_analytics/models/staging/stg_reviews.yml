@@ -1,0 +1,30 @@
+version: 2
+
+models: 
+  - name: stg_reviews
+    description: "Cleaned reviews table"
+
+    data_tests: 
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - review_id
+              - order_id
+
+    columns: 
+      - name: review_id
+        data_tests:
+          - not_null
+      - name: order_id
+        data_tests:
+          - not_null
+      - name: review_score
+        data_tests: 
+          - not_null
+          - accepted_values: 
+              arguments: 
+                values: [1, 2, 3, 4, 5]
+      - name: review_comment_title
+      - name: review_comment_message
+      - name: review_creation_date
+      - name: review_answer_timestamp
