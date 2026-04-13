@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_products
+    description: "Cleaned products table"
+
+    columns: 
+      - name: product_id
+        description: "primary key, relationship with ordres_item"
+        data_tests:
+          - not_null
+          - unique
+      - name: product_category_name
+        description: "product category name in Portuguese, may be null"
+      - name: product_name_length
+      - name: product_description_length
+      - name: product_photos_qty
+      - name: product_weight_g
+      - name: product_length_cm
+      - name: product_height_cm
+      - name: product_width_cm
