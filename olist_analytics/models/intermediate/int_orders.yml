@@ -1,0 +1,44 @@
+version: 2
+
+models: 
+  - name: int_orders
+    description: "orders intermediate table enriched"
+
+    columns: 
+      - name: order_id
+        description: "unique order id, primary key"
+        data_tests: 
+          - not_null
+          - unique
+      - name: order_status
+        data_tests: 
+          - not_null
+      - name: order_purchase_timestamp
+        data_tests:
+          - not_null
+      - name: order_approved_at
+      - name: order_delivered_carrier_date
+      - name: order_delivered_customer_date
+      - name: order_estimated_delivery_date
+      - name: customer_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+      - name: total_price
+        data_tests:
+          - not_null
+      - name: nb_item
+        data_tests:
+          - not_null
+      - name: total_freight_value
+        data_tests:
+          - not_null
+      - name: total_seller
+        data_tests:
+          - not_null
+      - name: review_score
+        
+     
