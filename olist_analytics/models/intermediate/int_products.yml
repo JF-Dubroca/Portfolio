@@ -1,0 +1,25 @@
+version: 2
+
+models: 
+  - name: int_products
+    description: "Intermediate products table enriched"
+
+    columns:
+      - name: product_id
+        description: "Unique ID product, primary key"
+        data_tests: 
+          - unique
+          - not_null
+      - name: category
+      - name: nb_order
+        data_tests:
+          - not_null
+      - name: nb_item_sold
+        data_tests:
+          - not_null
+      - name: total_revenue
+        data_tests:
+          - not_null
+      - name: avg_price
+        data_tests:
+          - not_null
