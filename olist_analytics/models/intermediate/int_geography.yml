@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_geography
+    description: "zip code, cities and contries present in the dataset "
+
+    columns:
+      - name: zip_code
+        data_tests:
+          - not_null
+      - name: city
+        data_tests:
+          - not_null
+      - name: country
+        data_tests:
+          - not_null
